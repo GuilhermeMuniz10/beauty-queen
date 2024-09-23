@@ -36,7 +36,7 @@ function Paginicio() {
                </div>
 
                <div className="slide">
-                  <img src="teste.png" alt="Imagem 2"/>
+                  <img src="public/estetica-facil-saude-rosto.jpg" alt="Imagem 2"/>
                </div>
 
                <div className="slide">
@@ -50,22 +50,22 @@ function Paginicio() {
                 {/* Fim imagens de slides  */}
 
                 {/* Navegação automatica */}
-                <div className='navegacao auto'>
+                <div className='navigation-auto'>
                      <div className="auto-btn1"></div>
                      <div className="auto-btn2"></div>
-                     <div className="auto-bt3"></div>
-                     <div className="auto-bt4"></div>
+                     <div className="auto-btn3"></div>
+                     <div className="auto-btn4"></div>
                      
                 </div>
 
          </div>
 
 
-         <div className="manual-navegacao">
-          <label For="radio1" className='manual-btn'></label>
-          <label For="radio2" className='manual-btn'></label>
-          <label For="radio3" className='manual-btn'></label>
-          <label For="radio4" className='manual-btn'></label>
+         <div className="manual-navigation">
+             <label For="radio1" className='manual-btn'></label>
+             <label For="radio2" className='manual-btn'></label>
+             <label For="radio3" className='manual-btn'></label>
+             <label For="radio4" className='manual-btn'></label>
           
          </div>
    

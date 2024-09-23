@@ -3,7 +3,6 @@ header {
   height: 50px;
 
 }
-
  
 
 .cabecalho {
@@ -36,3 +35,48 @@ header {
 	position: relative;
 }
 
+.slide img {
+	width: 900px;
+}
+
+.manual-navigation {
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+// o tamanho da bolinhas do carrossel (tamanho borda), e sua cor
+.manual-btn{
+	border: 2px solid #fff;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+
+// separa as bolinhas do carrossel
+.manual-btn:not(:last-child) {
+	margin-right: 40px;
+}
+
+
+// efeito quanto passa com o mouse por cima das bolinhas do carrossel
+.manual-btn:hover {
+	background-color: #fff;
+}
+
+
+.radio1:checked ~ .first {
+	margin-left: 0;
+}
+
+.radio2:checked ~ .first {
+	margin-left: -25%;
+}
+
+.radio3:checked ~ .first {
+	margin-left: -50%;
+}
