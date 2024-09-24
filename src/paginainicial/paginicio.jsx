@@ -74,7 +74,32 @@ function Paginicio() {
 
 
 
+      <div className='historia'>
+         <div>
 
+         </div>
+      </div>
+
+
+      <div className='formacoes'>
+         
+         <div className='texto'>
+            <p>Formações</p>
+
+            
+            <ul>
+               <li>Tec. Estética</li>
+               <li>Aromaterapeuta</li>
+               <li>Especialização em Jato de plasma</li>
+               <li>Especialização Pós operatório com taping terapia</li>
+            </ul>
+         </div>
+
+            <div>
+               <img className='img' src="/assets/images/mulherF.png" alt="" />
+            </div>
+         
+      </div>
 
 
 
