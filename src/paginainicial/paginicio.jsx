@@ -116,10 +116,29 @@ function Paginicio() {
       </div>
 
 
-      <div className='pagina-servico'>
+      <div className='servico'>
+
+         <div className='txt'>
+            <p className='N'>nossos</p>
+            <p className='S'>Serviços</p>
+            ―――――――――――――
+            
+         </div>
 
          <div className='conteiner'>
-            <img src="/assets/images/Cabelo.png" alt="" />
+
+            <div className='imgs'>
+            <img className='card' src="/assets/images/cabelo1.png" alt="" />
+            <img className='card' src="/assets/images/esteticaF.png" alt="" />
+            <img className='card' src="/assets/images/esteticaC.png" alt="" />
+            </div>
+
+            <div className='imgs'>
+            <img className='card' src="/assets/images/manicure.png" alt="" />
+            <img className='card' src="/assets/images/sombrancelha.png" alt="" />
+            <img className='card' src="/assets/images/cilios.png" alt="" />
+            </div>
+
          </div>
 
       </div>

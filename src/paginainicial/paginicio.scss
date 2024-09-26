@@ -196,6 +196,73 @@ header {
 
 
 
+.servico {
+
+	.txt{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #C8A19D;
+		margin: 80px 280px 80px;
+		padding: 30px;
+		border-radius: 20px;
+		color: white;
+		line-height: 1px;
+	}
+
+	.N{
+		font-family: 'Major Mono Display';
+		font-size: 25px;
+		
+	}
+
+	.S{
+		font-family: 'Gilda Display';
+    	font-size: 50px;
+	
+	}
+
+	.conteiner {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.imgs {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 130px;
+		margin-bottom: 60px;
+	}
+
+	.conteiner:hover .card {
+		opacity: 0.5;
+		filter: blur(3px); /* Adiciona o efeito de desfoque */
+	}
+
+	.conteiner .card:hover {
+		opacity: 1;
+		filter: none; /* Remove o desfoque ao passar o mouse sobre a card */
+	}
+
+	.card {
+		transition: all 0.3s;
+	}
+
+	.card:hover {
+		transform: translateY(-20px);
+	}
+
+	img {
+		width: 230px;
+	}
+}
+
+
+
+
 // o tamanho da bolinhas do carrossel (tamanho borda), e sua cor
 .manual-btn{
 	border: 2px solid #fff;
