@@ -116,7 +116,15 @@ function Paginicio() {
       </div>
 
 
+      <div className='pagina-servico'>
 
+         <div className='conteiner'>
+            <img src="/assets/images/Cabelo.png" alt="" />
+         </div>
+
+      </div>
+
+      
 
 
 
