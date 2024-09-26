@@ -6,15 +6,29 @@ function Paginicio() {
 
 
      <header>
-          <div className='cabecalho'>
-            <a href="">Home</a>
-            <a href="">Nossa História</a>
-            <a href="">Serviços</a>
-            <a href="">Galeria</a>
-            <a href="">Produtos</a>
 
-            <a className='log' href="">Login</a>
-          </div>
+         <nav className='links'>
+
+         <img src="/assets/images/logoBQ.png" alt="Descrição da Imagem" class="imagem-opaca"  />
+            
+            <ul>   
+               <li><a href="#" className='Link'>Home</a></li>
+               <li><a href="#" className='Link'>Nossa História</a></li>
+               <li><a href="#" className='Link'>Serviços</a></li>
+               <li><a href="#" className='Link'>Galeria</a></li>
+               <li><a href="#" className='Link'>Produtos</a></li>  
+            </ul>
+
+            <div class="botom">
+            <ul>
+                <li>
+                    <a href="#" class="button">Login</a>
+                </li>
+            </ul>
+         </div>
+
+         </nav>
+
      </header>
 
      <div className='slider'>
