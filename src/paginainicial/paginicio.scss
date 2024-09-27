@@ -225,13 +225,12 @@ header {
 
 	.N{
 		font-family: 'Major Mono Display';
-		font-size: 30px;
-		
+		font-size: 25px;
 	}
 
 	.S{
 		font-family: 'Gilda Display';
-    	font-size: 60px;
+    	font-size: 50px;
 		margin-top: 25px;
 		margin-bottom: 28px;
 	}
@@ -273,6 +272,33 @@ header {
 	}
 }
 
+
+.parcerias{
+	background-color: #C8A19D;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.txt{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+		line-height: 37px;
+		
+	}
+	
+	.N{
+		font-family: 'Bellota Text';
+		font-size: 30px;
+		margin-bottom: 1px;
+	}
+
+	.P{
+		font-family: 'Antic Didone';
+		font-size: 55px;
+		margin-top: 1px;
+	}
+}
 
 
 

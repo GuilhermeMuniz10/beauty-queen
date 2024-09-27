@@ -144,12 +144,6 @@ function Paginicio() {
                </div>
             </div>
 
-
-
-
-
-
-
             <div className='conteiner'>
 
                <div className='imgs'>
@@ -169,10 +163,26 @@ function Paginicio() {
          </div>
 
 
+         <div className='parcerias'>
+            
+               <hr />
+               <div className='txt'>
+                  <p className='N'>----NOSSAS----</p>
+                  <p className='P'>Parcerias</p>
+               </div>
+              
 
+               <div className='logoP'>
+                  <img src="/assets/images/eudora.png" alt="" />
+                  <img src="/assets/images/oboticario.png" alt="" />
+                  <img src="/assets/images/melu.png" alt="" />
+                  <img src="/assets/images/sephora.png" alt="" />
+                  <img src="/assets/images/natura.png" alt="" />
 
-
-
+               </div>
+            
+            <hr />
+         </div>
       </div>
    );
 }
