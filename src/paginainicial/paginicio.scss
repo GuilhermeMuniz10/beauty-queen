@@ -158,14 +158,14 @@ header {
 .formacoes{
 
 	background-color: #fff;
-	margin: 90px;
+	margin: 150px;
 	border-radius: 90px;
 	display: flex;
 	flex-direction: ROW;
 	align-items: center;
 	justify-content: space-around;
 	padding: 23px;
-	gap:45px;
+	gap:40px;
 	box-shadow: 0px 0px 10px 5px #C59E9A;
 	
 	p{
@@ -200,27 +200,40 @@ header {
 
 	.txt{
 		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: #C8A19D;
+		margin: 80px 310px 80px;
+		padding: 20px;
+		color: white;
+		border-radius: 25px;
+	}
+
+	.estre{
+		font-size: 20px;	
+		line-height: 17px;
+	}
+
+	.texto{
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background-color: #C8A19D;
-		margin: 80px 280px 80px;
-		padding: 30px;
-		border-radius: 20px;
 		color: white;
-		line-height: 1px;
+		line-height: 2px;
 	}
 
 	.N{
 		font-family: 'Major Mono Display';
-		font-size: 25px;
+		font-size: 30px;
 		
 	}
 
 	.S{
 		font-family: 'Gilda Display';
-    	font-size: 50px;
-	
+    	font-size: 60px;
+		margin-top: 25px;
+		margin-bottom: 28px;
 	}
 
 	.conteiner {
