@@ -2,7 +2,7 @@ header {
 	background: #C59E9A;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	height: 60px;
+	height: 75px;
   
 	.links {
 		display: flex;
@@ -24,7 +24,7 @@ header {
 		text-decoration: none;
 		
 		color: #ede7e5;
-		font-size: 22px;
+		font-size: 28px;
 		padding: 0.2rem;
 		position: relative;
   
@@ -59,11 +59,10 @@ header {
 			background: #E9DFDD;
 			color: #744540;
 			border-radius: 25px;
-			font-size: 18px;
 			padding: 0.2rem 1rem;
-			padding-top: 2px;
+			padding-top: 1px;
 			padding-bottom: 6px;
-			font-size: 22px;
+			font-size: 28px;
 			text-decoration: none;
 			position: relative;
 			border: none;
@@ -96,11 +95,11 @@ header {
 
 	.imagem-opaca {
 		transition: opacity 0.3s ease; /* Suaviza a transição */
-		width: 150px;
+		width: 180px;
 	}
 	
 	.imagem-opaca:hover {
-		opacity: 0.6; 
+		opacity: 0.4; 
 	}
 	
 	
@@ -298,6 +297,15 @@ header {
 		font-size: 55px;
 		margin-top: 1px;
 	}
+
+	.logoP{
+		
+	}
+
+	img{
+		mix-blend-mode: screen;
+	}
+
 }
 
 

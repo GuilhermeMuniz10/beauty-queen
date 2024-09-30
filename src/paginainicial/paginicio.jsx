@@ -173,11 +173,12 @@ function Paginicio() {
               
 
                <div className='logoP'>
-                  <img src="/assets/images/eudora.png" alt="" />
-                  <img src="/assets/images/oboticario.png" alt="" />
-                  <img src="/assets/images/melu.png" alt="" />
-                  <img src="/assets/images/sephora.png" alt="" />
-                  <img src="/assets/images/natura.png" alt="" />
+                  <img className='logo' src="/assets/images/logoJ.png" alt="" width={200}/>
+                  <img className='logo' src="/assets/images/logoO.png" alt="" width={200}/>
+                  <img className='logo' src="/assets/images/logoMac.png" alt="" width={200}/>
+                  <img className='logo' src="/assets/images/logoN.png" alt="" width={200}/>
+                  <img className='logo' src="/assets/images/logoE.jpeg" alt="" width={200}/>
+                  <img className='logo' src="/assets/images/logoA.png" alt="" width={200}/>
 
                </div>
             
