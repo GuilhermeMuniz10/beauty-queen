@@ -1,6 +1,14 @@
 import './paginicio.scss';
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
+import './SwiperComponent.scss';
+
+
 
 function Paginicio() {
+
+
    return (
       <div className="paginicio">
 
@@ -172,15 +180,6 @@ function Paginicio() {
                </div>
               
 
-               <div className='logoP'>
-                  <img className='logo' src="/assets/images/logoJ.png" alt="" width={200}/>
-                  <img className='logo' src="/assets/images/logoO.png" alt="" width={200}/>
-                  <img className='logo' src="/assets/images/logoMac.png" alt="" width={200}/>
-                  <img className='logo' src="/assets/images/logoN.png" alt="" width={200}/>
-                  <img className='logo' src="/assets/images/logoE.jpeg" alt="" width={200}/>
-                  <img className='logo' src="/assets/images/logoA.png" alt="" width={200}/>
-
-               </div>
             
             <hr />
          </div>
