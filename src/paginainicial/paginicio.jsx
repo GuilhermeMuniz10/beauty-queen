@@ -1,6 +1,6 @@
 
+import Carrossel from '../carroselP/Carrossel';
 import './paginicio.scss';
-
 
 function Paginicio() {
 
@@ -190,7 +190,7 @@ function Paginicio() {
                   <p className='P'>Parcerias</p>
                </div>
               
-
+               <Carrossel />
             
             <hr />
          </div>
