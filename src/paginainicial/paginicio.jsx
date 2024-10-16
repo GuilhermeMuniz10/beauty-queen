@@ -110,7 +110,7 @@ function Paginicio() {
 
          <div className='historia'>
             <div>
-
+               <img src="/assets/images/historia.png" alt="" />
             </div>
          </div>
 

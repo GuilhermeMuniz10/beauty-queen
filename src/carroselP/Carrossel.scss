@@ -4,14 +4,47 @@
 
 .carousel-item {
     width: 100%;
-    height: 500px; // Ajuste conforme necessário
-    img {
-        width: 100%;
-        height: auto;
-        object-fit: cover; // Para manter a proporção da imagem
-    }
+    height: 230px; /* Ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative; /* Para o pseudo-elemento */
+    overflow: hidden; /* Esconde o excesso de conteúdo */
 }
 
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.39); /* Cor de fundo desejada */
+    clip-path: circle(0 at center); /* Inicialmente invisível */
+    transition: clip-path 0.3s; /* Transição do clip-path */
+    z-index: 0; /* Abaixo das imagens */
+}
+
+.carousel-item:hover::before {
+    clip-path: circle(100px at center); /* Ajuste o tamanho e a posição conforme necessário */
+}
+
+.imgA, .imgB, .imgC, .imgD, .imgE, .imgF {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.39);
+    z-index: 1; /* Acima do pseudo-elemento */
+    transition: transform 0.3s; /* Transição nas imagens */
+}
+
+.carousel-item:hover .imgA,
+.carousel-item:hover .imgB,
+.carousel-item:hover .imgC,
+.carousel-item:hover .imgD,
+.carousel-item:hover .imgE,
+.carousel-item:hover .imgF {
+    transform: scale(1.05); /* Aumenta levemente a imagem */
+}
 
 
 .carousel-control {
@@ -20,7 +53,7 @@
     transform: translateY(-50%);
     border: none;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 65px;
     padding: 10px;
     color: white; // Cor da seta
     background: transparent; // Sem fundo
@@ -28,7 +61,7 @@
     transition: color 0.3s;
 
     &:hover {
-        color: #f0f0f0; // Efeito de hover
+        color: rgba(0, 0, 0, 0.39); // Efeito de hover
     }
 }
 
@@ -38,4 +71,33 @@
 
 .next {
     right: 10px; // Ajuste a distância da borda
+}
+
+/* Media Queries para ajustes específicos */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 180px; /* Altura menor em telas menores */
+    }
+
+    .imgA, .imgB, .imgC, .imgD, .imgE, .imgF {
+        width: 25vw; /* Largura um pouco maior em telas pequenas */
+    }
+
+    .carousel-control {
+        font-size: 8vw; /* Aumenta o tamanho das setas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        height: 150px; /* Altura ainda menor para dispositivos muito pequenos */
+    }
+
+    .imgA, .imgB, .imgC, .imgD, .imgE, .imgF {
+        width: 30vw; /* Largura maior para dispositivos pequenos */
+    }
+
+    .carousel-control {
+        font-size: 10vw; /* Aumenta ainda mais o tamanho das setas */
+    }
 }

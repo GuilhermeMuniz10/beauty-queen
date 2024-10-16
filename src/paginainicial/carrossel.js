@@ -8,7 +8,7 @@ setInterval( function() {
 }, 3000)
 
 
-function nextImage(){
+ export default function nextImage(){
     count++;
     if(count>6){
       count = 1;

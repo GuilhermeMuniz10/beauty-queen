@@ -29,22 +29,22 @@ const Carrossel = () => {
                 disableDotsControls
             >
                 <div className="carousel-item">
-                    <img src="/assets/images/logoA.png" alt="Imagem 1" />
+                    <img className='imgA' src="/assets/images/logoA.png" alt="Imagem 1" />
                 </div>
                 <div className="carousel-item">
-                    <img src="/assets/images/logoC.avif" alt="Imagem 2" />
+                    <img className='imgB' src="/assets/images/logoC.avif" alt="Imagem 2" />
+                </div>           
+                <div className="carousel-item">
+                    <img className='imgD' src="/assets/images/logoSalon.png" alt="Imagem 8" />
                 </div>
                 <div className="carousel-item">
-                    <img src="/assets/images/logoDep.webp" alt="Imagem 3" />
+                    <img className='imgC' src="/assets/images/logoN.png" alt="Imagem 10" />
                 </div>
                 <div className="carousel-item">
-                    <img src="/assets/images/logoE.jpeg" alt="Imagem 4" />
+                    <img className='imgE' src="/assets/images/logoSw.png" alt="Imagem 10" />
                 </div>
                 <div className="carousel-item">
-                    <img src="/assets/images/carros5.png" alt="Imagem 5" />
-                </div>
-                <div className="carousel-item">
-                    <img src="/assets/images/carros6.png" alt="Imagem 6" />
+                    <img className='imgF' src="/assets/images/logoNeu.png" alt="Imagem 10" />
                 </div>
             </AliceCarousel>
         </div>
