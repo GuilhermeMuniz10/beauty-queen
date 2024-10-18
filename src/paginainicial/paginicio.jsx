@@ -1,6 +1,10 @@
 
 import Carrossel from '../carroselP/Carrossel';
+import CarrosselC from '../carroselC/Carrosselc';
+
 import './paginicio.scss';
+
+
 
 
 function Paginicio() {
@@ -36,75 +40,17 @@ function Paginicio() {
 
          </header>
 
-         <div className='slider'>
-
-            <div className='slides'>
-
-               {/* Botões de radios */}
-               <input type="radio" name="radio-btn" id="radio1" />
-               <input type="radio" name="radio-btn" id="radio2" />
-               <input type="radio" name="radio-btn" id="radio3" />
-               <input type="radio" name="radio-btn" id="radio4" />
-               <input type="radio" name="radio-btn" id="radio5" />
-               <input type="radio" name="radio-btn" id="radio6" />
-               {/* Fim Botão de radio */}
-
-
-               {/* imagens de slides  */}
-               <div className="slide first">
-                  <img src="/assets/images/carros1.png" alt="Imagem 1" />
-               </div>
-
-               <div className="slide">
-                  <img src="/assets/images/carros2.png" alt="Imagem 2" />
-               </div>
-
-               <div className="slide">
-                  <img src="/assets/images/carros3.png" alt="Imagem 3" />
-               </div>
-
-               <div className="slide">
-                  <img src="/assets/images/carros4.png" alt="Imagem 4" />
-               </div>
-
-               <div className="slide">
-                  <img src="/assets/images/carros5.png" alt="Imagem 5" />
-               </div>
-
-               <div className="slide">
-                  <img src="/assets/images/carros6.png" alt="Imagem 6" />
-               </div>
-
-               
-
-               {/* Fim imagens de slides  */}
-
-               {/* Navegação automatica */}
-               <div className='navigation-auto'>
-                  <div className="auto-btn1"></div>
-                  <div className="auto-btn2"></div>
-                  <div className="auto-btn3"></div>
-                  <div className="auto-btn4"></div>
-                  <div className="auto-btn5"></div>
-                  <div className="auto-btn6"></div>
-
-               </div>
-
-            </div>
-
-
-            <div className="manual-navigation">
-               <label for="radio1" className='manual-btn'></label>
-               <label for="radio2" className='manual-btn'></label>
-               <label for="radio3" className='manual-btn'></label>
-               <label for="radio4" className='manual-btn'></label>
-               <label for="radio5" className='manual-btn'></label>
-               <label for="radio6" className='manual-btn'></label>
-
-            </div>
-
-
+         <div className='carrosselC'>
+         <CarrosselC />
          </div>
+
+
+       
+
+        
+
+
+
 
 
 
@@ -218,9 +164,16 @@ function Paginicio() {
          </div>
       </div>
       
+
+
    );
-   
+
+
+
 }
 
+
 export default Paginicio;
+
+
 

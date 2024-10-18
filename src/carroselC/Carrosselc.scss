@@ -1,0 +1,76 @@
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 400px; /* Altura conforme o segundo exemplo */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative; /* Para o pseudo-elemento */
+    overflow: hidden; /* Esconde o excesso de conteúdo */
+}
+
+.carousel-slide img {
+    width: 100%; /* Mantendo a largura das imagens */
+    height:  100%;
+    
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    font-size: 65px;
+    padding: 10px;
+    color: white; /* Cor da seta */
+    background: transparent; /* Sem fundo */
+    z-index: 10;
+    transition: color 0.3s;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.39); /* Efeito de hover nas setas */
+    }
+}
+
+.prev-btn {
+    left: 10px; /* Ajuste da distância da seta esquerda para a borda */
+}
+
+.next-btn {
+    right: 10px; /* Ajuste da distância da seta direita para a borda */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .carousel-slide {
+        height: 300px; /* Altura menor para telas menores */
+    }
+
+    .carousel-slide img {
+        width: 100%; /* Ajusta a imagem para caber no container */
+    }
+
+    .carousel-btn {
+        font-size: 8vw; /* Aumenta o tamanho das setas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-slide {
+        height: 200px; /* Altura menor para dispositivos muito pequenos */
+    }
+
+    .carousel-slide img {
+        width: 100%; /* Ajusta a imagem para telas pequenas */
+    }
+
+    .carousel-btn {
+        font-size: 10vw; /* Aumenta ainda mais o tamanho das setas para telas muito pequenas */
+    }
+}
