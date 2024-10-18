@@ -154,6 +154,30 @@ header {
 	justify-content: center;
 }
 
+.historia{
+	
+	.imagem img{
+		width: 1200px;
+	}
+
+	.imagem{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 60px;
+	}
+
+	.QS{
+		position: absolute;
+		margin: 100px;
+		margin-bottom: 900px;
+	}
+}
+
+
+
+
+// FORMAÇÕES
 
 .formacoes{
 
@@ -199,7 +223,54 @@ header {
 	
 }
 
+@media (max-width: 1024px) {
+    .formacoes {
+        flex-direction: column; /* Altera para coluna em telas menores */
+        margin: 50px; /* Reduz a margem para se adequar a telas menores */
+        padding: 15px;
+    }
 
+    .formacoes p {
+        font-size: 36px; /* Reduz o tamanho da fonte para telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .formacoes .texto {
+        font-size: 20px; /* Ajusta o tamanho do texto */
+        margin-left: 0;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .formacoes .img {
+        width: 250px; /* Reduz o tamanho da imagem */
+        margin: 0 auto; /* Centraliza a imagem */
+    }
+}
+
+@media (max-width: 768px) {
+    .formacoes {
+        margin: 20px; /* Reduz ainda mais a margem */
+        padding: 10px;
+    }
+
+    .formacoes p {
+        font-size: 28px; /* Tamanho menor para textos em telas pequenas */
+    }
+
+    .formacoes .texto {
+        font-size: 18px; /* Ajuste adicional para telas pequenas */
+        line-height: 30px;
+    }
+
+    .formacoes .img {
+        width: 200px; /* Tamanho da imagem reduzido em telas menores */
+    }
+}
+
+
+
+
+// SERVIÇOS
 
 .servico {
 
@@ -208,7 +279,7 @@ header {
 		flex-direction: row;
 		justify-content: space-between;
 		background-color: #C8A19D;
-		margin: 80px 310px 80px;
+		margin: 80px 280px 80px;
 		padding: 20px;
 		color: white;
 		border-radius: 25px;
@@ -277,6 +348,62 @@ header {
 	}
 }
 
+@media (max-width: 1024px) {
+    .servico .txt {
+        margin: 40px 50px; /* Reduzindo margens para telas médias */
+        padding: 20px;
+        flex-direction: column; /* Coloca o layout em coluna para melhor ajuste */
+        align-items: center;
+    }
+
+    .servico .imgs {
+        flex-direction: column; /* Imagens ficam em coluna em telas médias */
+        gap: 50px; /* Reduz o espaçamento entre as imagens */
+        margin-bottom: 40px;
+    }
+
+    .servico img {
+        width: 200px; /* Reduzindo o tamanho das imagens */
+    }
+
+    .servico .S {
+        font-size: 40px; /* Reduzindo o tamanho da fonte dos títulos */
+    }
+
+    .servico .N {
+        font-size: 22px; /* Ajustando o tamanho da fonte */
+    }
+}
+
+@media (max-width: 768px) {
+    .servico .txt {
+        margin: 20px; /* Margens menores em telas pequenas */
+        padding: 10px;
+        flex-direction: column; /* Garantindo a organização em coluna */
+    }
+
+    .servico .imgs {
+        gap: 30px; /* Reduz ainda mais o espaço entre as imagens */
+    }
+
+    .servico img {
+        width: 150px; /* Diminuindo ainda mais as imagens para telas pequenas */
+    }
+
+    .servico .S {
+        font-size: 30px; /* Fonte menor em telas pequenas */
+    }
+
+    .servico .N {
+        font-size: 18px; /* Ajuste para texto menor */
+    }
+}
+
+
+
+
+
+// PARCERIAS
 
 .parcerias{
 	background-color: #C8A19D;

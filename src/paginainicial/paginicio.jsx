@@ -109,8 +109,24 @@ function Paginicio() {
 
 
          <div className='historia'>
-            <div>
+            <div className='imagem'>
                <img src="/assets/images/historia.png" alt="" />
+            </div> 
+
+            <div className='txt'>
+
+                  <div className='QS'>
+                     <p>Quem Somos?</p>
+                     <br />
+                     <p>Beauty Queen Spa Fundado por Adriana Gomes, é um oásis de tranquilidade e luxo, dedicado a proporcionar bem-estar e beleza a todos os seus clientes. Com uma abordagem personalizada, o spa oferece tratamentos que combinam tecnologia avançada com técnicas tradicionais, sempre visando renovar corpo e mente. O compromisso de Adriana é garantir que cada cliente se sinta como uma verdadeira rainha, revitalizada e confiante, através de uma experiência de cuidado única e inesquecível.</p>
+                  </div>
+
+                  <div className='NM'>
+                     <p>Nossa Missão</p>
+                     <br />
+                     <p>Na Beauty Queen, nossa missão é oferecer tratamentos de spa de alta qualidade que promovem relaxamento, bem-estar e autoconfiança. Fundada por Adriana Gomes, buscamos criar um ambiente acolhedor onde cada cliente se sinta valorizada. Acreditamos que o cuidado com o corpo e a mente é essencial para revelar a verdadeira beleza de cada pessoa.</p>
+                  </div>
+
             </div>
          </div>
 
