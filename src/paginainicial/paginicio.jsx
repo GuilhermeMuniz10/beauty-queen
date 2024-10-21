@@ -1,6 +1,7 @@
 
 import Carrossel from '../carroselP/Carrossel';
 import CarrosselC from '../carroselC/Carrosselc';
+import {Link} from 'react-router-dom'
 
 import './paginicio.scss';
 
@@ -31,7 +32,7 @@ function Paginicio() {
                <div class="botom">
                   <ul>
                      <li>
-                        <a href="#" class="button">Login</a>
+                       <Link to='/Login' className='button' >Login</Link>
                      </li>
                   </ul>
                </div>
