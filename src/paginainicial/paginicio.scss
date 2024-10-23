@@ -313,6 +313,9 @@ header {
 	}
 }
 
+
+
+
 @media (max-width: 1024px) {
     .servico .txt {
         margin: 40px 50px; /* Reduzindo margens para telas médias */
@@ -438,4 +441,13 @@ header nav {
     align-items: center;
     justify-content: space-between;
     transition: all .50s ease;
+}
+
+footer {
+	background-color: #C8A19D;
+    text-align: center;
+}
+
+.separa {
+	color: #D6B686;
 }

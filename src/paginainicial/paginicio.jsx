@@ -98,6 +98,29 @@ function Paginicio() {
 
          </div>
 
+         <div className='comecou'>
+            <h2>Onde tudo Começou</h2>
+
+            <p>Tudo começou com um sonho em uma <br /> sacada de uma casa.
+             Em um espaço <br /> pequeno, mas cuidadosamente decorado, <br /> 
+             nossa fundadora transformou sua paixão por estetica em um negicio 
+             promissor.</p>
+         </div>
+
+         <img src="" alt="" />
+
+         <div className='historia'>
+           <h2>Nosssa Historia</h2>
+
+           <p>Com serviços personalizados e um atendimento <br /> excepcional
+           , a pequena sala na sacada rapidamente <br /> conquistou a fidelidade
+           dos clientes. O sucesso <br /> crescente levou a expansão, e o que 
+           começou <br /> como um modesto salão de beleza evoluiu para um <br />
+           spa mediano, oferecendo uma experiência completa <br /> e sofisticada.
+           Hoje, nossa empresa é sinônimo de <br /> qualidade e dedicação,
+           refletindo a jornada que <br /> começou em uma simples sacada de casa.</p>
+         </div>
+
 
          <div className='servico'>
 
@@ -140,10 +163,20 @@ function Paginicio() {
                   <img className='card' src="/assets/images/sombrancelha.png" alt="" />
                   <img className='card' src="/assets/images/cilios.png" alt="" />
                </div>
-
+             
             </div>
 
+
+         <p className='separa'>———————————————————————————————————————————————————————————————————————————————————— </p>
          </div>
+
+         <div className='galeria'>
+            <h3>Confira   ——————————————</h3>
+            <h1>Nossa Galeria</h1>
+         </div>
+
+
+
 
 
          <div className='parcerias'>
@@ -159,10 +192,30 @@ function Paginicio() {
             <hr />
          </div>
 
+         <div className='contat'>
+            <h2>Nossos Contatos:</h2>
+            <h2>Horario de funcionamento:</h2>
+            <h3>Segunda á sexta: 8:00 ás 20:00hs <br /> Sábado: 9:00 ás 15:00</h3>
+         </div>
+         
+         <div className='redes'>
+               <img src="/assets/images/face.svg" alt="facebook" />
+               <img src="/assets/images/insta.svg" alt="instagran" />
+               <img src="/assets/images/twitter.svg" alt="twitter" />
+            </div>
+            
+
 
          <div className='mapBox'>
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.189356950853!2d-46.70332172578109!3d-23.704931066880288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4fb7e753c599%3A0x6f9ca28fe0093bd2!2sAut%C3%B3dromo%20de%20Interlagos%20-%20Port%C3%A3o%208%20%2F%20Gate%208!5e0!3m2!1spt-BR!2sbr!4v1728855956689!5m2!1spt-BR!2sbr"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
+
+         <footer>
+            <h1>Site desenvolvido pela agência VeloxBity</h1>
+         </footer>
+
+
+
       </div>
       
 
