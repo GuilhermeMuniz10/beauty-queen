@@ -119,29 +119,35 @@ header {
 
 
 
-.historia{
+
 	
-	.imagem img{
-		width: 1200px;
-	}
+.historia {
+	margin-bottom: 100px;
+}
 
-	.imagem{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 60px;
+.historia img{
+		display: inline-block;
 		position: relative;
-	}
+		width: 1200;
+}
 
-	.QS{
+	
+
+.NM {
 		position: absolute;
-		margin: 100px;
-		margin-bottom: 900px;
-	}
+        top: 900px;
+		left: 50px;
+		line-height: 25px;
+}
 
-	.NM {
-		
-	}
+
+.QS{
+		position: absolute;
+		right: 50px;
+		top: 500px;
+		line-height: 25px;
+
+	
 }
 
 
@@ -161,6 +167,7 @@ header {
 	padding: 23px;
 	gap:40px;
 	box-shadow: 0px 0px 10px 5px #C59E9A;
+
 	
 	p{
 		margin-left: 15px;
@@ -238,6 +245,28 @@ header {
 }
 
 
+.oncome {
+	position: relative;
+}
+
+.NH {
+	position: absolute;
+	top: 2200px;
+	right: 50px;
+	line-height: 25px;
+}
+
+
+.OC{
+	position: absolute;
+	left: 95px;
+	top: 1910px;
+	line-height: 25px;
+
+
+}
+
+
 
 
 // SERVIÇOS
@@ -307,6 +336,7 @@ header {
 
 	.card {
 		transition: all 0.3s;
+
 	}
 
 	.card:hover {
@@ -418,6 +448,33 @@ header {
 }
 
 
+.contat {
+	position: absolute;
+	left: 220px;
+	top: 5150px;
+}
+
+.funcio {
+	position: absolute;
+	right: 30px;
+	top: 5150px;
+}
+
+
+
+
+.redes {
+    width: 50px;
+	height: 50px;
+    display: flex;
+	margin-left: 220px;
+	margin-top: 115px;
+	gap: 20px;
+}
+
+
+
+
 
 
 .mapBox {
@@ -430,6 +487,7 @@ header {
 	align-items: center;
 	min-height: 50vh;
 	left: 260px;
+	margin-top: 300px;
    
 }
 
@@ -440,6 +498,7 @@ header {
 
 header nav {
     position: fixed;
+
     width: 95%;
     background: transparent;
     display: flex;
@@ -451,8 +510,11 @@ header nav {
 footer {
 	background-color: #C8A19D;
     text-align: center;
+    margin-top: 50px;
 }
 
 .separa {
 	color: #D6B686;
 }
+
+

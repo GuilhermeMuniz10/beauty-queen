@@ -60,7 +60,7 @@ const CarrosselG = () => {
             </AliceCarouselG>
 
             {/* Botão próximo */}
-            <div className="next-btng-container">
+            <div className="next-btng-containerg">
                 {botaoProximo()}
             </div>
         </div>
