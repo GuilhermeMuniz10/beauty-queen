@@ -70,7 +70,7 @@ export default function Login() {
         <div className='pagina-home'>
             <div className='login'>
                 <div className='IMG'>
-                    <img src="/assets/images/pessoa.png" alt="Imagem de usuário" />
+                    <img className='imagem1' src="/assets/images/pessoa.png" alt="Imagem de usuário" />
                     <h1 className='BV'>Bem-vindo de volta</h1>
                     <br />
                     <p>Esta área é destinada apenas aos administradores do site!</p>

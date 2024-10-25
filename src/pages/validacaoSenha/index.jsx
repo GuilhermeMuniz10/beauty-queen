@@ -21,7 +21,7 @@ export default function ValidacaoSenha() {
         <div className='pagina-validacaoSenha'>
             <div className='login'>
                 <div className='IMG'>
-                    <img src="/assets/images/pessoa.png" alt="Imagem de usuário" />
+                    <img className='imagem' src="/assets/images/pessoa.png" alt="Imagem de usuário" />
                     <h1 className='BV'>Verificação de código</h1>
                     <br />
                     <p>Insira o código de verificação:</p>

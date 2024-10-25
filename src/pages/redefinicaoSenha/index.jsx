@@ -60,7 +60,7 @@ export default function RedefinirSenha() {
         <div className='pagina-home'>
             <div className='login'>
                 <div className='IMG'>
-                    <img src="/assets/images/pessoa.png" alt="Imagem de usuário" />
+                    <img className='imagem1' src="/assets/images/pessoa.png" alt="Imagem de usuário" />
                     <h1 className='BV'>Redefinição de Senha</h1>
                     <br />
                     <p>Defina uma senha segura para ter acesso à plataforma Beauty Queen.</p>

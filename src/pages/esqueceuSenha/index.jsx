@@ -10,7 +10,7 @@ export default function EsqueceuSenha(){
 
             <div className='login'>
                 <div className='IMG'>
-                    <img src="/assets/images/pessoa.png" alt="Imagem de usuário" />
+                    <img className='imagem1' src="/assets/images/pessoa.png" alt="Imagem de usuário" />
                     <h1 className='BV'>Esqueceu a senha?</h1>
                     <br />
                     <p className='pa'>Informe o seu e-mail</p>

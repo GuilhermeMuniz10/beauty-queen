@@ -7,6 +7,10 @@
         font-family: 'Courier New', Courier, monospace;
     }
 
+    .imagem{
+        width: 400px;
+    }
+
     .login {
         margin: 70px;
         padding: 100px;
@@ -54,7 +58,7 @@
         cursor: pointer;
         transition: background 0.3s ease, box-shadow 0.3s ease; // Adicionando transição para box-shadow
     
-        a {
+        Link {
             color: #fff;
             font-family: 'Darker Grotesque';
             font-size: large;
