@@ -10,8 +10,8 @@ import ValidacaoSenha from './pages/validacaoSenha';
 import RedefinirSenha from './pages/redefinicaoSenha';
 import SenhaAlterada from './pages/alterada';
 import AdmHome from './pages/admHome';
-import CadastrarAdmc from './pages/cadastrarAdmC';
-import CadastrarAdmP from './pages/cadastrarAdmP';
+import CadastrarAdmCliente from './pages/cadastrarAdmCliente';
+import CadastrarAdmProcedimento from './pages/cadastrarAdmProcedimento';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import NotFound from './pages/notFound';
 
@@ -27,11 +27,14 @@ root.render(
         <Route path='/RedefinirSenha' element={<RedefinirSenha />} />
         <Route path='/SenhaAlterada' element={<SenhaAlterada />} />
         <Route path='/AdmHome' element={<AdmHome />} />
-        <Route path='/CadastrarAdmC' element={<CadastrarAdmc />} />
-        <Route path='/CadastrarAdmP' element={<CadastrarAdmP />} />
+        <Route path='/CadastrarAdmCliente' element={<CadastrarAdmc />} />
+        <Route path='/CadastrarAdmProcedimento' element={<CadastrarAdmP />} />
         <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>
         <Route path='/ProdutosFacial' element={<ProdutosFacial />}/>
-       
+        <Route path='/CadastrarAdmCliente' element={<CadastrarAdmCliente />} />
+        <Route path='/CadastrarAdmProcediemento' element={<CadastrarAdmProcedimento />} />
+        <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>    
+
 
         {/* <Route path= '/Not' element={<NotFound />} /> */}
       </Routes>
