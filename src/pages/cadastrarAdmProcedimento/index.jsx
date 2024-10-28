@@ -1,16 +1,15 @@
 import './index.scss';
 import {Link} from 'react-router-dom'
 
-export default function cadastrarAdmC() {
+export default function cadastrarAdmProcedimento() {
     return (
-        <div className='pagina-cadastrar'>
+        <div className='pagina-cadastrar'> 
             <input type="checkbox" className='menu-faketrigger' id="menu-toggle" />
             <label htmlFor="menu-toggle" className='menu-lines'>
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
 
             <nav className='menu'>
                 <ul>
@@ -33,10 +32,28 @@ export default function cadastrarAdmC() {
                 </ul>
             </nav>
 
+            <div className='home'>
 
-                
+                <div className='txt'>
+                    <h1>Bem Vindo!</h1>
+                    <h2>O que você deseja fazer hoje?</h2>
+                </div>
 
-                <div className='pgt'>
+                <div className='fzr'>
+
+                    <div className='botoes'>
+                        <a href="#"><img className='imagem' src="/assets/images/caderno.png" alt="" /></a>
+                        <a href="#">Cadastrar consultas</a>
+                    </div>
+
+                    <div className='botoes'>
+                        <a href="#"><img className='imagem' src="/assets/images/pasta.png" alt="" /></a>
+                        <a href="#">Examinar consultas</a>
+                    </div>
+                </div>
+
+
+                <div className='input'>
                     <div className='p1'>
                         
                         
@@ -69,7 +86,7 @@ export default function cadastrarAdmC() {
 
 
                 </div>       
-
+            </div>
         </div>
     );
 }

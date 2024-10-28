@@ -19,7 +19,8 @@ export default function AdmHome() {
                             <img className='imagem' src="/assets/images/adm.png" alt="" />
                         </li>
                     </div>
-                    <li><Link to='/CadastrarAdmC'>Cadastrar Consultas</Link></li>
+                    <li><Link to='/AdmHome'>Home</Link></li>
+                    <li><Link to='/CadastrarAdmCliente'>Cadastrar Cliente</Link></li>
                     <li><Link to='/CadastrarAdmP' href="#">Cadastrar Procedimentos</Link></li>
                     <li><a href="#">Examinar Consultas</a></li>
                     <li><a href="#">Examinar Procedimentos</a></li>
@@ -44,14 +45,16 @@ export default function AdmHome() {
             <div className='fzr'>
 
                 <div className='botoes'>
-                    <Link to='/CadastrarAdmC' href="#"><img className='imagem' src="/assets/images/caderno.png" alt="" /></Link>
-                    <Link to='/CadastrarAdmC'>Cadastrar Consultas</Link>
+                    <Link to='/CadastrarAdmCliente' href="#"><img className='imagem' src="/assets/images/caderno.png" alt="" /></Link>
+                    <Link to='/CadastrarAdmCliente'>Cadastrar Cliente</Link>
                 </div>
 
                 <div className='botoes'>
                     <a href="#"><img className='imagem' src="/assets/images/pasta.png" alt="" /></a>
-                    <a href="#">Examinar consultas</a>
+                    <a href="#">Examinar cliente</a>
                 </div>
+
+
             </div>
 
             </div>
