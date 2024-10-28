@@ -32,6 +32,14 @@ function Paginicio() {
 
                
 
+               <div class="botomP">
+                  <ul>
+                     <li>
+                       <Link to='/ProdutosCorpo' className='button' >Produtos</Link>
+                     </li>
+                  </ul>
+               </div>
+
                <div class="botom">
                   <ul>
                      <li>

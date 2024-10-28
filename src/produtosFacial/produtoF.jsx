@@ -1,7 +1,7 @@
-import './produto.scss';
+import './produtoF.scss';
 
 
-function Produto() {
+function ProdutoFacial() {
 
     return (
        <div className="produto">
@@ -33,6 +33,7 @@ function Produto() {
                 <p className='seg'>Hidratantes</p>
                 <p className='seg'>Sabonetes</p>
               </div>
+
               
 
               <div className='facia'>
@@ -40,6 +41,8 @@ function Produto() {
                 <p className='prime'>FACIAL</p>
                 <p className='segun'>Cremes</p>
                 <p className='segun'>Hidratantes</p>
+
+                
               </div>
               
          </div>
@@ -212,4 +215,4 @@ function Produto() {
    
    
 
-export default Produto;
+export default ProdutoFacial;

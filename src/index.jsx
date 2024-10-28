@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Paginicio from './paginainicial/paginicio';
 import ProdutosCorpo from './produtosCorpo/produto';
+import ProdutosFacial from './produtosFacial/produtoF';
 import Login from './pages/login';
 import EsqueceuSenha from './pages/esqueceuSenha';
 import ValidacaoSenha from './pages/validacaoSenha';
@@ -29,6 +30,8 @@ root.render(
         <Route path='/CadastrarAdmC' element={<CadastrarAdmc />} />
         <Route path='/CadastrarAdmP' element={<CadastrarAdmP />} />
         <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>
+        <Route path='/ProdutosFacial' element={<ProdutosFacial />}/>
+       
 
         {/* <Route path= '/Not' element={<NotFound />} /> */}
       </Routes>
