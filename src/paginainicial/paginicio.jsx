@@ -30,6 +30,8 @@ function Paginicio() {
                   <li><a href="#" className='Link'>Produtos</a></li>
                </ul>
 
+               
+
                <div class="botom">
                   <ul>
                      <li>
@@ -218,7 +220,7 @@ function Paginicio() {
 
             
 
-         <h2 className='LoM'>Mapa de localização</h2>
+      
          <div className='mapBox'>
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.189356950853!2d-46.70332172578109!3d-23.704931066880288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4fb7e753c599%3A0x6f9ca28fe0093bd2!2sAut%C3%B3dromo%20de%20Interlagos%20-%20Port%C3%A3o%208%20%2F%20Gate%208!5e0!3m2!1spt-BR!2sbr!4v1728855956689!5m2!1spt-BR!2sbr"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>

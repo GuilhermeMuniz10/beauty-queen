@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Paginicio from './paginainicial/paginicio';
+import ProdutosCorpo from './produtosCorpo/produto';
 import Login from './pages/login';
 import EsqueceuSenha from './pages/esqueceuSenha';
 import ValidacaoSenha from './pages/validacaoSenha';
@@ -27,6 +28,7 @@ root.render(
         <Route path='/AdmHome' element={<AdmHome />} />
         <Route path='/CadastrarAdmC' element={<CadastrarAdmc />} />
         <Route path='/CadastrarAdmP' element={<CadastrarAdmP />} />
+        <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>
 
         {/* <Route path= '/Not' element={<NotFound />} /> */}
       </Routes>
