@@ -51,7 +51,7 @@ const [token, setToken] = useState('');
 
     async function consultar() {
         if (id != undefined) {
-            const url = `http://localhost:8001/cliente/${id}?x-access-token=${token}`;
+            const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
             let resp = await axios.get(url);
             let dados = resp.data;
 
