@@ -47,6 +47,27 @@ header {
 	  }
 
 
+	  .botomP ul {
+		display: flex;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		
+	
+		.buttonP {
+			
+			color: #ede7e5;
+			font-size: 28px;
+			text-decoration: none;
+			position: relative;
+			cursor: pointer;
+			transition: background 0.3s ease;
+	
+	
+			
+		}
+	}
 
 	  .botom ul {
 		display: flex;
@@ -108,8 +129,20 @@ header {
 
 	
   }
+
+
+
+.buttonP {
+	position: relative;
+    right: 140px;
+	text-decoration: none;
+      
+	
+
+}
   
  
+
 
 .cabecalho {
   display: flex;

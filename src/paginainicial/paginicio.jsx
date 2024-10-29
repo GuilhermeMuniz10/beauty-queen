@@ -27,7 +27,7 @@ function Paginicio() {
                   <li><a href="#" className='Link'>Nossa História</a></li>
                   <li><a href="#" className='Link'>Serviços</a></li>
                   <li><a href="#" className='Link'>Galeria</a></li>
-                  <li><a href="#" className='Link'>Produtos</a></li>
+                  
                </ul>
 
                
@@ -35,10 +35,11 @@ function Paginicio() {
                <div class="botomP">
                   <ul>
                      <li>
-                       <Link to='/ProdutosCorpo' className='button' >Produtos</Link>
+                       <Link to='/ProdutosCorpo' className='buttonP' >Produtos</Link>
                      </li>
                   </ul>
                </div>
+
 
                <div class="botom">
                   <ul>

@@ -27,8 +27,8 @@ root.render(
         <Route path='/RedefinirSenha' element={<RedefinirSenha />} />
         <Route path='/SenhaAlterada' element={<SenhaAlterada />} />
         <Route path='/AdmHome' element={<AdmHome />} />
-        <Route path='/CadastrarAdmCliente' element={<CadastrarAdmc />} />
-        <Route path='/CadastrarAdmProcedimento' element={<CadastrarAdmP />} />
+        <Route path='/CadastrarAdmCliente' element={<CadastrarAdmCliente />} />
+        <Route path='/CadastrarAdmProcedimento' element={<CadastrarAdmProcedimento />} />
         <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>
         <Route path='/ProdutosFacial' element={<ProdutosFacial />}/>
         <Route path='/CadastrarAdmCliente' element={<CadastrarAdmCliente />} />
