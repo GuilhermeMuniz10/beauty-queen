@@ -16,7 +16,7 @@ export default function Login() {
 
 
 
-    
+
 //funcao entra\ar conexao
     async function entrar() {
        
@@ -34,7 +34,7 @@ export default function Login() {
         } else {
             localStorage.setItem('USUARIO', JSON.stringify(resp.data.usuario))
             localStorage.setItem('TOKEN', resp.data.token)
-            navigate('/consultar')
+            navigate('/admHome')
         }
     }
  
