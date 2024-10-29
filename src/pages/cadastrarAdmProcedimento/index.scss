@@ -1,6 +1,9 @@
 .pagina-cadastrar {
     background-color: #E9DFDD;
     position: relative;
+    font-family: 'Darker Grotesque';
+    font-weight: 150px;
+    font-size: 21px;
 
     .menu {
         position: absolute;
@@ -8,10 +11,11 @@
         left: 0;
         width: 300px;
         height: 100vh;
-        background-color: #f6f2f1;
+        background-color: #f6f2f1; // Cor de fundo sólida
         transform: translateX(-100%); // Esconde o menu inicialmente
-        transition: transform 0.3s ease, box-shadow 0.3s ease; // Adicionado box-shadow na transição
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); // Sombras do lado direito
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+        z-index: 10; // Garante que o menu fique na frente
 
         .imagem {
             width: 95px;
@@ -19,39 +23,37 @@
             margin-top: -15px;
             margin-bottom: 23px;
 
-            transition: opacity 0.3s ease; // Transição suave
+            transition: opacity 0.3s ease;
 
-                    &:hover {
-                        opacity: 0.6; // Define a opacidade quando o mouse passa
-                    }
+            &:hover {
+                opacity: 0.6;
+            }
         }
 
         .sair {
             display: flex;
-            
             margin-top: 590px;
 
             .sairr {
                 margin-right: 10px;  
                 font-size: 22px;
-                padding: 0px;
-                text-align: right; // Alinha o texto à direita
+                padding: 0;
+                text-align: right;
             }
 
             .sair-icon {
                 img {
                     width: 30px;  
-                    margin: 0; // Remove margens
-                    padding-bottom: 0px;
+                    margin: 0;
+                    padding-bottom: 0;
                     margin-bottom: -8px;
-                    // Efeito de opacidade ao passar o mouse
-                    transition: opacity 0.3s ease; // Transição suave
+                    transition: opacity 0.3s ease;
 
                     &:hover {
-                        opacity: 0.5; // Define a opacidade quando o mouse passa
+                        opacity: 0.5;
                     }
                 }
-            }
+            }                               
         }
 
         ul {
@@ -61,7 +63,6 @@
 
             li {
                 padding: 10px 30px;
-                
 
                 a {
                     text-decoration: none;
@@ -78,17 +79,17 @@
     }
 
     .menu-faketrigger {
-        display: none; // Esconde o checkbox
+        display: none;
     }
 
     .menu-faketrigger:checked ~ .menu {
         transform: translateX(0); // Exibe o menu quando checkbox está marcado
-        box-shadow: 6px 0 8px rgba(0, 0, 0, 0.3); // Aplica o sombreamento quando o menu é exibido
+        box-shadow: 6px 0 8px rgba(0, 0, 0, 0.3);
     }
 
     .menu-lines {
         position: absolute;
-        z-index: 999;
+        z-index: 11; // Garante que o botão de menu fique na frente
         width: 35px;
         height: 35px;
         cursor: pointer;
@@ -119,73 +120,203 @@
     }
 
     .menu-faketrigger:checked + .menu-lines span:nth-child(1) {
-        transform: rotate(45deg) translateY(10%); // Rotaciona e move
+        transform: rotate(45deg) translateY(10%);
     }
 
     .menu-faketrigger:checked + .menu-lines span:nth-child(2) {
-        opacity: 0; // Esconde o meio
+        opacity: 0;
     }
 
     .menu-faketrigger:checked + .menu-lines span:nth-child(3) {
-        transform: rotate(-45deg) translateY(-10%); // Rotaciona e move
+        transform: rotate(-45deg) translateY(-10%);
     }
 
 
+.pgt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 
-    .pgt{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-
-        .p1{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 100px;
-
-            input{
-                width: 400px;
-                height: 40px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-        }
-
-        .p2{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            margin-top: 100px;
-
-
-            input{
-                width: 400px;
-                height: 40px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-        }
-
-        .p3{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            margin-top: 100px;
-
-
-            input{
-                width: 400px;
-                height: 40px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-        }
+    input{
+        width: 300px;
+        
     }
+}
+
+  .part1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 190px;
+    gap: 20px; // Adiciona espaço entre os containers
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    color: rgb(77, 77, 77);
+    margin-bottom: 40px; // Adiciona o espaçamento desejado
+  }
+  
+  .label {        
+    padding-left: 10px;
+    position: absolute;
+    top: 2px;
+    transition: 0.3s;
+    pointer-events: none;
+    font-size: 25px;
+  }
+  
+  .input {
+    width: 200px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0 7px;
+    border-radius: 6px;
+    color: #000000;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgb(41, 40, 40),
+                -1px -1px 6px rgba(255, 255, 255, 0.4);             
     
+
+    &:focus {
+      border: 2px solid transparent;
+      color: #000000;
+      box-shadow: 3px 3px 10px rgb(26, 26, 26),
+                  -1px -1px 6px rgba(255, 255, 255, 0.4),
+                  inset 3px 3px 10px rgba(0, 0, 0, 1),
+                  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+    }
+  }
+  
+  .input:valid ~ .label,
+  .input:focus ~ .label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-35px);
+  }
+  
+  .input:valid,
+  .input:focus {
+    box-shadow: 3px 3px 10px rgb(71, 71, 71),
+                -1px -1px 6px rgba(255, 255, 255, 0.4),
+                inset 3px 3px 10px rgb(71, 71, 71),
+                inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+  }
+  
+
+
+
+  .part3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; // Adiciona espaço entre os containers
+    margin-top: 190px;
+
+    .input{
+        height: 210px;
+    }
+
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    color: rgb(77, 77, 77);
+    margin-bottom: 40px; // Adiciona o espaçamento desejado
+  }
+  
+  .label-data {
+    font-size: 25px;
+    padding-left: 10px;
+    position: absolute;
+    top: -35px;
+    transition: 0.3s;
+    pointer-events: none;
+    font-size: 25px;
+  }
+
+  
+  
+  .input {
+    width: 200px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0 7px;
+    border-radius: 6px;
+    color: #000000;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgb(41, 40, 40),
+                -1px -1px 6px rgba(255, 255, 255, 0.4);
+  
+    &:focus {
+      border: 2px solid transparent;
+      color: #000000;
+      box-shadow: 3px 3px 10px rgb(26, 26, 26),
+                  -1px -1px 6px rgba(255, 255, 255, 0.4),
+                  inset 3px 3px 10px rgba(0, 0, 0, 1),
+                  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+    }
+  }
+  
+  .input:valid ~ .label,
+  .input:focus ~ .label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-35px);
+  }
+  
+  .input:valid,
+  .input:focus {
+    box-shadow: 3px 3px 10px rgb(71, 71, 71),
+                -1px -1px 6px rgba(255, 255, 255, 0.4),
+                inset 3px 3px 10px rgb(71, 71, 71),
+                inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+  }
+
+  
+
+  .botom ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    margin-right: 330px;
+
+    .button {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 3px 3px 10px rgb(41, 40, 40),
+                    -1px -1px 6px rgba(255, 255, 255, 0.4);			
+        color: #3f3f3f;
+        border-radius: 25px;
+        padding: 95px 7rem;
+        padding-top: 1px;
+        padding-bottom: 6px;
+        font-size: 28px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        // Efeitos ao passar o mouse
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.788);
+            box-shadow: 0 0 15px rgba(158, 152, 152, 0.664), 0 0 30px rgba(77, 73, 73, 0.692); // Efeito de brilho
+            color: lighten(#3f3f3f, 20%); // Clarear a cor do texto
+        }
+    }
+}
+
 }

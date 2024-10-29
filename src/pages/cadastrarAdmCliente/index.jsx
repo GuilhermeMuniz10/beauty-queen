@@ -1,8 +1,89 @@
 import './index.scss';
-import {Link} from 'react-router-dom'
+import {Link, UseParams, Navigate} from 'react-router-dom'
 import React from 'react';
+import axios from 'axios';
+import { UseEffect, useState, Hook  } from 'react' 
+import moment from 'moment';
 
-export default function cadastrarAdmCliente() {
+
+export default function CadastrarAdmCliente() {
+
+const [nome, setNome] = useState('');
+const [nascimento, setNascimento] = useState('');
+const [telefone, setTelefone] = useState('');
+const [cpf, setCpf] = useState('');
+const [medidas, setMedidas] = useState('');
+const [observacoes, setObservacoes] = useState('');
+const [email, setEmail] = useState('');
+const [id, setId] = useState(undefined);
+
+const [token, setToken] = useState('');
+
+
+
+
+    async function Salvar() {
+        let paramCorpo = {
+            "NOME_cliente": nome,
+            "DATA_nascimento":nascimento,
+		"telefone": telefone,
+		"cpf":cpf,
+		"medidas":medidas,
+		"observacoes" : observacoes, 
+		"E_MAIL" : email
+		        }
+        
+        if (id == undefined) {
+            const url = `http://localhost:5010/cliente/?x-access-token=${token}`;
+            let resp = await axios.post(url, paramCorpo);
+            alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
+        } else {
+            const url = `http://localhost:5010/cliente/${id}?x-access-token=${token}`;
+            let resp = await axios.put(url, paramCorpo);
+            alert('Pessoa alterada nos arquivos.');
+        }
+    }
+
+
+
+
+
+
+    async function consultar() {
+        if (id != undefined) {
+            const url = `http://localhost:8001/cliente/${id}?x-access-token=${token}`;
+            let resp = await axios.get(url);
+            let dados = resp.data;
+
+            let data = moment(dados.nascimento).format('YYYY-MM-DD')
+            console.log(data)
+
+            setNome(dados.nome)
+            setNascimento(dados.nascimento)
+	    setTelefone(dados.telefone)
+		setCpf(dados.cpf)
+		setMedidas(dados.medidas)
+		setObservacoes(dados.observacoes)
+		setEmail(dados.email)
+
+        }
+
+
+        UseEffect(() => {
+            let usu = localStorage.getItem('USUARIO')
+            setToken(usu)
+    
+            if (usu == undefined) {
+                Navigate('/')
+            }
+    
+            consultar();
+        }, [])
+
+    }
+
+
+  
     return (
         <div className='pagina-cadastrar'>
             <input type="checkbox" className='menu-faketrigger' id="menu-toggle" />
@@ -21,8 +102,8 @@ export default function cadastrarAdmCliente() {
                         </li>
                     </div>
                     <li><Link to='/AdmHome'>Home</Link></li>
-                    <li><a href="#">Cadastrar Cliente</a></li>
-                    <li><a href="#">Cadastrar Procedimentos</a></li>
+                    <li><Link to='/CadastrarAdmCliente'>Cadastrar Cliente</Link></li>
+                    <li><Link to='/CadastrarAdmProcedimento'>Cadastrar Procedimento</Link></li>
                     <li><a href="#">Examinar Cliente</a></li>
                     <li><a href="#">Examinar Procedimentos</a></li>
 
@@ -45,6 +126,8 @@ export default function cadastrarAdmCliente() {
                             required 
                             type="text" 
                             name="text" 
+                            value={nome}
+                            onChange={e => setNome(e.target.value)}
                             className="input" 
                             /> 
                             <label className="label">Nome do Cliente</label>
@@ -55,16 +138,21 @@ export default function cadastrarAdmCliente() {
                         required
                         type="date"
                         name='date'
+                        value = {nascimento}
+                        onChange={e => setNascimento(e.target.value)}
                         className='input'
                         />
                         <label htmlFor="date" className="label-data" >Data de Nascimento</label>
                         </div>
+
 
                         <div className="container">
                             <input 
                             required 
                             type="text" 
                             name="text" 
+                            value={cpf}
+                            onChange={e => setCpf(e.target.value)}
                             className="input" 
                             /> 
                             <label className="label">CPF</label>
@@ -75,6 +163,8 @@ export default function cadastrarAdmCliente() {
                             required 
                             type="text" 
                             name="text" 
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
                             className="input" 
                             /> 
                             <label className="label">E-mail</label>
@@ -85,6 +175,8 @@ export default function cadastrarAdmCliente() {
                             required 
                             type="text" 
                             name="text" 
+                            value={telefone}
+                            onChange={e => setTelefone(e.target.value)}
                             className="input" 
                             /> 
                             <label className="label">Telefone</label>
@@ -99,6 +191,8 @@ export default function cadastrarAdmCliente() {
                             required 
                             type="text" 
                             name="text" 
+                            value={medidas}
+                            onChange={e => setMedidas(e.target.value)}
                             className="input" 
                             /> 
                             <label className="label">Medidas</label>
@@ -108,6 +202,8 @@ export default function cadastrarAdmCliente() {
                             <input 
                             required 
                             type="text" 
+                            value={observacoes}
+                            onChange={e => setObservacoes(e.target.value)}
                             name="text" 
                             className="input" 
                             /> 
@@ -120,7 +216,7 @@ export default function cadastrarAdmCliente() {
                 <div class="botom">
                   <ul>
                      <li>
-                       <Link to='#' className='button' >Salvar</Link>
+                       <Link to='#' className='button'onClick={Salvar}>Salvar</Link>
                      </li>
                   </ul>
                </div>

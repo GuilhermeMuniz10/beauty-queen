@@ -13,6 +13,10 @@ export default function Login() {
     const [lastTypedChar, setLastTypedChar] = useState(''); // Armazena o último caractere digitado
  
       
+
+
+
+    
 //funcao entra\ar conexao
     async function entrar() {
        
