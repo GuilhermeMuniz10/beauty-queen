@@ -42,6 +42,7 @@ const [token, setToken] = useState('');
             let resp = await axios.put(url, paramCorpo);
             alert('Pessoa alterada nos arquivos.');
         }
+        
     }
 
 
@@ -70,7 +71,7 @@ const [token, setToken] = useState('');
 
 
         UseEffect(() => {
-            let usu = localStorage.getItem('USUARIO')
+            let usu = localStorage.getItem('TOKEN')
             setToken(usu)
     
             if (usu == undefined) {
