@@ -37,15 +37,7 @@ const CarrosselGA = () => {
                 <div className="unique-carousel-item">
                     <img className='unique-imgC' src="/assets/images/galeria3.svg" alt="Imagem 3" />
                 </div>
-                <div className="unique-carousel-item">
-                    <img className='unique-imgD' src="/assets/images/galeria4.svg" alt="Imagem 4" />
-                </div>
-                <div className="unique-carousel-item">
-                    <img className='unique-imgE' src="/assets/images/galeria5.svg" alt="Imagem 5" />
-                </div>
-                <div className="unique-carousel-item">
-                    <img className='unique-imgF' src="/assets/images/galeria6.svg" alt="Imagem 6" />
-                </div>
+            
             </AliceCarouselGA>
         </div>
     );

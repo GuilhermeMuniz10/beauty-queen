@@ -1,0 +1,59 @@
+.unique-carousel-containerC {
+    position: relative;
+}
+
+.unique-carousel-itemC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; // Adiciona espaçamento entre as imagens
+}
+
+.unique-carousel-itemC img {
+    width: 620px;
+    height: 300px; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    
+}
+
+.unique-carousel-controlC {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    font-size: 40px; /* Tamanho da seta */
+    background: transparent; /* Sem fundo */
+    color: white; /* Cor da seta */
+    z-index: 10;
+    transition: color 0.3s;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.7); /* Efeito de hover */
+    }
+}
+
+.unique-prevC {
+    left:10px; /* Ajusta a posição da seta anterior para fora da imagem */
+}
+
+.unique-nextC {
+    right: 10px; /* Ajusta a posição da seta próxima para fora da imagem */
+}
+
+/* Media Queries para ajustes específicos */
+@media (max-width: 768px) {
+    .unique-carousel-controlC {
+        font-size: 30px; /* Tamanho da seta em telas menores */
+    }
+
+    .unique-carousel-itemC {
+        margin: 0 5px; // Menor espaçamento em telas menores
+    }
+}
+
+@media (max-width: 480px) {
+    .unique-carousel-controlC {
+        font-size: 25px; /* Tamanho da seta em dispositivos muito pequenos */
+    }
+}

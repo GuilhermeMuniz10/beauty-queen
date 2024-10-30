@@ -63,6 +63,7 @@ header {
 			position: relative;
 			cursor: pointer;
 			transition: background 0.3s ease;
+			left: 10px;
 	
 	
 			
@@ -543,3 +544,7 @@ footer {
 }
 
 
+.galeria h1 {
+   position: relative;
+   left: 10px;
+}

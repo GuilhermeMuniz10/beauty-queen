@@ -1,6 +1,8 @@
 import Carrossel from '../carroselP/Carrossel';
 import CarrosselC from '../carroselC/Carrosselc';
 import CarrosselGA from '../carroselGA/Carrosselga';
+import CarrosselGB from '../carroselGB/Carrosselgb';
+import CarrosselGC from '../carroselGC/Carrosselgc';
 
 
 import {Link} from 'react-router-dom'
@@ -36,7 +38,7 @@ function Paginicio() {
                <div class="botomP">
                   <ul>
                      <li>
-                       <Link to='/ProdutosCorpo' className='buttonP' >Produtos</Link>
+                       <Link to='/ProdutosCorpo' className='Link' >Produtos</Link>
                      </li>
                   </ul>
                </div>
@@ -190,6 +192,8 @@ function Paginicio() {
 
          <div className='carrosselGS'>
            <CarrosselGA />
+           <CarrosselGB />
+           <CarrosselGC />
           
          </div>
 
