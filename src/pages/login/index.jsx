@@ -36,6 +36,8 @@ export default function Login() {
             localStorage.setItem('TOKEN', resp.data.token)
             navigate('/admHome')
         }
+
+        alert (resp.data.token)
     }
  
 
