@@ -15,7 +15,7 @@ const CarrosselC = () => {
     );
 
     const renderNextButton = () => (
-        <button className="carousel-btn next-btn"></button>
+        <button className="carousel-btn next-btng"></button>
     );
 
     return (

@@ -1,7 +1,8 @@
-
 import Carrossel from '../carroselP/Carrossel';
 import CarrosselC from '../carroselC/Carrosselc';
-import CarrosselG from '../carroselG/Carrosselg';
+import CarrosselGA from '../carroselGA/Carrosselga';
+
+
 import {Link} from 'react-router-dom'
 
 import './paginicio.scss';
@@ -187,8 +188,9 @@ function Paginicio() {
             <h1>Nossa Galeria</h1>
          </div>
 
-         <div className='carrosselG'>
-         <CarrosselG />
+         <div className='carrosselGS'>
+           <CarrosselGA />
+          
          </div>
 
 
