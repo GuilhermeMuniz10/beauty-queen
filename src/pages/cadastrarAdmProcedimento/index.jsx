@@ -35,8 +35,9 @@ const [token, setToken] = useState('');
         } else {
             const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
             let resp = await axios.put(url, paramCorpo);
-            alert('Pessoa alterada nos arquivos.');
+            alert('Pessoa alterada nos arquivos. '  );
         }
+        alert(token)
     }
 
     async function consultar() {
