@@ -2,7 +2,7 @@ import './index.scss';
 import {Link, UseParams, Navigate} from 'react-router-dom'
 import React from 'react';
 import axios from 'axios';
-import { UseEffect, useState, Hook  } from 'react' 
+import { useEffect, useState, Hook  } from 'react' 
 import moment from 'moment';
 
 
@@ -21,8 +21,48 @@ const [token, setToken] = useState('');
 
 
 
+useEffect(() => {
+    const usu = localStorage.getItem('TOKEN');
+    setToken(usu);
+
+    if (usu === undefined) {
+        Navigate('/');
+    }
+}, []); // Executado uma vez ao carregar o componente , para salvar o token da localstorage na variavel
+
+
+async function consultar() {
+    if (id !== undefined && token) {
+        const url = `http://localhost:5010/cliente/${id}?x-access-token=${token}`;
+        let resp = await axios.get(url);
+        let dados = resp.data;
+
+        let data = moment(dados.nascimento).format('YYYY-MM-DD')
+        console.log(data)
+
+        setNome(dados.nome)
+        setNascimento(dados.nascimento)
+    setTelefone(dados.telefone)
+    setCpf(dados.cpf)
+    setMedidas(dados.medidas)
+    setObservacoes(dados.observacoes)
+    setEmail(dados.email)
+
+    }
+
+
+  
+
+}
+
+
 
     async function Salvar() {
+
+        if(!token){alert('token não encontrado. por favor , faça login novamente')
+        return;
+    }
+
         let paramCorpo = {
             "NOME_cliente": nome,
             "DATA_nascimento":nascimento,
@@ -32,16 +72,33 @@ const [token, setToken] = useState('');
 		"observacoes" : observacoes, 
 		"E_MAIL" : email
 		        }
+
+                try {
+                    if (id == undefined) {
+                        const url = `http://localhost:5010/cliente/?x-access-token=${token}`;
+                        let resp = await axios.post(url, paramCorpo , {
+                            headers : {
+                                'x-acess-token':token
+
+                            }
+                        });
+                        alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
+                    } else {
+                        const url = `http://localhost:5010/cliente/${id}?x-access-token=${token}`;
+                        let resp = await axios.put(url, paramCorpo, {
+                            headers : {
+                                'x-acess-token':token
+
+                            }
+
+                        });
+                        alert('Pessoa alterada nos arquivos.');
+                    }
+                } catch (err) {
+                    alert ('erro ao salvar , verifique se este email já não está cadastrado' + err.message);
+                }
         
-        if (id == undefined) {
-            const url = `http://localhost:5010/cliente/?x-access-token=${token}`;
-            let resp = await axios.post(url, paramCorpo);
-            alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
-        } else {
-            const url = `http://localhost:5010/cliente/${id}?x-access-token=${token}`;
-            let resp = await axios.put(url, paramCorpo);
-            alert('Pessoa alterada nos arquivos.');
-        }
+     
         
     }
 
@@ -50,38 +107,7 @@ const [token, setToken] = useState('');
 
 
 
-    async function consultar() {
-        if (id != undefined) {
-            const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
-            let resp = await axios.get(url);
-            let dados = resp.data;
-
-            let data = moment(dados.nascimento).format('YYYY-MM-DD')
-            console.log(data)
-
-            setNome(dados.nome)
-            setNascimento(dados.nascimento)
-	    setTelefone(dados.telefone)
-		setCpf(dados.cpf)
-		setMedidas(dados.medidas)
-		setObservacoes(dados.observacoes)
-		setEmail(dados.email)
-
-        }
-
-
-        UseEffect(() => {
-            let usu = localStorage.getItem('TOKEN')
-            setToken(usu)
-    
-            if (usu == undefined) {
-                Navigate('/')
-            }
-    
-            consultar();
-        }, [])
-
-    }
+  
 
 
   
@@ -226,7 +252,7 @@ const [token, setToken] = useState('');
                 <div class="botom">
                   <ul>
                      <li>
-                       <Link to='#' className='button'onClick={Salvar}>Salvar</Link>
+                       <Link to='/admHome' className='button'onClick={Salvar}>Salvar</Link>
                      </li>
                   </ul>
                </div>
