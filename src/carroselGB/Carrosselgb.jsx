@@ -32,7 +32,7 @@ const CarrosselGB = () => {
                     <img className='unique-imgB' src="/assets/images/galeria4.svg" alt="Imagem 4" />
                 </div>
                 <div className="unique-carousel-itemB">
-                    <img className='unique-imgBB' src="/assets/images/galeria5.svg" alt="Imagem 5" />
+                    <img className='unique-imgB' src="/assets/images/galeria5.svg" alt="Imagem 5" />
                 </div>           
                 <div className="unique-carousel-itemB">
                     <img className='unique-imgB' src="/assets/images/galeria6.svg" alt="Imagem 6" />

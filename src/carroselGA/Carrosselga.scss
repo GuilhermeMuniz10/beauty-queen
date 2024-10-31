@@ -57,3 +57,56 @@
         font-size: 25px; /* Tamanho da seta em dispositivos muito pequenos */
     }
 }
+
+
+@media (max-width: 1024px) {
+    .unique-carousel-item img {
+      width: 500px;
+      height: auto; /* Mantém a proporção ao reduzir a largura */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .unique-carousel-item img {
+      width: 350px;
+      height: auto;
+    }
+    .unique-carousel-item {
+      margin: 0 5px; /* Ajuste de margem menor em telas médias */
+    }
+    .unique-carousel-control {
+      font-size: 30px; /* Reduz o tamanho das setas */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .unique-carousel-item img {
+      width: 280px;
+      height: auto;
+    }
+    .unique-carousel-control {
+      font-size: 25px;
+      left: 5px; /* Ajusta a posição da seta anterior */
+      right: 5px; /* Ajusta a posição da seta próxima */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .unique-carousel-item img {
+      width: 200px;
+      height: auto;
+    }
+    .unique-carousel-control {
+      font-size: 20px; /* Tamanho das setas para dispositivos muito pequenos */
+    }
+  }
+
+
+
+
+
+
+
+
+
+  

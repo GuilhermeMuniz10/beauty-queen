@@ -32,10 +32,10 @@ const CarrosselGA = () => {
                     <img className='unique-imgA' src="/assets/images/galeria1.svg" alt="Imagem 1" />
                 </div>
                 <div className="unique-carousel-item">
-                    <img className='unique-imgB' src="/assets/images/galeria2.svg" alt="Imagem 2" />
+                    <img className='unique-imgA' src="/assets/images/galeria2.svg" alt="Imagem 2" />
                 </div>           
                 <div className="unique-carousel-item">
-                    <img className='unique-imgC' src="/assets/images/galeria3.svg" alt="Imagem 3" />
+                    <img className='unique-imgA' src="/assets/images/galeria3.svg" alt="Imagem 3" />
                 </div>
             
             </AliceCarouselGA>

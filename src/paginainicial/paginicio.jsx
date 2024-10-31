@@ -30,19 +30,19 @@ function Paginicio() {
                   <li><a href="#" className='Link'>Nossa História</a></li>
                   <li><a href="#" className='Link'>Serviços</a></li>
                   <li><a href="#" className='Link'>Galeria</a></li>
-                  
-               </ul>
-
-               
-
-               <div class="botomP">
+                
                   <ul>
                      <li>
                        <Link to='/ProdutosCorpo' className='Link' >Produtos</Link>
                      </li>
                   </ul>
-               </div>
+               
+                  
+               </ul>
 
+               
+
+               
 
                <div class="botom">
                   <ul>
@@ -62,10 +62,6 @@ function Paginicio() {
 
 
        
-
-        
-
-
 
 
          <div className='historia'>
