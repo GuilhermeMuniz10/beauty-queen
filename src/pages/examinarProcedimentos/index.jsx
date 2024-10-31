@@ -9,7 +9,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 
 
-export default function Consultar() {
+export default function ConsultarProcedimentos() {
     const [token, setToken] = useState(null);
     const [clientes, setClientes] = useState([]);
 
@@ -76,7 +76,7 @@ export default function Consultar() {
                     <li><Link to='/CadastrarAdmProcedimento' href="#">Cadastrar Procedimentos</Link></li>
                     <li><Link to='/CadastrarAdmPedido'>Cadastrar Pedido</Link></li>
                     <li><Link to='/ExaminarClientes'>Examinar Clientes</Link></li>
-                    <li><Link to='/'>Examinar Procedimentos</Link></li>
+                    <li><Link to='/ExaminarProcedimento'>Examinar Procedimentos</Link></li>
                     <li><Link to='/'>Examinar Pedidos</Link></li>
                     
                     <div className='sair'>
@@ -96,7 +96,7 @@ export default function Consultar() {
             </div>
                 
                 <div className='nome'>
-                    <h1>Examinar Clientes</h1>
+                    <h1>Examinar Procedimentos</h1>
                     <hr />
                 </div>
 

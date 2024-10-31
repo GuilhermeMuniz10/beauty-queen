@@ -23,8 +23,8 @@ export default function AdmHome() {
                     <li><Link to='/CadastrarAdmCliente'>Cadastrar Cliente</Link></li>
                     <li><Link to='/CadastrarAdmProcedimento' href="#">Cadastrar Procedimentos</Link></li>
                     <li><Link to='/CadastrarAdmPedido'>Cadastrar Pedido</Link></li>
-                    <li><Link to='/'>Examinar Clientes</Link></li>
-                    <li><Link to='/'>Examinar Procedimentos</Link></li>
+                    <li><Link to='/ExaminarClientes'>Examinar Clientes</Link></li>
+                    <li><Link to='/ExaminarProcedimento'>Examinar Procedimentos</Link></li>
                     <li><Link to='/'>Examinar Pedidos</Link></li>
                     
                     <div className='sair'>

@@ -105,6 +105,9 @@ async function consultar() {
   
     return (
         <div className='pagina-cadastrar'>
+
+           
+
             <input type="checkbox" className='menu-faketrigger' id="menu-toggle" />
             <label htmlFor="menu-toggle" className='menu-lines'>
                 <span></span>
@@ -124,9 +127,9 @@ async function consultar() {
                     <li><Link to='/CadastrarAdmCliente'>Cadastrar Cliente</Link></li>
                     <li><Link to='/CadastrarAdmProcedimento' href="#">Cadastrar Procedimentos</Link></li>
                     <li><Link to='/CadastrarAdmPedido'>Cadastrar Pedido</Link></li>
-                    <li><Link to='/'>Examinar Clientes</Link></li>
-                    <li><Link to='/'>Examinar Procedimentos</Link></li>
-                    <li><Link to='/'>Examinar Pedidos</Link></li>
+                    <li><Link to='/ExaminarClientes'>Examinar Clientes</Link></li>
+                    <li><Link to='/ExaminarProcedimentos'>Examinar Procedimentos</Link></li>
+                    <li><Link to='/ExaminarPedidos'>Examinar Pedidos</Link></li>
                 
                     <div className='sair'>
                         <li>

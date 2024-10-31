@@ -14,7 +14,10 @@ import CadastrarAdmCliente from './pages/cadastrarAdmCliente';
 import CadastrarAdmProcedimento from './pages/cadastrarAdmProcedimento';
 import ExaminarClientes from './pages/examinarClientes';
 import CadastrarAdmPedido from './pages/cadastrarAdmPedido';
+import ConsultarProcedimentos from './pages/examinarProcedimentos';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ConsultarPedidos from './pages/examinarPedido';
 // import NotFound from './pages/notFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,6 +41,8 @@ root.render(
         <Route path='/CadastrarAdmPedido' element={<CadastrarAdmPedido />} />
         <Route path='/ExaminarClientes' element={<ExaminarClientes />} />
         <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>    
+        <Route path='/ExaminarProcedimento' element={<ConsultarProcedimentos />}/>    
+        <Route path='/ExaminarPedidos' element={<ConsultarPedidos />}/>    
 
 
         {/* <Route path= '/Not' element={<NotFound />} /> */}
