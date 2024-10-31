@@ -102,14 +102,6 @@ async function consultar() {
         
     }
 
-
-
-
-
-
-  
-
-
   
     return (
         <div className='pagina-cadastrar'>
@@ -130,11 +122,12 @@ async function consultar() {
                     </div>
                     <li><Link to='/AdmHome'>Home</Link></li>
                     <li><Link to='/CadastrarAdmCliente'>Cadastrar Cliente</Link></li>
-                    <li><Link to='/CadastrarAdmProcedimento'>Cadastrar Procedimento</Link></li>
+                    <li><Link to='/CadastrarAdmProcedimento' href="#">Cadastrar Procedimentos</Link></li>
                     <li><Link to='/CadastrarAdmPedido'>Cadastrar Pedido</Link></li>
-                    <li><a href="/ExaminarClientes">Examinar Cliente</a></li>
-                    <li><a href="#">Examinar Procedimentos</a></li>
-
+                    <li><Link to='/'>Examinar Clientes</Link></li>
+                    <li><Link to='/'>Examinar Procedimentos</Link></li>
+                    <li><Link to='/'>Examinar Pedidos</Link></li>
+                
                     <div className='sair'>
                         <li>
                             <a className='sairr' href="#">Finalizar Sessão</a>
@@ -144,16 +137,18 @@ async function consultar() {
                 </ul>
             </nav>
 
-            
-
+            <div>
+                 <br />
+            </div>
                 
                 <div className='nome'>
                     <h1>Cadastrar Cliente</h1>
                     <hr />
                 </div>
 
-                <div className='pgt'>   
+                <div className='pgt'>  
 
+<div className='pgta'>
 
                     <div className='part1'>
 
@@ -220,7 +215,7 @@ async function consultar() {
                     
                     </div>
 
-
+<div className='direc'>
                     <div className='part3'>
                         <div className="container">
                             <input 
@@ -248,7 +243,8 @@ async function consultar() {
                     </div>
                 
                 </div> 
-
+</div>                
+</div>
                 <div class="botom">
                   <ul>
                      <li>
