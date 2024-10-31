@@ -105,7 +105,7 @@ function Paginicio() {
 
       <div className='comeco'>
          
-      <img className='oncome' src="/assets/images/oncomecou.png" alt="" />
+      <img src="/assets/images/oncomecou.png" alt="" />
 
          <div className='OC'>
             <h2>Onde tudo Começou</h2>
@@ -213,12 +213,17 @@ function Paginicio() {
          </div>
 
 
-         <div className='redes'>
-               <img src="/assets/images/face.svg" alt="facebook" />
-               <img src="/assets/images/insta.svg" alt="instagran" />
-               <img src="/assets/images/twitter.svg" alt="twitter" />
-            </div>
-
+         <div className="redes">
+      <a href="https://www.whatsapp.com/?lang=pt_BR">
+        <img className="icon" src="/assets/images/whats.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.facebook.com/?locale=pt_BR">
+        <img className="icon" src="/assets/images/face.svg" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/">
+        <img className="icon" src="/assets/images/insta.svg" alt="Twitter" />
+      </a>
+    </div>
 
          <div className='funcio'>
             <h2>Horario de funcionamento: <br /> ———————————</h2>
