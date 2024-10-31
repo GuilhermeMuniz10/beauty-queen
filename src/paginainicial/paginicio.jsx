@@ -208,20 +208,20 @@ function Paginicio() {
          </div>
 
          <div className='contat'>
-            <h2>Nossos Contatos: <br /> ——————— </h2>
+            <h2>Nossos Contatos: <br /> ____________ </h2>
             
          </div>
 
 
          <div className="redes">
       <a href="https://www.whatsapp.com/?lang=pt_BR">
-        <img className="icon" src="/assets/images/whats.png" alt="WhatsApp" />
+        <img className="wt" src="/assets/images/whats.png" alt="WhatsApp" />
       </a>
       <a href="https://www.facebook.com/?locale=pt_BR">
-        <img className="icon" src="/assets/images/face.svg" alt="Facebook" />
+        <img className="fa" src="/assets/images/face.svg" alt="Facebook" />
       </a>
       <a href="https://www.instagram.com/">
-        <img className="icon" src="/assets/images/insta.svg" alt="Twitter" />
+        <img className="in" src="/assets/images/insta.svg" alt="Twitter" />
       </a>
     </div>
 

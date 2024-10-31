@@ -1,136 +1,157 @@
 header {
 	background: #C59E9A;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding: 8px 0;
 	height: 75px;
 	
-  
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 50px;
+	font-family: 'Darker Grotesque';
+}
+
+.links ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.Link {
+	text-decoration: none;
+	color: #ede7e5;
+	font-size: 28px;
+	padding: 0.2rem;
+	position: relative;
+}
+
+.Link::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #E9DFDD;
+	border-radius: 5px;
+	bottom: -5px;
+	left: 0;
+	transform: scaleX(0);
+	transition: all 0.4s ease;
+}
+
+.Link:hover::before {
+	transform: scaleX(1);
+}
+
+.botomP ul, .botom ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.buttonP, .button {
+	font-size: 28px;
+	color: #ede7e5;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	position: relative;
+}
+
+.button {
+	background: #E9DFDD;
+	color: #744540;
+	border-radius: 25px;
+	padding: 0.2rem 1rem;
+	padding-top: 1px;
+	padding-bottom: 6px;
+	border: none;
+}
+
+.button::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #E9DFDD;
+	bottom: -5px;
+	left: 0;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.button:hover {
+	background: transparent;
+}
+
+.button:hover::after {
+	transform: scaleX(1);
+}
+
+.imagem-opaca {
+	transition: opacity 0.3s ease;
+	width: 180px;
+}
+
+.imagem-opaca:hover {
+	opacity: 0.4;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
 	.links {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin-left: 50px;
-		margin-right: 50px;
-		font-family: 'Darker Grotesque';;
-	  ul {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 6rem;
-		list-style: none;
-		
-	  }
-  
-	  .Link {
-		text-decoration: none;
-		
-		color: #ede7e5;
-		font-size: 28px;
-		padding: 0.2rem;
-		position: relative;
-  
-		&::before {
-		  content: "";
-		  position: absolute;
-		  width: 100%;
-		  height: 2px;
-		  background-color: #E9DFDD;
-		  border-radius: 5px;
-		  bottom: -5px; // Ajuste a posição vertical da linha
-		  left: 0;
-		  transform: scaleX(0);
-		  transition: all 0.4s ease;
-		}
-  
-		&:hover::before {
-		  transform: scaleX(1);
-		}
-	  }
-
-
-	  .botomP ul {
-		display: flex;
-		align-items: center;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		
-		
-	
-		.buttonP {
-			
-			color: #ede7e5;
-			font-size: 28px;
-			text-decoration: none;
-			position: relative;
-			cursor: pointer;
-			transition: background 0.3s ease;
-			
-	
-	
-			
-		}
+		margin: 0 30px;
 	}
 
-	  .botom ul {
-		display: flex;
-		align-items: center;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-
-		.button {
-			background: #E9DFDD;
-			color: #744540;
-			border-radius: 25px;
-			padding: 0.2rem 1rem;
-			padding-top: 1px;
-			padding-bottom: 6px;
-			font-size: 28px;
-			text-decoration: none;
-			position: relative;
-			border: none;
-			cursor: pointer;
-			transition: background 0.3s ease;
-		
-			&::after {
-				content: "";
-				position: absolute;
-				width: 100%;
-				height: 2px;
-				background-color: #E9DFDD;
-				bottom: -5px; /* Posição da linha */
-				left: 0;
-				transform: scaleX(0);
-				transition: transform 0.3s ease;
-			}
-		
-			&:hover {
-				background: transparent; /* Remove o fundo */
-			}
-		
-			&:hover::after {
-				transform: scaleX(1); /* Faz a linha aparecer */
-			}
-		}
-
+	.links ul {
+		gap: 3rem;
 	}
 
+	.Link, .buttonP, .button {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.links {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.links ul {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.Link, .buttonP, .button {
+		font-size: 20px;
+	}
 
 	.imagem-opaca {
-		transition: opacity 0.3s ease; /* Suaviza a transição */
-		width: 180px;
+		width: 150px;
 	}
-	
-	.imagem-opaca:hover {
-		opacity: 0.4; 
-	}
-	
-	
-	
+}
+
+@media (max-width: 480px) {
+	.links {
+		margin: 0 10px;
 	}
 
-	
+	.Link, .buttonP, .button {
+		font-size: 18px;
+		
+	}
+
+	.imagem-opaca {
+		width: 120px;
+	}
 }
 
 
@@ -156,39 +177,64 @@ header {
 
 
 
-	
 .historia {
 	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.historia img{
-		display: inline-block;
-		position: relative;
-		width: 90%;
-		left: 5%;
+.historia img {
+	width: 90%;
+	max-width: 4000px;
+	margin: 0 auto;
 }
 
-	
+.NM, .QS {
+	width: 80%;
+	margin: 20px auto;
+	line-height: 25px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Darker Grotesque';
+}
 
-.NM {
+@media (min-width: 768px) {
+	.NM, .QS {
+		font-size: 18px;
+		width: 60%;
+	}
+
+	.NM {
+		text-align: left;
+		margin-left: 10%;
+	}
+
+	.QS {
+		text-align: right;
+		margin-right: 10%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.NM, .QS {
+		font-size: 20px;
+		width: 40%;
+		margin: 0;
 		position: absolute;
-        top: 1030px;
+	}
+
+	.NM {
+		top: 1030px;
 		left: 10%;
-		line-height: 25px;
-		text-align: center;
-		font-size: 20px;
-		font-family: 'Darker Grotesque';
-}
+		text-align: left;
+	}
 
-
-.QS{
-		position: absolute;
+	.QS {
+		top: 570px;
 		right: 10%;
-		top: 640px;
-		line-height: 25px;
-        text-align: center;
-		font-size: 20px;
-		font-family: 'Darker Grotesque';
+		text-align: right;
+	}
 }
 
 
@@ -286,17 +332,17 @@ header {
 }
 
 
+
 .comeco img {
 	position: relative;
 	left: 9%;
 	width: 80%;
-   top: -60px;
-	
+	top: -60px;
 }
 
 .NH {
 	position: absolute;
-	top: 322%;
+	top: 368%;
 	right: 137px;
 	line-height: 25px;
 	text-align: center;
@@ -304,16 +350,52 @@ header {
 	font-family: 'Darker Grotesque';
 }
 
-
-.OC{
+.OC {
 	position: absolute;
 	left: 14%;
-	top: 282%;
+	top: 300%;
 	line-height: 25px;
-    text-align: center;
+	text-align: center;
 	font-size: 20px;
 	font-family: 'Darker Grotesque';
 }
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+	.comeco img {
+		width: 90%;
+		left: 5%;
+		top: -5px;
+	}
+
+	.NH, .OC {
+		position: relative;
+		top: initial;
+		right: initial;
+		left: 0;
+		margin-top: 20px;
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.comeco img {
+		width: 100%;
+		left: 0;
+		top: -20px;
+	}
+
+	.NH, .OC {
+		position: relative;
+		top: initial;
+		right: initial;
+		left: 0;
+		font-size: 1rem;
+		margin-top: 20px;
+	}
+}
+
+
 
 
 
@@ -500,7 +582,10 @@ header {
 .contat {
 	position: relative;
 	left: 220px;
+	font-size: 20px;
+	font-family: 'Darker Grotesque';
 	top: 90px;
+	
 }
 
 .funcio {
@@ -512,20 +597,30 @@ header {
 
 
 
-.redes {
-    width: 50px;
-	height: 50px;
-    display: flex;
-	margin-left: 220px;
-	margin-top: 115px;
-	gap: 20px;
-}
 
-.redes .insta {
+.redes .wt{
 	height: 65px;
 	position: relative;
-	top: -8px;
+	bottom: -55px;
+	padding: 3px;
+	left: 215px;
 }
+
+.redes .fa{
+	height: 65px;
+	position: relative;
+	bottom: -55px;
+	left: 215px;
+}
+
+.redes .in{
+	height: 88px;
+	position: relative;
+	bottom: -68px;
+	left: 215px;
+	
+}
+
 
 
 
@@ -570,57 +665,3 @@ footer {
 }
 
 
-
-@media (max-width: 1024px) {
-	header .links {
-	  margin-left: 20px;
-	  margin-right: 20px;
-	}
-	header .links ul {
-	  gap: 3rem;
-	}
-	header .links .Link, header .links .buttonP, header .links .button {
-	  font-size: 22px;
-	}
-  }
-  
-  @media (max-width: 768px) {
-	header .links {
-	  flex-direction: column;
-	  margin: 0;
-	  height: auto;
-	}
-	header .links ul {
-	  flex-direction: column;
-	  gap: 1.5rem;
-	}
-	header .links .Link, header .links .buttonP, header .links .button {
-	  font-size: 20px;
-	  padding: 0.4rem;
-	}
-	header .imagem-opaca {
-	  width: 140px;
-	}
-  }
-  
-  @media (max-width: 480px) {
-	header {
-	  padding-top: 4px;
-	  padding-bottom: 4px;
-	  height: auto;
-	}
-	header .links {
-	  align-items: flex-start;
-	  margin: 0 10px;
-	}
-	header .links ul {
-	  gap: 1rem;
-	}
-	header .links .Link, header .links .buttonP, header .links .button {
-	  font-size: 18px;
-	  padding: 0.2rem;
-	}
-	header .imagem-opaca {
-	  width: 120px;
-	}
-  }
