@@ -96,7 +96,7 @@ const [token, setToken] = useState('');
                     <li><Link to='/AdmHome'>Home</Link></li>
                     <li><Link to='/CadastrarAdmCliente'>Cadastrar Cliente</Link></li>
                     <li><Link to='/CadastrarAdmProcedimento'>Cadastrar Procedimento</Link></li>
-                    <li><a href="#">Examinar Cliente</a></li>
+                    <li><a href="/ExaminarClientes">Examinar Cliente</a></li>
                     <li><a href="#">Examinar Procedimentos</a></li>
 
                     <div className='sair'>
@@ -107,6 +107,12 @@ const [token, setToken] = useState('');
                     </div>
                 </ul>
             </nav>
+
+            
+            <div className='nome'>
+                    <h1>Cadastrar Procedimento</h1>
+                    <hr />
+                </div>
 
 
                 <div className='pgt'>   

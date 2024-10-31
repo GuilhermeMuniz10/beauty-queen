@@ -1,0 +1,69 @@
+pagina-consultar {
+    padding: 50px;
+
+    .acoes {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        margin: 14px 0px;
+
+        // Responsivo para telas menores
+        @media (max-width: 768px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        background-color: pink ;
+
+        th, td {
+            border: 1px solid transparent;
+        }
+
+        th {
+            background-color: pink ;
+            color: white;
+            font-size: 16px;
+            text-align: left;
+            padding: 8px 8px;
+        }
+
+        td {
+            padding: 8px 8px;
+        }
+
+        .botao {
+            color: $highlight;
+            font-size: 18px;
+        }
+
+        // Responsivo para telas menores
+        @media (max-width: 768px) {
+            th, td {
+                padding: 6px 4px;
+                font-size: 14px;
+            }
+
+            .botao {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            th, td {
+                padding: 4px 2px;
+                font-size: 12px;
+            }
+
+            .botao {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
