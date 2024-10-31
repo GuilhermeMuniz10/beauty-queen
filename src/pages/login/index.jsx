@@ -1,7 +1,7 @@
 import './index.scss';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Ícones para mostrar/esconder senha
 import toast, { Toaster } from 'react-hot-toast';
 

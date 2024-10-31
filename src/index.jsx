@@ -12,6 +12,8 @@ import SenhaAlterada from './pages/alterada';
 import AdmHome from './pages/admHome';
 import CadastrarAdmCliente from './pages/cadastrarAdmCliente';
 import CadastrarAdmProcedimento from './pages/cadastrarAdmProcedimento';
+import ExaminarClientes from './pages/examinarClientes';
+import CadastrarAdmPedido from './pages/cadastrarAdmPedido';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import NotFound from './pages/notFound';
 
@@ -33,6 +35,8 @@ root.render(
         <Route path='/ProdutosFacial' element={<ProdutosFacial />}/>
         <Route path='/CadastrarAdmCliente' element={<CadastrarAdmCliente />} />
         <Route path='/CadastrarAdmProcediemento' element={<CadastrarAdmProcedimento />} />
+        <Route path='/CadastrarAdmPedido' element={<CadastrarAdmPedido />} />
+        <Route path='/ExaminarClientes' element={<ExaminarClientes />} />
         <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>    
 
 

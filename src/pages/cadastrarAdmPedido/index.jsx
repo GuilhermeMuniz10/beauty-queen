@@ -6,7 +6,7 @@ import { UseEffect, useState, Hook  } from 'react'
 import moment from 'moment';
 
 
-export default function CadastrarAdmCliente() {
+export default function CadastrarAdmPedido() {
 
 const [nome, setNome] = useState('');
 const [nascimento, setNascimento] = useState('');
@@ -118,16 +118,15 @@ const [token, setToken] = useState('');
                 </ul>
             </nav>
 
-            
 
                 
-                <div className='nome'>
-                    <h1>Cadastrar Cliente</h1>
-                    <hr />
-                </div>
 
                 <div className='pgt'>   
-
+                    
+                    <div className='nome'>
+                    <h1>Cadastrar Produto</h1>
+                    <hr />
+                </div>
 
                     <div className='part1'>
 
@@ -140,19 +139,7 @@ const [token, setToken] = useState('');
                             onChange={e => setNome(e.target.value)}
                             className="input" 
                             /> 
-                            <label className="label">Nome do Cliente</label>
-                        </div>
-
-                        <div className="container">
-                        <input  
-                        required
-                        type="date"
-                        name='date'
-                        value = {nascimento}
-                        onChange={e => setNascimento(e.target.value)}
-                        className='input'
-                        />
-                        <label htmlFor="date" className="label-data" >Data de Nascimento</label>
+                            <label className="label">ID do Cliente</label>
                         </div>
 
 
@@ -165,7 +152,7 @@ const [token, setToken] = useState('');
                             onChange={e => setCpf(e.target.value)}
                             className="input" 
                             /> 
-                            <label className="label">CPF</label>
+                            <label className="label">ID do Procedimento</label>
                         </div>
 
                         <div className="container">
@@ -177,7 +164,7 @@ const [token, setToken] = useState('');
                             onChange={e => setEmail(e.target.value)}
                             className="input" 
                             /> 
-                            <label className="label">E-mail</label>
+                            <label className="label">Quantidadade de Procedimento</label>
                         </div>
 
                         <div className="container">
@@ -189,36 +176,9 @@ const [token, setToken] = useState('');
                             onChange={e => setTelefone(e.target.value)}
                             className="input" 
                             /> 
-                            <label className="label">Telefone</label>
+                            <label className="label">ID do Usúario</label>
                         </div>
                     
-                    </div>
-
-
-                    <div className='part3'>
-                        <div className="container">
-                            <input 
-                            required 
-                            type="text" 
-                            name="text" 
-                            value={medidas}
-                            onChange={e => setMedidas(e.target.value)}
-                            className="input" 
-                            /> 
-                            <label className="label">Medidas</label>
-                        </div>
-
-                        <div className="container">
-                            <input 
-                            required 
-                            type="text" 
-                            value={observacoes}
-                            onChange={e => setObservacoes(e.target.value)}
-                            name="text" 
-                            className="input" 
-                            /> 
-                            <label className="label">Observações</label>
-                        </div>
                     </div>
                 
                 </div> 
@@ -230,6 +190,7 @@ const [token, setToken] = useState('');
                      </li>
                   </ul>
                </div>
+
         </div>
     );
 }

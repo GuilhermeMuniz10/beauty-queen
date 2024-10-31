@@ -194,9 +194,6 @@ function Paginicio() {
          </div>
 
 
-
-
-
          <div className='parcerias'>
             
                <hr />
