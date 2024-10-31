@@ -2,7 +2,7 @@ import './index.scss';
 import {Link, UseParams, Navigate} from 'react-router-dom'
 import React from 'react';
 import axios from 'axios';
-import { UseEffect, useState} from 'react'
+import { useEffect, useState} from 'react'
 import moment from 'moment';    
 
 
@@ -15,64 +15,92 @@ const [descricao, setDescricao] = useState('');
 const [observacoes, setObservacoes] = useState('');
 const [id, setId] = useState(undefined);
 
+
+
+
 const [token, setToken] = useState('');
 
 
 
+useEffect(() => {
+    const usu = localStorage.getItem('TOKEN');
+    setToken(usu);
+
+    if (usu === undefined) {
+        Navigate('/');
+    }
+}, []); // Executado uma vez ao carregar o componente , para salvar o token da localstorage na variavel
+
+
+
+
+async function consultar() {
+    if (id !== undefined && token) {
+        const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
+        let resp = await axios.get(url);
+        let dados = resp.data;
+
+        let data = moment(dados.nascimento).format('YYYY-MM-DD')
+        console.log(data)
+
+        setNome(dados.nome)
+        setProfissional(dados.profissional)
+        setPreco(dados.preco)
+        setDescricao(dados.descricao)    
+        setObservacoes(dados.observacoes)
+
+    }
+
+
+  
+
+}
     async function Salvar() {
+
+        if(!token){
+            alert ('Token não encontrado. Por favor, faça login novamente')
+            return;
+        }
         let paramCorpo = {
-            "NM_procedimento": nome,
-            "NM_profissional": profissional,
-            "PRECO": preco,
-            "DESCRICAO": descricao,
-            "OBSERVACOES": observacoes
+            "nm_procedimento": nome,
+            "nm_profissional": profissional,
+            "preco": preco,
+            "descricao": descricao,
+            "observacoes": observacoes
 		        }
         
-        if (id == undefined) {
-            const url = `http://localhost:5010/produtos/?x-access-token=${token}`;
-            let resp = await axios.post(url, paramCorpo);
-            alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
-        } else {
-            const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
-            let resp = await axios.put(url, paramCorpo);
-            alert('Pessoa alterada nos arquivos. '  );
-        }
-        alert(token)
-    }
 
-    async function consultar() {
-        if (id != undefined) {
-            const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
-            let resp = await axios.get(url);
-            let dados = resp.data;
+            try {
+                if (id === undefined) {
+                    const url = `http://localhost:5010/produtos/?x-access-token=${token}`;
+                    let resp = await axios.post(url, paramCorpo, {
 
-            let data = moment(dados.nascimento).format('YYYY-MM-DD')
-            console.log(data)
+                        headers:{
+                            'x-acess-token':token
 
-            setNome(dados.nome)
-            setProfissional(dados.profissional)
-            setPreco(dados.preco)
-            setDescricao(dados.descricao)    
-            setObservacoes(dados.observacoes)
+                        }
 
-        }
+                    });
+                    alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
+                } else {
+                    const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
+                    let resp = await axios.put(url, paramCorpo, {
 
+                        headers:{
+                            'x-acess-token':token
 
-        UseEffect(() => {
-            let usu = localStorage.getItem('USUARIO')
-            setToken(usu)
-    
-            if (usu == undefined) {
-                Navigate('/')
+                        }
+
+                    });
+                    alert('Procedimento alterada nos arquivos. '  );
+                }
+               
+            } catch (err) {
+                alert('erro ao salvar'+err.message)
             }
-    
-            consultar();
-        }, [])
 
+       
     }
-
-
-
 
 
 
