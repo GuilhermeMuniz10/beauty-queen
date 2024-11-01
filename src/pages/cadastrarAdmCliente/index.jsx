@@ -145,7 +145,7 @@ async function consultar() {
             </div>
                 
                 <div className='nome'>
-                    <h1>Cadastrar Cliente</h1>
+                    <h1 className='no'>Cadastrar Cliente</h1>
                     <hr />
                 </div>
 
