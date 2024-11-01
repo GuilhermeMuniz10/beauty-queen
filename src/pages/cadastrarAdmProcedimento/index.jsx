@@ -36,7 +36,7 @@ useEffect(() => {
 
 async function consultar() {
     if (id !== undefined && token) {
-        const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
+        const url = `http://4.172.207.208:5029/produtos/${id}?x-access-token=${token}`;
         let resp = await axios.get(url);
         let dados = resp.data;
 
@@ -72,7 +72,7 @@ async function consultar() {
 
             try {
                 if (id === undefined) {
-                    const url = `http://localhost:5010/produtos/?x-access-token=${token}`;
+                    const url = `http://4.172.207.208:5029/produtos/?x-access-token=${token}`;
                     let resp = await axios.post(url, paramCorpo, {
 
                         headers:{
@@ -83,7 +83,7 @@ async function consultar() {
                     });
                     alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
                 } else {
-                    const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
+                    const url = `http://4.172.207.208:5029/produtos/${id}?x-access-token=${token}`;
                     let resp = await axios.put(url, paramCorpo, {
 
                         headers:{
@@ -123,9 +123,11 @@ async function consultar() {
                     </div>
                     <li><Link to='/AdmHome'>Home</Link></li>
                     <li><Link to='/CadastrarAdmCliente'>Cadastrar Cliente</Link></li>
-                    <li><Link to='/CadastrarAdmProcedimento'>Cadastrar Procedimento</Link></li>
-                    <li><a href="/ExaminarClientes">Examinar Cliente</a></li>
-                    <li><a href="#">Examinar Procedimentos</a></li>
+                    <li><Link to='/CadastrarAdmProcedimento' href="#">Cadastrar Procedimentos</Link></li>
+                    <li><Link to='/CadastrarAdmPedido'>Cadastrar Pedido</Link></li>
+                    <li><Link to='/ExaminarClientes'>Examinar Clientes</Link></li>
+                    <li><Link to='/ExaminarProcedimento'>Examinar Procedimentos</Link></li>
+                    <li><Link to='/ExaminarPedidos'>Examinar Pedidos</Link></li>
 
                     <div className='sair'>
                         <li>
@@ -136,14 +138,19 @@ async function consultar() {
                 </ul>
             </nav>
 
+            <div>
+                <br />
+            </div>
+
             
             <div className='nome'>
-                    <h1>Cadastrar Procedimento</h1>
+                    <h1 className='NOME'>Cadastrar Procedimento</h1>
                     <hr />
                 </div>
 
 
                 <div className='pgt'>   
+                <div className='pgta'>
 
                     <div className='part1'>
 
@@ -212,7 +219,7 @@ async function consultar() {
                             <label className="label">Observações</label>
                         </div>
                     </div>
-                
+                </div>
                 </div> 
 
                 <div class="botom">
