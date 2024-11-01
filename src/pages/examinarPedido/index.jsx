@@ -30,7 +30,7 @@ export default function ConsultarPedidos() {
 
 //     async function buscar() {
 //         try {
-//             const url = `http://localhost:5010/cliente?x-access-token=${token}`;
+//             const url = `http://4.172.207.208:5029/cliente?x-access-token=${token}`;
 //             const resp = await axios.get(url);
 //             setClientes(resp.data);
 
@@ -42,7 +42,7 @@ export default function ConsultarPedidos() {
 
 //     async function excluir(id, nome) {
 //         try {
-//             const url = `http://localhost:5010/cliente/${id}?x-access-token=${token}`;
+//             const url = `http://4.172.207.208:5029/cliente/${id}?x-access-token=${token}`;
 //             await axios.delete(url);
 
 //             await buscar();

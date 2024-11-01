@@ -33,7 +33,7 @@ useEffect(() => {
 
 async function consultar() {
     if (id !== undefined && token) {
-        const url = `http://localhost:5010/cliente/${id}?x-access-token=${token}`;
+        const url = `http://4.172.207.208:5029/cliente/${id}?x-access-token=${token}`;
         let resp = await axios.get(url);
         let dados = resp.data;
 
@@ -75,7 +75,7 @@ async function consultar() {
 
                 try {
                     if (id == undefined) {
-                        const url = `http://localhost:5010/cliente/?x-access-token=${token}`;
+                        const url = `http://4.172.207.208:5029:5029/cliente/?x-access-token=${token}`;
                         let resp = await axios.post(url, paramCorpo , {
                             headers : {
                                 'x-acess-token':token
@@ -84,7 +84,7 @@ async function consultar() {
                         });
                         alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
                     } else {
-                        const url = `http://localhost:5010/cliente/${id}?x-access-token=${token}`;
+                        const url = `http://4.172.207.208:5029:5029/cliente/${id}?x-access-token=${token}`;
                         let resp = await axios.put(url, paramCorpo, {
                             headers : {
                                 'x-acess-token':token
