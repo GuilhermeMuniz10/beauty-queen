@@ -120,7 +120,7 @@ async function consultar() {
                 <ul>
                     <div className='imagem'>
                         <li>
-                            <img className='imagem' src="/assets/images/adm.png" alt="" />
+                            <img className='imagemm' src="/assets/images/adm.png" alt="" />
                         </li>
                     </div>
                     <li><Link to='/AdmHome'>Home</Link></li>

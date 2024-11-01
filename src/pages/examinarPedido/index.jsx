@@ -123,13 +123,9 @@ export default function ConsultarPedidos() {
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Nome</th>
-                            <th>Data de Nascimento</th>
-                            <th>Telefone</th>
-                            <th>CPF</th>
-                            <th>Medidas</th>
-                            <th>Observações</th>
-                            <th>Email</th>
+                            <th>Nome do Cliente</th>
+                            <th>Nome do Procedimento</th>
+                            <th>Quantidade de Procedimentos</th>
                             <th>Ações</th>
                         </tr>
                     </thead>

@@ -1,12 +1,12 @@
 .pagina-cadastrar {
     background-color: #E9DFDD;
     position: relative;
-    font-family: 'Darker Grotesque';
-    font-weight: 150px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 400; // Corrigido para um valor válido
     font-size: 21px;
     height: 100vh; // Garante que a página ocupe a altura total da tela
 
-
+    // Menu
     .menu {
         position: absolute;
         top: 0;
@@ -19,46 +19,7 @@
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
         z-index: 10; // Garante que o menu fique na frente
 
-      
-        .imagem {
-            width: px; // Tamanho da imagem alterado para 65px
-            margin-left: 20%;
-            margin-top: -15px;
-            margin-bottom: 23px;
-
-            transition: opacity 0.3s ease;
-
-            &:hover {
-                opacity: 0.6;
-            }
-        }
-
-        .sair {
-            display: flex;
-            margin-bottom: 10px;
-
-            .sairr {
-                margin-right: 10px;  
-                font-size: 22px;
-                padding: 0;
-                text-align: right;
-            }
-
-            .sair-icon {
-                img {
-                    width: 30px;  
-                    margin: 0;
-                    padding-bottom: 0;
-                    margin-bottom: -8px;
-                    transition: opacity 0.3s ease;
-
-                    &:hover {
-                        opacity: 0.5;
-                    }
-                }
-            }                               
-        }
-
+        // Itens do menu
         ul {
             padding-top: 100px;
             list-style: none;
@@ -79,8 +40,32 @@
                 }
             }
         }
+
+        // Ícone de saída
+        .sair {
+            display: flex;
+            margin-bottom: 10px;
+
+            .sairr {
+                margin-right: 10px;  
+                font-size: 22px;
+                text-align: right;
+            }
+
+            .sair-icon {
+                img {
+                    width: 30px;  
+                    transition: opacity 0.3s ease;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
     }
 
+    // Trigger do menu
     .menu-faketrigger {
         display: none;
     }
@@ -134,209 +119,145 @@
         transform: rotate(-45deg) translateY(-10%);
     }
 
-    .nome{
+    .nome {
         margin: 20px 0 0 80px; // Simplificado
-        margin-left: 10px;
         line-height: 25px;
     }
 
-    hr{
-        width: 1200px;
+    hr {
+        width: 1100px;
         margin-left: 0px;
     }
 
-    .pgta{
+    .pgta {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 250px;
- input{
-        width: 300px;
-        
+
+        input {
+            width: 300px;
+        }
     }
-}
+
+    .pgt {
+        margin-top: -20px;
     }
 
-
-   .pgt{
-    margin-top: -20px;
-
-   }
-
-  .part1 {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    position: relative;
-    color: rgb(77, 77, 77);
-    margin-bottom: 40px; // Adiciona o espaçamento desejado
-  }
-  
-  .label {        
-    padding-left: 10px;
-    position: absolute;
-    top: 2px;
-    transition: 0.3s;
-    pointer-events: none;
-    font-size: 25px;
-  }
-  
-  .input {
-    width: 200px;
-    height: 45px;
-    border: none;
-    outline: none;
-    padding: 0 7px;
-    border-radius: 6px;
-    color: #000000;
-    font-size: 15px;
-    background-color: transparent;
-    box-shadow: 3px 3px 10px rgb(41, 40, 40),
-                -1px -1px 6px rgba(255, 255, 255, 0.4);             
-    
-
-    &:focus {
-      border: 2px solid transparent;
-      color: #000000;
-      box-shadow: 3px 3px 10px rgb(26, 26, 26),
-                  -1px -1px 6px rgba(255, 255, 255, 0.4),
-                  inset 3px 3px 10px rgba(0, 0, 0, 1),
-                  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+    .part1 {
+        display: flex;
+        flex-direction: column;
     }
-  }
-  
-  .input:valid ~ .label,
-  .input:focus ~ .label {
-    transition: 0.3s;
-    padding-left: 2px;
-    transform: translateY(-35px);
-  }
-  
-  .input:valid,
-  .input:focus {
-    box-shadow: 3px 3px 10px rgb(71, 71, 71),
-                -1px -1px 6px rgba(255, 255, 255, 0.4),
-                inset 3px 3px 10px rgb(71, 71, 71),
-                inset -1px -1px 6px rgba(255, 255, 255, 0.4);
-  }
-  
-.direc{
-    margin-top: -140px;
 
-}
-
-
-  .part3 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; // Adiciona espaço entre os containers
-
-    .input{
-        height: 210px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        position: relative;
+        color: rgb(77, 77, 77);
+        margin-bottom: 40px; // Adiciona o espaçamento desejado
     }
-    
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    position: relative;
-    color: rgb(77, 77, 77);
-    margin-bottom: 40px; // Adiciona o espaçamento desejado
-  }
-  
-  .label-data {
-    font-size: 25px;
-    padding-left: 10px;
-    position: absolute;
-    top: -35px;
-    transition: 0.3s;
-    pointer-events: none;
-    font-size: 25px;
-  }
 
-  
-  
-  .input {
-    width: 200px;
-    height: 45px;
-    border: none;
-    outline: none;
-    padding: 0 7px;
-    border-radius: 6px;
-    color: #000000;
-    font-size: 15px;
-    background-color: transparent;
-    box-shadow: 3px 3px 10px rgb(41, 40, 40),
-                -1px -1px 6px rgba(255, 255, 255, 0.4);
-  
-    &:focus {
-      border: 2px solid transparent;
-      color: #000000;
-      box-shadow: 3px 3px 10px rgb(26, 26, 26),
-                  -1px -1px 6px rgba(255, 255, 255, 0.4),
-                  inset 3px 3px 10px rgba(0, 0, 0, 1),
-                  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+    .label {
+        padding-left: 10px;
+        position: absolute;
+        top: 2px;
+        transition: 0.3s;
+        pointer-events: none;
+        font-size: 25px;
     }
-  }
-  
-  .input:valid ~ .label,
-  .input:focus ~ .label {
-    transition: 0.3s;
-    padding-left: 2px;
-    transform: translateY(-35px);
-  }
-  
-  .input:valid,
-  .input:focus {
-    box-shadow: 3px 3px 10px rgb(71, 71, 71),
-                -1px -1px 6px rgba(255, 255, 255, 0.4),
-                inset 3px 3px 10px rgb(71, 71, 71),
-                inset -1px -1px 6px rgba(255, 255, 255, 0.4);
-  }
 
-  
-
-  .botom ul {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 60px;
-
-    .button {
-        background-color: rgb(255, 255, 255);
-        box-shadow: 3px 3px 10px rgb(41, 40, 40),
-                    -1px -1px 6px rgba(255, 255, 255, 0.4);			
-        color: #3f3f3f;
-        border-radius: 25px;
-        padding: 95px 7rem;
-        padding-top: 1px;
-        padding-bottom: 6px;
-        font-size: 28px;
-        text-decoration: none;
+    .input {
+        width: 200px;
+        height: 45px;
         border: none;
-        cursor: pointer;
-        transition: all 0.3s ease;
+        outline: none;
+        padding: 0 7px;
+        border-radius: 6px;
+        color: #000000;
+        font-size: 15px;
+        background-color: transparent;
+        box-shadow: 3px 3px 10px rgb(41, 40, 40),
+                    -1px -1px 6px rgba(255, 255, 255, 0.4);
 
-        // Efeitos ao passar o mouse
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.788);
-            box-shadow: 0 0 15px rgba(158, 152, 152, 0.664), 0 0 30px rgba(77, 73, 73, 0.692); // Efeito de brilho
-            color: lighten(#3f3f3f, 20%); // Clarear a cor do texto
+        &:focus {
+            border: 2px solid transparent;
+            color: #000000;
+            box-shadow: 3px 3px 10px rgb(26, 26, 26),
+                        -1px -1px 6px rgba(255, 255, 255, 0.4),
+                        inset 3px 3px 10px rgba(0, 0, 0, 1),
+                        inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+        }
+    }
+
+    .input:valid ~ .label,
+    .input:focus ~ .label {
+        transition: 0.3s;
+        padding-left: 2px;
+        transform: translateY(-35px);
+    }
+
+    .input:valid,
+    .input:focus {
+        box-shadow: 3px 3px 10px rgb(71, 71, 71),
+                    -1px -1px 6px rgba(255, 255, 255, 0.4),
+                    inset 3px 3px 10px rgb(71, 71, 71),
+                    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+    }
+
+    .direc {
+        margin-top: -140px;
+    }
+
+    .part3 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; // Adiciona espaço entre os containers
+
+        .input {
+            height: 210px;
+        }
+    }
+
+    .label-data {
+        font-size: 25px;
+        padding-left: 10px;
+        position: absolute;
+        top: -35px;
+        transition: 0.3s;
+        pointer-events: none;
+    }
+
+    .botom {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 60px;
+
+            .button {
+                background-color: rgb(255, 255, 255);
+                box-shadow: 3px 3px 10px rgb(41, 40, 40),
+                            -1px -1px 6px rgba(255, 255, 255, 0.4);			
+                color: #3f3f3f;
+                border-radius: 25px;
+                padding: 10px 7rem; // Corrigido para um padding mais razoável
+                font-size: 28px;
+                text-decoration: none;
+                border: none;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                // Efeitos ao passar o mouse
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.788);
+                    box-shadow: 0 0 15px rgba(158, 152, 152, 0.664), 0 0 30px rgba(77, 73, 73, 0.692); // Efeito de brilho
+                    color: lighten(#3f3f3f, 20%); // Clarear a cor do texto
+                }
+            }
         }
     }
 }
-
-  
-
-
-

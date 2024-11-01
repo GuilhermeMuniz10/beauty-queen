@@ -1,5 +1,5 @@
 import './index.scss';
-import {Link, UseParams, Navigate} from 'react-router-dom'
+import {Link, useParams, Navigate} from 'react-router-dom'
 import React from 'react';
 import axios from 'axios';
 import { useEffect, useState, Hook  } from 'react' 
@@ -138,7 +138,7 @@ async function consultar() {
                 <div className='pgt'>   
                     
                     <div className='nome'>
-                    <h1>Cadastrar Produto</h1>
+                    <h1>Cadastrar Pedido</h1>
                     <hr />
                 </div>
 

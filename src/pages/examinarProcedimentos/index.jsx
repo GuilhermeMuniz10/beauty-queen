@@ -124,12 +124,10 @@ export default function ConsultarProcedimentos() {
                         <tr>
                             <th>ID</th>
                             <th>Nome</th>
-                            <th>Data de Nascimento</th>
-                            <th>Telefone</th>
-                            <th>CPF</th>
-                            <th>Medidas</th>
+                            <th>Nome do Profissional</th>
+                            <th>Preço</th>
+                            <th>Descrição</th>
                             <th>Observações</th>
-                            <th>Email</th>
                             <th>Ações</th>
                         </tr>
                     </thead>
