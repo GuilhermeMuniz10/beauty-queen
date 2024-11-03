@@ -1,78 +1,105 @@
-.pagina-consultar {
-    background-color: #E9DFDD;
-    position: relative;
-    font-family: 'Darker Grotesque';
-    font-weight: 150px;
-    font-size: 21px;
-    height: 100vh; // Garante que a página ocupe a altura total da tela
-
-
+.pagina-consultar {  
+    background-color: #E9DFDD;  
+    position: relative;  
+    font-family: 'Darker Grotesque';  
+    font-weight: bold;  
+    font-size: 16px;  
+    height: 100vh;  
+    box-sizing: border-box;  
+    overflow-x: auto;  
+    
     .menu {
         position: absolute;
         top: 0;
         left: 0;
         width: 25%;
-        height: 100%;
-        background-color: #f6f2f1; // Cor de fundo sólida
-        transform: translateX(-100%); // Esconde o menu inicialmente
+        height: 100vh;
+        background-color: #f6f2f1;
+        transform: translateX(-100%);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-        z-index: 10; // Garante que o menu fique na frente
-
-      
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        overflow-y: auto;
+    
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+    
         .imagem {
-            width: px; // Tamanho da imagem alterado para 65px
+            width: 65px;
             margin-left: 20%;
-            margin-top: -15px;
+            margin-top: 20px;
             margin-bottom: 23px;
-
             transition: opacity 0.3s ease;
-
+    
+            @media (max-width: 768px) {
+                width: 50px;
+                margin-left: 10%;
+            }
+    
             &:hover {
                 opacity: 0.6;
             }
         }
-
+    
         .sair {
             display: flex;
             margin-bottom: 10px;
-
+            align-items: center;
+    
             .sairr {
-                margin-right: 10px;  
+                margin-right: 10px;
                 font-size: 22px;
                 padding: 0;
                 text-align: right;
+    
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
             }
-
+    
             .sair-icon {
                 img {
-                    width: 30px;  
-                    margin: 0;
-                    padding-bottom: 0;
+                    width: 30px;
                     margin-bottom: -8px;
                     transition: opacity 0.3s ease;
-
+    
+                    @media (max-width: 768px) {
+                        width: 25px;
+                    }
+    
                     &:hover {
                         opacity: 0.5;
                     }
                 }
-            }                               
+            }
         }
-
+    
         ul {
-            padding-top: 100px;
+            padding-top: 50px;
             list-style: none;
             padding-left: 0;
-
+    
+            @media (max-width: 768px) {
+                padding-top: 30px;
+            }
+    
             li {
-                padding: 10px 30px;
-
+                padding: 10px 20px;
+    
                 a {
                     text-decoration: none;
                     color: black;
                     font-size: 22px;
                     transition: color 0.3s ease;
-
+    
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
+    
                     &:hover {
                         color: rgb(184, 184, 184);
                     }
@@ -80,72 +107,120 @@
             }
         }
     }
+    
 
+    @media (max-width: 768px) {
+        .menu {
+            width: 50%; // O menu ocupa 50% da largura da tela em dispositivos menores
+        }
+
+        .menu-faketrigger:checked ~ .menu {
+            width: 50%; // Permite que o menu ocupe a tela inteira quando aberto
+        }
+    }
     .menu-faketrigger {
         display: none;
     }
-
+    
     .menu-faketrigger:checked ~ .menu {
-        transform: translateX(0); // Exibe o menu quando checkbox está marcado
+        transform: translateX(0);
         box-shadow: 6px 0 8px rgba(0, 0, 0, 0.3);
     }
-
+    
     .menu-lines {
         position: absolute;
-        z-index: 11; // Garante que o botão de menu fique na frente
+        z-index: 11;
         width: 35px;
         height: 35px;
         cursor: pointer;
-        margin-left: 25px;
-        margin-top: 30px;        
-
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        @media (max-width: 768px) {
+            width: 30px;
+            height: 30px;
+            margin: 15px;
+        }
+    
         span {
             display: block;
             width: 35px;
-            height: 5px;
-            margin-bottom: 6px; 
+            height: 4px;
+            margin-bottom: 6px;
             background-color: #2b2929;
             border-radius: 3px;
             transition: all 0.3s ease;
-
+    
+            @media (max-width: 768px) {
+                width: 50%;
+                height: 3px;
+                margin-bottom: 5px;
+            }
+    
             &:nth-child(1) {
                 transform-origin: left;
             }
-
+    
             &:nth-child(2) {
                 opacity: 1;
             }
-
+    
             &:nth-child(3) {
                 transform-origin: left;
             }
         }
     }
-
-    .menu-faketrigger:checked + .menu-lines span:nth-child(1) {
-        transform: rotate(45deg) translateY(10%);
+    
+    .menu-faketrigger:checked + .menu-lines {
+        span {
+            &:nth-child(1) {
+                transform: rotate(45deg) translateY(10%);
+            }
+    
+            &:nth-child(2) {
+                opacity: 0;
+            }
+    
+            &:nth-child(3) {
+                transform: rotate(-45deg) translateY(-10%);
+            }
+        }
     }
-
-    .menu-faketrigger:checked + .menu-lines span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-faketrigger:checked + .menu-lines span:nth-child(3) {
-        transform: rotate(-45deg) translateY(-10%);
-    }
-
-
-
-    .nome{
-        margin: 10px 0 0 80px; // Simplificado
-        margin-left: 100px;
-        line-height: 25px;
-    }
-
-    hr{
-        width: 1200px;
-        margin-left: 0px;
-    }
+    .nome {  
+     margin: 10px 0 0 80px;  
+     margin-left: 13vh;  
+     line-height: 4vh;  
+     display: flex;  
+     flex-direction: column;  
+     justify-content: center;  
+     padding: 10px;  
+     border-collapse: collapse;  
+     font-size: 16px;  
+     line-height: 1.5;  
+     margin: 0;  
+     overflow-y: auto;  
+    
+     @media (max-width: 768px) {  
+      font-size: 2vh;  
+     }  
+    }  
+    
+    hr {  
+     width: 1200px;  
+     margin-left: 0px;  
+     display: flex;  
+     flex-direction: column;  
+     justify-content: center;  
+     padding: 10px;  
+     border-collapse: collapse;  
+     font-size: 16px;  
+     line-height: 1.5;  
+     margin: 0;  
+     overflow-y: auto;  
+    }  
+    
     .botom {
         background-color: #fff;
         padding: 10px 20px; /* Ajuste para acomodar o ícone e o texto */
@@ -163,42 +238,122 @@
         gap: 8px; /* Espaço entre a lupa e o texto */
         cursor: pointer;
         transition: background-color 0.3s ease;
-    }
+        }
+    .botom:hover {  
+     background-color: rgba(95, 94, 94, 0.87);  
+    }  
     
-    .botom:hover {
-        background-color: rgba(221, 219, 219, 0.807);
-    }
+    .lupa-icon {  
+     font-size: 18px;  
+     color: #3f3f3f;  
+     display: flex;  
+     flex-direction: column;  
+     justify-content: center;  
+     padding: 10px;  
+     border-collapse: collapse;  
+     font-size: 16px;  
+     line-height: 1.5;  
+     margin: 0;  
+     overflow-y: auto;  
+    }  
     
-    .lupa-icon {
-        font-size: 18px; /* Tamanho da lupa */
-        color: #3f3f3f; /* Cor da lupa */
+   
+    table {  
+        width: 100%;  
+        display: table;  
+        table-layout: fixed;  
+        border-collapse: collapse;  
+        display: flex;
+        flex-direction: row;
+        vertical-align: middle;
+        justify-content: center;  
+        padding: 10px;  
+        font-size: 16px;  
+        line-height: 1.5;  
+        margin: 0;  
+        overflow-y: auto;  
+
+        .table-scroll {
+            height: 80%;
+            overflow-y: auto; 
+            padding-right: 20px; 
+        }
+
+        @media (max-width: 768px) {  
+            width: 90%;  
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        } 
+
+        @media (min-width: 768px) {  
+            display: table;
+        }
+    }  
+
+    thead {
+        @media (min-width: 768px) {
+            display: table-header-group;
+            
+            tr {
+                display: table-row;
+            }
+        }
     }
 
     thead th {
-        padding: 10px 20px; /* Adiciona espaçamento nos cabeçalhos */
-        text-align: center; /* Centraliza o texto */
-        vertical-align: middle; /* Alinha verticalmente ao centro */
+        padding: 10px 20px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+
+        @media (min-width: 768px) {
+            display: table-cell; // Isso fará com que fiquem lado a lado
+            font-size: 16px;
+            white-space: nowrap; // Evita quebra de linha
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 12px;
+            padding: 3px;
+        }
     }
 
-    table {
-        width: 100%; /* Faz a tabela ocupar toda a largura disponível */
-        border-collapse: collapse; /* Remove espaçamentos extras das bordas */
+    tr {
+        @media (min-width: 768px) {
+            display: table-row;
+        }
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
-    thead th {
-        padding: 10px 20px; /* Espaçamento horizontal e vertical */
-        text-align: center; /* Centraliza o texto */
-        vertical-align: middle; /* Alinha verticalmente ao centro */
-        background-color: #f0f0f0; /* Cor de fundo opcional para o cabeçalho */
-        font-weight: bold; /* Deixa o texto do cabeçalho em negrito */
+    td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        vertical-align: middle;
+
+        @media (min-width: 768px) {
+            display: table-cell;
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            padding: 8px;
+        }
     }
-
-    tbody td {
-        padding: 10px; /* Espaçamento nas células da tabela */
-        text-align: center; /* Centraliza o texto nas células */
-    }
-    
-    
-
-
 }

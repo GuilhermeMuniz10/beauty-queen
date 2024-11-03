@@ -79,7 +79,7 @@ export default function Login() {
                     <img className='imagem1' src="/assets/images/pessoa.png" alt="Imagem de usuário" />
                     <h1 className='BV'>Bem-vindo de volta</h1>
                     <br />
-                    <p>Esta área é destinada apenas aos administradores do site!</p>
+                    <p className='letra'>Esta área é destinada apenas aos administradores do site!</p>
                 </div>
 
                 <div className='campo'>
@@ -110,7 +110,7 @@ export default function Login() {
                     />
 
 
-                    <span onClick={togglePasswordVisibility} className='eye-icon'>
+                    <span  onClick={togglePasswordVisibility} className='eye-icon'>
                         {showPassword ? <FaEyeSlash /> : <FaEye />}
                     </span>
                 </div>
