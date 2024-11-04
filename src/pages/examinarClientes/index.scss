@@ -284,6 +284,7 @@
             display: block;
             overflow-x: auto;
             white-space: nowrap;
+            margin:15px;
         } 
 
         @media (min-width: 768px) {  
@@ -300,7 +301,8 @@
             }
         }
     }
-
+   
+    
     thead th {
         padding: 10px 20px;
         text-align: center;
