@@ -36,7 +36,7 @@ export default function ConsultarProcedimentos() {
 
              toast(`${resp.data.length} iten(s) encontrado(s)!, { icon: '🔎' }`);
          } catch (error) {
-             toast.error("Erro ao buscar clientes!");
+             toast.error("Erro ao buscar clieprontes!");
          }
      }
 
