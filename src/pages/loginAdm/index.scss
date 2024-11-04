@@ -1,0 +1,387 @@
+    .pagina-home {
+        margin: 0px;
+        background-color: #cab1ac;
+        font-family: 'Darker Grotesque';
+        width: 100vw;
+        height: 100vh;
+        font-weight: 150px;
+        font-size: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+            padding: 100px;
+            width: 60%;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: #e5d8d6;
+            box-shadow: 0px 0px 10px 2px rgb(195, 193, 193);
+        }
+
+        .letra{
+            width: 500px;
+            text-align: center;
+        }
+
+        .imagem1{
+            width: 80px;
+        }
+
+        .IMG {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .BV {
+                font-family: 'Jacques Francois';
+                font-size: xx-large;
+            }
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 480px;
+            margin-bottom: 12px;
+            margin-right: 550px;
+
+            input {
+                font-size: 16px;
+                padding: 6px;
+                margin-top: 8px;
+                width: 90%;
+                border-radius: 8px;
+                border: none;  
+                padding-left: 15px;
+                box-shadow: 0px 0px 10px 2px rgb(195, 193, 193);
+                outline: none;  
+                transition: box-shadow 0.3s ease; 
+            }
+
+
+            input:focus {
+                box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2); // Efeito de foco
+            
+            }
+        }
+
+        .senha {
+            display: flex;
+            position: relative;
+            margin-bottom: 20px;
+
+            input {
+                width: 90%;
+            }
+
+            .eye-icon {
+                position: absolute;
+                right: -28vh;
+                top: 2.8vh;
+                transform: translateY(-50%);
+                cursor: pointer;
+                font-size: 18px;
+                color: #333;
+            }
+        }
+
+        .esqueceu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 57%;
+
+            a {
+                text-decoration: none;
+                color: #131313;
+                position: relative; // Adicione esta linha para posicionar o pseudo-elemento
+                transition: color 0.3s ease; // Adiciona transição suave para a cor
+        
+                &::after {
+                    content: ""; // Necessário para criar o pseudo-elemento
+                    position: absolute; // Posiciona o pseudo-elemento em relação ao link
+                    left: 0; // Alinha à esquerda do link
+                    bottom: -2px; // Ajuste a posição vertical da linha
+                    width: 100%; // Largura da linha igual à do link
+                    height: 1.5px; // Espessura da linha
+                    background-color: #575555; // Cor da linha
+                    transform: scaleX(0); // Inicialmente escondido
+                    transition: transform 0.3s ease; // Transição suave para a linha
+                }
+        
+                &:hover {
+                    color: #575555; // Muda a cor do texto ao passar o mouse
+        
+                    &::after {
+                        transform: scaleX(1); // Faz com que a linha apareça
+                    }
+                }
+            }
+
+            
+        }    
+
+
+        .botom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 2px;
+            margin-top: 50px;
+            background: #2c2c2c;
+            border-radius: 6px;
+            width: 30vh;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            text-decoration: none;
+            position: relative;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            transition: background 0.3s ease, box-shadow 0.3s ease; 
+        
+        
+            &:hover {
+                background: #1d1d1c; 
+                box-shadow: 0 0 10px #1d1d1c, // Sombra externa
+                            0 0 15px #1d1d1c; // Sombra interna
+            }
+        }
+
+        .checkbox-wrapper-30 {
+            height: 37px;
+            display: flex;
+            flex-direction: row;
+            place-items: center;
+
+            .lmb{
+                font-size: 21px;
+                font-weight: 21px;
+            }
+        
+            .checkbox {
+                --bg: transparent;
+                --brdr: rgba(81, 81, 81, 0.678);
+                --brdr-actv: #8f44fd;
+                --brdr-hovr: rgba(255, 255, 255, 0.2);
+                --dur: calc((var(--size, 2) / 2) * 0.6s);
+                display: inline-block;
+                width: calc(var(--size, 1) * 22px);
+                position: relative;
+        
+                &:after {
+                    content: "";
+                    width: 100%;
+                    padding-top: 100%;
+                    display: block;
+                }
+        
+                > * {
+                    position: absolute;
+                }
+        
+                input {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -webkit-tap-highlight-color: transparent;
+                    cursor: pointer;
+                    background-color: var(--bg);
+                    border-radius: calc(var(--size, 1) * 4px);
+                    border: calc(var(--newBrdr, var(--size, 1.4)) * 1px) solid;
+                    color: var(--newBrdrClr, var(--brdr));
+                    outline: none;
+                    margin: 0;
+                    padding: 0;
+                    transition: all calc(var(--dur) / 3) linear;
+        
+                    &:hover,
+                    &:checked {
+                        --newBrdr: calc(var(--size, 1) * 2);
+                    }
+        
+                    &:hover {
+                        --newBrdrClr: var(--brdr-hovr);
+                    }
+        
+                    &:checked {
+                        --newBrdrClr: var(--brdr-actv);
+                        transition-delay: calc(var(--dur) / 1.3);
+                    }
+        
+                    &:checked + svg {
+                        --dashArray: 16 93;
+                        --dashOffset: 109;
+                    }
+                }
+        
+                svg {
+                    fill: none;
+                    left: 0;
+                    pointer-events: none;
+                    stroke: var(--stroke, var(--brdr-actv));
+                    stroke-dasharray: var(--dashArray, 93);
+                    stroke-dashoffset: var(--dashOffset, 94);
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                    top: 0;
+                    transition: stroke-dasharray var(--dur), stroke-dashoffset var(--dur);
+                }
+        
+                svg,
+                input {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        
+            label {
+                margin-left: 10px; // Espaçamento entre o checkbox e o texto
+                color: #333; // Cor do texto
+                cursor: pointer; // Muda o cursor para indicar interatividade
+                font-size: 16px; // Tamanho da fonte
+            }
+        }
+        
+        
+  // Responsividade para telas pequenas
+@media (max-width: 768px) {
+    .login {
+        margin: 30px; /* Diminui a margem */
+        padding: 50px; /* Diminui o padding */
+        width: 70%; /* Ajusta a largura do login */
+    }
+
+    .letra {
+        width: 90%; /* Ajusta a largura para 90% */
+        font-size: 18px; /* Diminui o tamanho da fonte */
+    }
+
+    .imagem1 {
+        width: 70px; /* Diminui o tamanho da imagem */
+    }
+
+    .BV {
+        font-size: large; /* Diminui o tamanho da fonte do título */
+        text-align: center;
+    }
+
+    .campo {
+        width: 80%; /* Ajusta a largura do campo para 80% */
+        margin-right: 0; /* Remove a margem direita */
+
+        input {
+        font-size: 13px; /* Diminui o tamanho da fonte */
+        padding: 5px; /* Diminui o padding */
+        }
+    }
+
+    .senha {
+        .eye-icon {
+            right: 3vh; /* Ajusta a posição do ícone do olho */
+            top: 3.4vh; /* Ajusta a posição vertical */
+            font-size: 16px; /* Diminui o tamanho do ícone */
+        }
+    }
+
+
+    .esqueceu {
+        width: 70%; /* Ajusta a largura para telas menores */
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os itens */
+        justify-content: center; /* Justifica o conteúdo ao centro */
+        font-size: 16px;
+        gap: 5px;
+
+        .lmb{
+            font-size: 18px;
+        }
+        a {
+            margin-bottom: 9px; /* Adiciona margem inferior para espaçamento */
+            font-size: 18px;
+        }
+    }
+
+    .botom {
+        width: 45vw; /* Ajusta a largura para 50% da tela em dispositivos menores */
+        padding-top: 5px; /* Aumenta o padding para melhorar a área clicável */
+        padding-bottom: 5px; /* Aumenta o padding para melhorar a área clicável */
+        font-size: 13px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+        margin-left: 50px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .login {
+        margin: 20px; /* Diminui ainda mais a margem */
+        padding: 30px; /* Diminui o padding ainda mais */
+    }
+
+    .letra {
+        font-size: 16px; /* Diminui o tamanho da fonte ainda mais */
+    }
+
+    .imagem1 {
+        width: 50px; /* Diminui ainda mais o tamanho da imagem */
+    }
+
+    .BV {
+        font-size: medium; /* Diminui o tamanho da fonte do título */
+    }
+
+    .campo {
+        width: 100%; /* Ajusta a largura do campo para 100% */
+        margin-bottom: 10px; /* Ajusta a margem inferior */
+    }
+
+    input {
+        font-size: 12px; /* Diminui ainda mais o tamanho da fonte */
+        padding: 4px; /* Diminui o padding ainda mais */
+    }
+
+    .senha {
+        .eye-icon {
+            right: 3vh; /* Ajusta a posição do ícone do olho */
+            top: 3.4vh; /* Ajusta a posição vertical */
+            font-size: 16px; /* Diminui o tamanho do ícone */
+        }
+    }
+  
+    .esqueceu {
+        width: 70%; /* Ajusta a largura para telas menores */
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os itens */
+        justify-content: center; /* Justifica o conteúdo ao centro */
+        font-size: 16px;
+        gap: 5px;
+
+        .lmb{
+            font-size: 18px;
+        }
+        a {
+            margin-bottom: 9px; /* Adiciona margem inferior para espaçamento */
+            font-size: 18px;
+        }
+    }
+
+    .botom {
+        width: 45vw; /* Ajusta a largura para 50% da tela em dispositivos menores */
+        padding-top: 5px; /* Aumenta o padding para melhorar a área clicável */
+        padding-bottom: 5px; /* Aumenta o padding para melhorar a área clicável */
+        font-size: 13px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+        margin-left: 50px;
+    } 
+    }
+
+    }

@@ -47,7 +47,7 @@ function Paginicio() {
                <div class="botom">
                   <ul>
                      <li>
-                       <Link to='/Login' className='button' >Login</Link>
+                       <Link to='/LoginAdm' className='button' >Login</Link>
                      </li>
                   </ul>
                </div>

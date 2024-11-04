@@ -28,15 +28,15 @@ useEffect(() => {
 
     if (usu === undefined) {
         navigate('/');
-    }
-}, []); // Executado uma vez ao carregar o componente , para salvar o token da localstorage na variavel
+    }else{ consultar();}
+}, []);
 
 
 
 
 async function consultar() {
     if (id !== undefined && token) {
-        const url = `http://localhost:5029/produtos/${id}?x-access-token=${token}`;
+        const url = `http://localhost:5029/produtos/${id}?x-access-token=${localStorage.getItem('TOKEN')}`;
         let resp = await axios.get(url);
         let dados = resp.data;
 
@@ -72,7 +72,7 @@ async function consultar() {
 
             try {
                 if (id === undefined) {
-                    const url = `http://4.172.207.208:5029/produtos/?x-access-token=${token}`;
+                    const url = `http://localhost:5029/produtos/?x-access-token=${token}`;
                     let resp = await axios.post(url, paramCorpo, {
 
                         headers:{
@@ -83,7 +83,7 @@ async function consultar() {
                     });
                     alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
                 } else {
-                    const url = `http://4.172.207.208:5029/produtos/${id}?x-access-token=${token}`;
+                    const url = `http://localhost:5029/produtos/${id}?x-access-token=${token}`;
                     let resp = await axios.put(url, paramCorpo, {
 
                         headers:{

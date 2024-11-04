@@ -29,7 +29,7 @@ useEffect(() => {
         navigate('/');
     } else{ consultar();}
    
-}, []); // Executado uma vez ao carregar o componente , para salvar o token da localstorage na variavel
+}, []); // alteraçoes 16.18 Executado uma vez ao carregar o componente , para salvar o token da localstorage na variavel
 
 
 async function consultar() {
