@@ -4,7 +4,6 @@ import './index.scss';
 import Paginicio from './paginainicial/paginicio';
 import ProdutosCorpo from './produtosCorpo/produto';
 import ProdutosFacial from './produtosFacial/produtoF';
-import Login from './pages/login';
 import EsqueceuSenha from './pages/esqueceuSenha';
 import ValidacaoSenha from './pages/validacaoSenha';
 import RedefinirSenha from './pages/redefinicaoSenha';
@@ -15,6 +14,7 @@ import CadastrarAdmProcedimento from './pages/cadastrarAdmProcedimento';
 import ExaminarClientes from './pages/examinarClientes';
 import CadastrarAdmPedido from './pages/cadastrarAdmPedido';
 import ConsultarProcedimentos from './pages/examinarProcedimentos';
+import LoginAdm from './pages/loginAdm';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ConsultarPedidos from './pages/examinarPedido';
@@ -26,7 +26,6 @@ root.render(
     <BrowserRouter>
       <Routes>
       <Route path='/' element={<Paginicio />}  />
-        <Route path='/Login' element={<Login />}  />
         <Route path='/EsqueceuSenha' element={<EsqueceuSenha />} />
         <Route path='/ValidacaoSenha' element={<ValidacaoSenha />} />
         <Route path='/RedefinirSenha' element={<RedefinirSenha />} />
@@ -43,6 +42,7 @@ root.render(
         <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>    
         <Route path='/ExaminarProcedimento' element={<ConsultarProcedimentos />}/>    
         <Route path='/ExaminarPedidos' element={<ConsultarPedidos />}/>    
+        <Route path='/LoginAdm' element={<LoginAdm />} />
 
 
         {/* <Route path= '/Not' element={<NotFound />} /> */}
