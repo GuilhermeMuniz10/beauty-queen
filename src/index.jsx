@@ -37,6 +37,7 @@ root.render(
         <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>
         <Route path='/ProdutosFacial' element={<ProdutosFacial />}/>
         <Route path='/CadastrarAdmCliente' element={<CadastrarAdmCliente />} />
+        <Route path='/CadastrarAdmCliente/:id' element={<CadastrarAdmCliente />} />
         <Route path='/CadastrarAdmProcediemento' element={<CadastrarAdmProcedimento />} />
         <Route path='/CadastrarAdmPedido' element={<CadastrarAdmPedido />} />
         <Route path='/ExaminarClientes' element={<ExaminarClientes />} />

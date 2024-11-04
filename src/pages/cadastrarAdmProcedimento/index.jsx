@@ -1,5 +1,5 @@
 import './index.scss';
-import {Link, UseParams, Navigate} from 'react-router-dom'
+import {Link, UseParams, useNavigate} from 'react-router-dom'
 import React from 'react';
 import axios from 'axios';
 import { useEffect, useState} from 'react'
@@ -14,7 +14,7 @@ const [preco, setPreco] = useState('');
 const [descricao, setDescricao] = useState('');
 const [observacoes, setObservacoes] = useState('');
 const [id, setId] = useState(undefined);
-
+const navigate = useNavigate
 
 
 
@@ -27,7 +27,7 @@ useEffect(() => {
     setToken(usu);
 
     if (usu === undefined) {
-        Navigate('/');
+        navigate('/');
     }
 }, []); // Executado uma vez ao carregar o componente , para salvar o token da localstorage na variavel
 
@@ -36,7 +36,7 @@ useEffect(() => {
 
 async function consultar() {
     if (id !== undefined && token) {
-        const url = `http://4.172.207.208:5029/produtos/${id}?x-access-token=${token}`;
+        const url = `http://localhost:5029/produtos/${id}?x-access-token=${token}`;
         let resp = await axios.get(url);
         let dados = resp.data;
 
@@ -225,7 +225,7 @@ async function consultar() {
                 <div class="botom">
                   <ul>
                      <li>
-                       <Link to='#' className='button' onClick={Salvar}>Salvar</Link>
+                       <button  className='button' onClick={Salvar}>Salvar</button>
                      </li>
                   </ul>
                </div>

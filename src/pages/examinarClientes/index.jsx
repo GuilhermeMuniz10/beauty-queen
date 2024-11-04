@@ -16,41 +16,42 @@ export default function Consultar() {
     const navigate = useNavigate();
 
 
-//     useEffect(() => {
-//        const token = localStorage.getItem('TOKEN');
-//        setToken(token);
+   useEffect(() => {
+        const token = localStorage.getItem('TOKEN');
+       setToken(token);
 
-//        if (!token || token === 'null') {
-//            navigate('/');
-//        } else {
-//            buscar(); // Carrega os dados assim que o token é confirmado
-//        }
-//    }, [navigate]);
+       if (!token || token === 'null') {
+            navigate('/');
+        } else {
+            buscar(); 
+       }
+    }, [navigate]);
 
 
-//     async function buscar() {
-//         try {
-//             const url = `http://4.172.207.208:5029/cliente?x-access-token=${token}`;
-//             const resp = await axios.get(url);
-//             setClientes(resp.data);
+     async function buscar() {
+         try {
+             const url = `http://localhost:5029/cliente?x-access-token=${token}`;
+             const resp = await axios.get(url);
+           setClientes(resp.data);
 
-//             toast(`${resp.data.length} iten(s) encontrado(s)!, { icon: '🔎' }`);
-//         } catch (error) {
-//             toast.error("Erro ao buscar clientes!");
-//         }
-//     }
+          toast(`${resp.data.length} iten(s) encontrado(s)!, { icon: '🔎' }`);
+        } catch (error) {
+             toast.error("Erro ao buscar clientes!");
+       }
+    }
 
-//     async function excluir(id, nome) {
-//         try {
-//             const url = `http://4.172.207.208:5029/cliente/${id}?x-access-token=${token}`;
-//             await axios.delete(url);
+   async function excluir(id, nome) {
+    alert(id)
+       try {
+         const url = `http://localhost:5029/cliente/${id}?x-access-token=${token}`;
+            await axios.delete(url);
 
-//             await buscar();
-//             toast.success(`${nome} removido da lista de clientes!`);
-//         } catch (error) {
-//             toast.error("Erro ao excluir cliente!");
-//         }
-//     }
+           await buscar();
+           toast.success(`${nome} removido da lista de clientes!`);
+       } catch (error) {
+           toast.error("Erro ao excluir cliente!");
+       }
+    }
 
     
 
@@ -102,7 +103,7 @@ export default function Consultar() {
 
 
                 <div className="acoes">
-            <button className="botom">
+            <button className="botom"  onClick={buscar}  >
                 {/* SVG da Lupa */}
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -145,10 +146,10 @@ export default function Consultar() {
                                 <td>{item.medidas}</td>                                <td>{item.observacoes}</td>
                                 <td>{item.email}</td>
                                 <td className='acoes'>
-                                    <Link to={`/cadastrarAdCliente/${item.id}`}>
+                                    <Link to={`/cadastrarAdmCliente/${item.id}`}>
                                         <i className='fa-solid fa-pencil botao' />
                                     </Link>
-                                    <button  className='botao'>
+                                    <button  className='botao' onClick={excluir}>
                                         <i className='fa-solid fa-trash-can' />
                                     </button>
                                 </td>

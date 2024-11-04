@@ -1,5 +1,5 @@
 import './index.scss';
-import {Link, UseParams, Navigate} from 'react-router-dom'
+import {Link, UseParams, useNavigate, useParams} from 'react-router-dom'
 import React from 'react';
 import axios from 'axios';
 import { useEffect, useState, Hook  } from 'react' 
@@ -15,10 +15,10 @@ const [cpf, setCpf] = useState('');
 const [medidas, setMedidas] = useState('');
 const [observacoes, setObservacoes] = useState('');
 const [email, setEmail] = useState('');
-const [id, setId] = useState(undefined);
+const {id} = useParams();
 
 const [token, setToken] = useState('');
-
+const navigate = useNavigate();
 
 
 useEffect(() => {
@@ -26,14 +26,17 @@ useEffect(() => {
     setToken(usu);
 
     if (usu === undefined) {
-        Navigate('/');
-    }
+        navigate('/');
+    } else{ consultar();}
+   
 }, []); // Executado uma vez ao carregar o componente , para salvar o token da localstorage na variavel
 
 
 async function consultar() {
-    if (id !== undefined && token) {
-        const url = `http://4.172.207.208:5029/cliente/${id}?x-access-token=${token}`;
+    if (id != undefined) {
+        const url = `http://localhost:5029/cliente/${id}?x-access-token=${localStorage.getItem('TOKEN')}`;
+      
+       
         let resp = await axios.get(url);
         let dados = resp.data;
 
@@ -64,7 +67,7 @@ async function consultar() {
     }
 
         let paramCorpo = {
-            "NOME_cliente": nome,
+            "NOME_Cliente": nome,
             "DATA_nascimento":nascimento,
 		"telefone": telefone,
 		"cpf":cpf,
@@ -75,7 +78,7 @@ async function consultar() {
 
                 try {
                     if (id == undefined) {
-                        const url = `http://4.172.207.208:5029:5029/cliente/?x-access-token=${token}`;
+                        const url = `http://localhost:5029/cliente/?x-access-token=${token}`;
                         let resp = await axios.post(url, paramCorpo , {
                             headers : {
                                 'x-acess-token':token
@@ -84,7 +87,8 @@ async function consultar() {
                         });
                         alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
                     } else {
-                        const url = `http://4.172.207.208:5029:5029/cliente/${id}?x-access-token=${token}`;
+                        alert(id)
+                        const url = `http://localhost:5029/cliente/${id}?x-access-token=${token}`;
                         let resp = await axios.put(url, paramCorpo, {
                             headers : {
                                 'x-acess-token':token
@@ -94,6 +98,8 @@ async function consultar() {
                         });
                         alert('Pessoa alterada nos arquivos.');
                     }
+
+                    navigate("/admHome")
                 } catch (err) {
                     alert ('erro ao salvar , verifique se este email já não está cadastrado' + err.message);
                 }
@@ -251,7 +257,7 @@ async function consultar() {
                 <div class="botom">
                   <ul>
                      <li>
-                       <Link to='/admHome' className='button'onClick={Salvar}>Salvar</Link>
+                       <button className='button'onClick={Salvar}>Salvar</button>
                      </li>
                   </ul>
                </div>

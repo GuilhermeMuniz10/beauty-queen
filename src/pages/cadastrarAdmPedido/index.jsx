@@ -1,8 +1,8 @@
 import './index.scss';
-import {Link, useParams, Navigate} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 import React from 'react';
 import axios from 'axios';
-import { useEffect, useState, Hook  } from 'react' 
+import { useEffect, useState, useNavigate  } from 'react' 
 import moment from 'moment';
 
 
@@ -14,7 +14,7 @@ const [qtdProcedimento, setqtdProcedimento] = useState();
 const [id, setId] = useState(undefined);
 
 const [token, setToken] = useState('');
-
+const navigate = useNavigate
 
 
 useEffect(() => {
@@ -22,7 +22,7 @@ useEffect(() => {
     setToken(usu)
 
     if (usu == undefined) {
-        Navigate('/')
+        navigate('/')
     }
 
     consultar();
@@ -30,7 +30,7 @@ useEffect(() => {
 
 async function consultar() {
     if (id !== undefined && token) {
-        const url = `http://4.172.207.208:5029/pedido/${id}?x-access-token=${token}`;
+        const url = `http://localhost:5029/pedido/${id}?x-access-token=${token}`;
         let resp = await axios.get(url);
         let dados = resp.data;
 
@@ -62,7 +62,7 @@ async function consultar() {
 
                 try {
                     if (id == undefined) {
-                        const url = `http://4.172.207.208:5029/pedidos/?x-access-token=${token}`;
+                        const url = `http://localhost:5029/pedidos/?x-access-token=${token}`;
                         let resp = await axios.post(url, paramCorpo, {
                             headers : {
                                 'x-acess-token':token
@@ -71,7 +71,7 @@ async function consultar() {
                         });
                         alert('pedido adicionado aos arquivos. Id: ' + resp.data.novoId);
                     } else {
-                        const url = `http:/4.172.207.208:5029/pedido/${id}?x-access-token=${token}`;
+                        const url = `http:/localhost:5029/pedido/${id}?x-access-token=${token}`;
                         let resp = await axios.put(url, paramCorpo, {
             
                             headers : {
