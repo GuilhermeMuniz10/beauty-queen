@@ -23,7 +23,7 @@ export default function ConsultarProcedimentos() {
         if (!token || token === 'null') {
             navigate('/');
         } else {
-            buscar(); // Carrega os dados assim que o token é confirmado
+            buscar(); 
         }
     }, [navigate]);
 
@@ -36,13 +36,13 @@ export default function ConsultarProcedimentos() {
 
              toast(`${resp.data.length} iten(s) encontrado(s)!, { icon: '🔎' }`);
          } catch (error) {
-             toast.error("Erro ao buscar clieprontes!");
+             toast.error("Erro ao buscar procedimentos!");
          }
      }
 
      async function excluir(id, nome) {
          try {
-            const url = `http://4.172.207.208:5029/cliente/${id}?x-access-token=${token}`;
+            const url = `http://localhost:5029/cliente/${id}?x-access-token=${token}`;
              await axios.delete(url);
 
              await buscar();
@@ -142,7 +142,7 @@ export default function ConsultarProcedimentos() {
                                 <td>{item.medidas}</td>                                <td>{item.observacoes}</td>
                                 <td>{item.email}</td>
                                 <td className='acoes'>
-                                    <Link to={`/cadastrarAdmProcedimente/${item.id}`}>
+                                    <Link to={`/cadastrarAdmProcedimento/${item.id}`}>
                                         <i className='fa-solid fa-pencil botao' />
                                     </Link>
                                     <button  className='botao'
