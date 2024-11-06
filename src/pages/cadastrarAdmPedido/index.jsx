@@ -18,19 +18,18 @@ const navigate = useNavigate
 
 
 useEffect(() => {
-    let usu = localStorage.getItem('TOKEN')
+    const usu = localStorage.getItem('TOKEN')
     setToken(usu)
 
-    if (usu == undefined) {
+    if (usu === undefined) {
         navigate('/')
-    }
+    } else{ consultar();}
 
-    consultar();
 }, [])
 
 async function consultar() {
     if (id !== undefined && token) {
-        const url = `http://localhost:5029/pedido/${id}?x-access-token=${token}`;
+        const url = `http://localhost:5029/pedido/${id}?x-access-token=${localStorage.getItem('TOKEN')}`;
         let resp = await axios.get(url);
         let dados = resp.data;
 

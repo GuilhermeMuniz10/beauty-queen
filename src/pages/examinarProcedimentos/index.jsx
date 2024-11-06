@@ -11,7 +11,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 export default function ConsultarProcedimentos() {
     const [token, setToken] = useState(null);
-    const [clientes, setClientes] = useState([]);
+    const [procedimento, setProcedimento] = useState([]);
 
     const navigate = useNavigate();
 
@@ -32,7 +32,7 @@ export default function ConsultarProcedimentos() {
          try {
              const url = `http://localhost:5029/produto?x-access-token=${token}`;
              const resp = await axios.get(url);
-             setClientes(resp.data);
+             setProcedimento(resp.data);
 
              toast(`${resp.data.length} iten(s) encontrado(s)!, { icon: '🔎' }`);
          } catch (error) {
@@ -133,14 +133,15 @@ export default function ConsultarProcedimentos() {
                     </thead>
 
                     <tbody>
-                       {clientes.map((item) => (
+                       {procedimento.map((item) => (
                             <tr key={item.id}>
                                <td>{item.id}</td>
                                 <td>{item.nome}</td>
-                                <td>{item.telefone}</td>
-                                <td>{item.cpf}</td>
-                                <td>{item.medidas}</td>                                <td>{item.observacoes}</td>
-                                <td>{item.email}</td>
+                                <td>{item.profissional}</td>
+                                <td>{item.preco}</td>
+                                <td>{item.descricao}</td>                             
+                                   <td>{item.observacoes}</td>
+                                
                                 <td className='acoes'>
                                     <Link to={`/cadastrarAdmProcedimento/${item.id}`}>
                                         <i className='fa-solid fa-pencil botao' />

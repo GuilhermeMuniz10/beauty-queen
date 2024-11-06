@@ -28,9 +28,12 @@ export default function ConsultarPedidos() {
 
 
      async function buscar() {
+        //let id = localStorage.getItem('USUARIO')
+        let id = 1
          try {
-             const url = `http://localhost:5029/pedido?x-access-token=${token}`;
+             const url = `http://localhost:5029/pedido/${id}?x-access-token=${token}`;
              const resp = await axios.get(url);
+             console.log(`resposta:`+resp.data);
              setPedidos(resp.data);
 
             toast(`${resp.data.length} iten(s) encontrado(s)!, { icon: '🔎' }`);
@@ -125,7 +128,7 @@ export default function ConsultarPedidos() {
                             <th>Nome do Cliente</th>
                             <th>Nome do Procedimento</th>
                             <th>Quantidade de Procedimentos</th>
-                            <th>Ações</th>
+                            
                         </tr>
                     </thead>
 
@@ -135,15 +138,8 @@ export default function ConsultarPedidos() {
                                <td>{item.id}</td>
                                 <td>{item.nome}</td>
                                 <td>{item.produto}</td>
-                                <td>{item.quantidade}</td>
-                                <td className='acoes'>
-                                    <Link to={`/cadastrarAdmPedido/${item.id}`}>
-                                        <i className='fa-solid fa-pencil botao' />
-                                    </Link>
-                                    <button  className='botao' onClick={excluir}>
-                                        <i className='fa-solid fa-trash-can' />
-                                    </button>
-                                </td>
+                                <td>{item.qtdProcedimento}</td>
+                               
                             </tr>
                         ))}
                     </tbody>

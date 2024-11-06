@@ -1,5 +1,5 @@
 import './index.scss';
-import {Link, UseParams, useNavigate} from 'react-router-dom'
+import {Link, useParams, useNavigate} from 'react-router-dom'
 import React from 'react';
 import axios from 'axios';
 import { useEffect, useState} from 'react'
@@ -13,7 +13,7 @@ const [profissional, setProfissional] = useState('');
 const [preco, setPreco] = useState('');
 const [descricao, setDescricao] = useState('');
 const [observacoes, setObservacoes] = useState('');
-const [id, setId] = useState(undefined);
+const {id} = useParams();
 const navigate = useNavigate
 
 
@@ -35,13 +35,12 @@ useEffect(() => {
 
 
 async function consultar() {
-    if (id !== undefined && token) {
+    if (id != undefined && token) {
         const url = `http://localhost:5029/produtos/${id}?x-access-token=${localStorage.getItem('TOKEN')}`;
         let resp = await axios.get(url);
         let dados = resp.data;
 
-        let data = moment(dados.nascimento).format('YYYY-MM-DD')
-        console.log(data)
+        
 
         setNome(dados.nome)
         setProfissional(dados.profissional)
@@ -81,7 +80,7 @@ async function consultar() {
                         }
 
                     });
-                    alert('Pessoa adicionada nos arquivos. Id: ' + resp.data.novoId);
+                    alert('Procedimento adicionada nos arquivos. Id: ' + resp.data.novoId);
                 } else {
                     const url = `http://localhost:5029/produtos/${id}?x-access-token=${token}`;
                     let resp = await axios.put(url, paramCorpo, {
