@@ -244,7 +244,7 @@ header {
 .NM, .QS {
 	width: 80%;
 	margin: 20px auto;
-	line-height: 25px;
+	line-height: 9px;
 	text-align: center;
 	font-size: 20px;
 	font-family: 'Darker Grotesque';
@@ -256,46 +256,33 @@ header {
 
 
 @media (max-width: 768px) {
-	
-	.NM, .QS {
-		font-size: 18px;
-		width: 60%;
-	}
-
-	.NM {
-		text-align: left;
-		margin-left: 10%;
-	}
-
-	.QS {
-		text-align: right;
+    .historia img {
+        width: 95%;
+        top: -10px; 
 		
-		right: 10%;
-		font-size: 1.5vw;
-		top: 8	0%;
-	}
+    }
+
 }
 
-@media (min-width: 1024px) {
-	.NM, .QS {
-		font-size: 20px;
-		width: 40%;
-		margin: 0;
+@media (max-width: 480px) {
+    .QS {
+		top: 34%;
+        font-size: 1.7vw;
+		left: 40%;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+	.NM {
+		top: 50%;
+		font-size: 1.7vw;
+		right: 40%;
 		
 	}
+}	
 
-	.NM {
-		top: 1030px;
-		left: 10%;
-		text-align: left;
-	}
-
-	.QS {
-		top: 570px;
-		right: 8%;
-		text-align: right;
-	}
-}
 
 
 
@@ -421,30 +408,30 @@ header {
     font-family: 'Darker Grotesque', sans-serif; 
 }
 
-/* Media Queries para ajustes em telas menores */
+
 @media (max-width: 768px) {
     .comeco img {
         width: 95%;
-        top: -10px; /* Menor deslocamento para telas menores */
+        top: -10px; 
 		
     }
 
     .NH, .OC {
-        font-size: 1vw; /* Aumenta o tamanho da fonte em telas menores */
+        font-size: 1vw; 
     }
 }
 
 @media (max-width: 480px) {
     .NH, .OC {
 		top: 133%;
-        font-size: 1.5vw; /* Aumenta ainda mais para telas muito pequenas */
+        font-size: 1.5vw;
     }
 
 
 	@media (max-width: 480px) {
 		.NH {
 			top: 148%;
-			font-size: 1.5vw; /* Aumenta ainda mais para telas muito pequenas */
+			font-size: 1.5vw; 
 		}
 		
 }
