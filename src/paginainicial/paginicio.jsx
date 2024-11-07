@@ -182,7 +182,7 @@ function Paginicio() {
          
 
          <div className='galeria'>
-            <h3>Confira   ——————————————</h3>
+            <div className='direc'><h3>Confira   </h3>———————</div>
             <h1>Nossa Galeria</h1>
          </div>
 
@@ -190,8 +190,9 @@ function Paginicio() {
            <CarrosselGA />
            <CarrosselGB />
            <CarrosselGC />
-          
+
          </div>
+
 
 
          <div className='parcerias'>

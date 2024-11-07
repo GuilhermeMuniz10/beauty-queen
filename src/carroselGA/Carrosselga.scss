@@ -1,112 +1,61 @@
 .unique-carousel-container {
-    position: relative;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .unique-carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px; // Adiciona espaçamento entre as imagens
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;  
+  overflow: hidden; 
 }
 
 .unique-carousel-item img {
-    width: 620px;
-    height: 300px; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Bordas arredondadas */
-    
+  width: 80%; 
+  height:  100%;
+  border-radius: 10px; 
 }
 
 .unique-carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    cursor: pointer;
-    font-size: 40px; /* Tamanho da seta */
-    background: transparent; /* Sem fundo */
-    color: white; /* Cor da seta */
-    z-index: 10;
-    transition: color 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  font-size: 40px; 
+  background: transparent; 
+  color: rgb(146, 146, 146); 
+  z-index: 10;
+  transition: color 0.3s;
 
-    &:hover {
-        color: rgba(255, 255, 255, 0.7); /* Efeito de hover */
-    }
+  &:hover {
+      color: rgba(0, 0, 0, 0.178); 
+  }
 }
 
 .unique-prev {
-    left:10px; /* Ajusta a posição da seta anterior para fora da imagem */
+  left:10px; 
 }
 
 .unique-next {
-    right: 10px; /* Ajusta a posição da seta próxima para fora da imagem */
+  right: 10px; 
 }
 
-/* Media Queries para ajustes específicos */
 @media (max-width: 768px) {
-    .unique-carousel-control {
-        font-size: 30px; /* Tamanho da seta em telas menores */
-    }
+  .unique-carousel-control {
+      font-size: 30px; 
+  }
 
-    .unique-carousel-item {
-        margin: 0 5px; // Menor espaçamento em telas menores
-    }
+  .unique-carousel-item {
+      margin: 0 5px; // Menor espaçamento em telas menores
+  }
 }
 
 @media (max-width: 480px) {
-    .unique-carousel-control {
-        font-size: 25px; /* Tamanho da seta em dispositivos muito pequenos */
-    }
+  .unique-carousel-control {
+      font-size: 25px; 
+  }
 }
-
-
-@media (max-width: 1024px) {
-    .unique-carousel-item img {
-      width: 500px;
-      height: auto; /* Mantém a proporção ao reduzir a largura */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .unique-carousel-item img {
-      width: 350px;
-      height: auto;
-    }
-    .unique-carousel-item {
-      margin: 0 5px; /* Ajuste de margem menor em telas médias */
-    }
-    .unique-carousel-control {
-      font-size: 30px; /* Reduz o tamanho das setas */
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .unique-carousel-item img {
-      width: 280px;
-      height: auto;
-    }
-    .unique-carousel-control {
-      font-size: 25px;
-      left: 5px; /* Ajusta a posição da seta anterior */
-      right: 5px; /* Ajusta a posição da seta próxima */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .unique-carousel-item img {
-      width: 200px;
-      height: auto;
-    }
-    .unique-carousel-control {
-      font-size: 20px; /* Tamanho das setas para dispositivos muito pequenos */
-    }
-  }
-
-
-
-
-
-
-
-
-
-  
