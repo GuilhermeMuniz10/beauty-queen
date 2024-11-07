@@ -437,6 +437,125 @@ header {
 		margin-bottom: 28px;
 	}
 
+	@media (max-width: 1024px) {
+
+		.txt{
+			display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: #C8A19D;
+		padding: 20px;
+		color: white;
+		border-radius: 25px;
+		margin-left: 10px;
+		gap: 30px;
+		}
+		/* Para telas menores que 1024px (ex: tablets) */
+		.estre {
+			font-size: 18px; /* Diminui o tamanho das estrelas */
+		}
+	
+		.N {
+			font-size: 22px; /* Diminui o tamanho da fonte de "nossos" */
+		}
+	
+		.S {
+			font-size: 40px; /* Diminui o tamanho da fonte de "Serviços" */
+			margin-top: 20px;
+			margin-bottom: 22px;
+		}
+	
+		.P {
+			font-size: 16px; /* Diminui o tamanho da linha de separação */
+		}
+	}
+	
+	@media (max-width: 768px) {
+		/* Para telas pequenas (ex: smartphones) */
+
+		.txt{
+			display: flex;
+		flex-direction: row;
+		justify-content: center;
+		background-color: #C8A19D;
+		padding: 20px;
+		color: white;
+		border-radius: 25px;
+		width: 260px;
+		margin-left: 50px;
+		gap: 30px;
+		}
+
+		.estre {
+			font-size: 16px; /* Diminui ainda mais o tamanho das estrelas */
+		}
+	
+		.N {
+			font-size: 20px; /* Diminui o tamanho da fonte de "nossos" */
+		}
+	
+		.S {
+			font-size: 35px; /* Diminui o tamanho da fonte de "Serviços" */
+			margin-top: 18px;
+			margin-bottom: 20px;
+		}
+	
+		.P {
+			font-size: 14px; /* Diminui a linha de separação ainda mais */
+		}
+	
+		.texto {
+			margin: 10px 0; /* Reduz a margem do texto */
+		}
+	
+		.estrelinha {
+			margin-bottom: 10px; /* Diminui a distância entre as estrelas */
+		}
+	}
+	
+	@media (max-width: 480px) {
+
+		.txt{
+			display: flex;
+		flex-direction: row;
+		justify-content: center;
+		background-color: #C8A19D;
+		padding: 20px;
+		color: white;
+		border-radius: 25px;
+		width: 260px;
+		margin-left: 50px;
+		margin-right: 50px;
+		gap: 30px;
+		}
+		/* Para dispositivos muito pequenos (ex: smartphones em modo retrato) */
+		.estre {
+			font-size: 14px; /* Diminui o tamanho das estrelas */
+		}
+	
+		.N {
+			font-size: 18px; /* Diminui o tamanho de "nossos" */
+		}
+	
+		.S {
+			font-size: 30px; /* Diminui o tamanho de "Serviços" */
+			margin-top: 15px;
+			margin-bottom: 18px;
+		}
+	
+		.P {
+			font-size: 12px; /* Diminui a linha de separação ainda mais */
+		}
+	
+		.texto {
+			margin: 5px 0; /* Reduz a margem do texto */
+		}
+	
+		.estrelinha {
+			margin-bottom: 5px; /* Diminui ainda mais a distância entre as estrelas */
+		}
+	}
+
 	.conteiner {
 		display: flex;
 		flex-direction: column;
@@ -479,12 +598,7 @@ header {
 
 
 @media (max-width: 1024px) {
-    .servico .txt {
-        margin: 40px 50px; /* Reduzindo margens para telas médias */
-        padding: 20px;
-        flex-direction: column; /* Coloca o layout em coluna para melhor ajuste */
-        align-items: center;
-    }
+
 
     .servico .imgs {
         flex-direction: column; /* Imagens ficam em coluna em telas médias */
@@ -496,21 +610,9 @@ header {
         width: 200px; /* Reduzindo o tamanho das imagens */
     }
 
-    .servico .S {
-        font-size: 40px; /* Reduzindo o tamanho da fonte dos títulos */
-    }
-
-    .servico .N {
-        font-size: 22px; /* Ajustando o tamanho da fonte */
-    }
 }
 
 @media (max-width: 768px) {
-    .servico .txt {
-        margin: 20px; /* Margens menores em telas pequenas */
-        padding: 10px;
-        flex-direction: column; /* Garantindo a organização em coluna */
-    }
 
     .servico .imgs {
         gap: 30px; /* Reduz ainda mais o espaço entre as imagens */
@@ -520,13 +622,6 @@ header {
         width: 150px; /* Diminuindo ainda mais as imagens para telas pequenas */
     }
 
-    .servico .S {
-        font-size: 30px; /* Fonte menor em telas pequenas */
-    }
-
-    .servico .N {
-        font-size: 18px; /* Ajuste para texto menor */
-    }
 }
 
 
@@ -571,7 +666,34 @@ header {
 
 
 	  
-
+	@media screen and (max-width: 767px) {
+		.N {
+			font-size: 24px; /* Reduz o tamanho da fonte de "NOSSAS" em telas pequenas */
+		}
+	
+		.P {
+			font-size: 36px; /* Reduz o tamanho da fonte de "Parcerias" em telas pequenas */
+		}
+	
+		.txt {
+			margin: 10px; /* Reduz a margem para dispositivos menores */
+		}
+	}
+	
+	/* Telas médias (como tablets) */
+	@media screen and (max-width: 1024px) {
+		.N {
+			font-size: 26px; /* Ajusta o tamanho da fonte de "NOSSAS" para tablets */
+		}
+	
+		.P {
+			font-size: 42px; /* Ajusta o tamanho da fonte de "Parcerias" para tablets */
+		}
+	
+		.txt {
+			margin: 15px; /* Ajusta a margem para dispositivos de tamanho médio */
+		}
+	}
 }
 
 
@@ -661,3 +783,104 @@ footer {
 }
 
 
+.separa {
+    color: #D6B686;
+}
+
+.direc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.galeria h1 {
+   position: relative;
+   left: 10px;
+   font-size: 35px;
+}
+
+.galeria h3{
+    font-size: 22px;
+    margin-left: 10px;
+    color: #B08F63;
+}
+
+.galeria{
+    margin-bottom: 70px;
+    margin-left: 50px;
+    font-family: 'inter';
+    line-height: 5px;
+}
+.carrosselGS{
+    margin-bottom: 60px;
+}
+
+.separa{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 80px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Telas pequenas (como celulares) */
+@media screen and (max-width: 767px) {
+    .galeria {
+        margin-left: 20px; /* Diminui a margem à esquerda */
+    }
+
+    .galeria h1 {
+        font-size: 28px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .galeria h3 {
+        font-size: 18px; /* Reduz o tamanho da fonte do subtítulo */
+    }
+
+    .direc {
+        flex-direction: column; /* Torna o layout da galeria vertical em telas menores */
+        gap: 15px; /* Reduz o espaço entre os itens */
+    }
+
+    .separa {
+        font-size: 60px; /* Diminui o tamanho do ícone separador */
+    }
+
+    .carrosselGS {
+        margin-bottom: 40px; /* Diminui a margem inferior no carrossel */
+    }
+}
+
+/* Telas médias (como tablets) */
+@media screen and (max-width: 1024px) {
+    .galeria {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		margin-left: -7px;
+    }
+
+    .galeria h1 {
+        font-size: 32px; /* Ajusta o tamanho do título */
+		margin-top: 40px;
+    }
+
+    .galeria h3 {
+        font-size: 20px; /* Ajusta o tamanho do subtítulo */
+		margin-left: 0px;
+    }
+
+    .direc {
+        gap: 0px; /* Reduz o espaço entre os itens */
+    }
+
+    .separa {
+        font-size: 70px; /* Ajusta o ícone separador */
+    }
+
+    .carrosselGS {
+        margin-bottom: 50px; /* Ajusta a margem inferior no carrossel */
+    }
+}
