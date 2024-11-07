@@ -20,7 +20,7 @@ function Paginicio() {
 
 
          <header>
-
+            
             <nav className='links'>
 
                <img src="/assets/images/logoBQ.png" alt="Descrição da Imagem" class="imagem-opaca" />
