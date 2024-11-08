@@ -227,7 +227,7 @@ function Paginicio() {
     </div>
 
          <div className='funcio'>
-            <h2>Horario de funcionamento: <br /> ———————————</h2>
+            <h2>Horario de funcionamento: <br />  ____________</h2>
             <h3> Segunda á sexta: 8:00 ás 20:00hs <br /> Sábado: 9:00 ás 15:00 </h3>
          </div>
          
@@ -240,7 +240,7 @@ function Paginicio() {
          </div>
 
          <footer>
-            <h1>Site desenvolvido pela agência VeloxBity</h1>
+            <h1>Site desenvolvido pela agência VeloxByte</h1>
          </footer>
 
 

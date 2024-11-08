@@ -206,7 +206,7 @@ header {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .historia img {
         width: 95%;
         top: -10px; 
@@ -216,7 +216,7 @@ header {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .QS {
 		top: 59.5%;
         font-size: 3.5vw;
@@ -227,7 +227,7 @@ header {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
 	.NM {
 		top: 41%;
 		font-size: 3.5vw;
@@ -340,7 +340,7 @@ header {
     width: 90%; 
     max-width: 800vh;
     top: -60px;
-	opacity: 0;
+	
 }
 
 .NH {
@@ -364,11 +364,11 @@ header {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .comeco img {
         width: 95%;
         top: -10px; 
-		
+		opacity: 0;
     }
 
     .NH, .OC {
@@ -376,18 +376,18 @@ header {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .OC {
-		top: 143%;
+		top: 145%;
 		font-size: 3.5vw;
 		left: 23%;
 		line-height: 13px;
     }
 
 
-	@media (max-width: 767px) {
+	@media (max-width: 480px) {
 		.NH {
-		top: 156%;
+		top: 161%;
 		font-size: 3.2vw;
 		right: 21%;
 		line-height: 13px;
@@ -725,6 +725,15 @@ header {
 	position: relative;
 	left: 900px;
 	top: -148px;
+	font-family: 'Darker Grotesque';
+}
+
+@media (max-width:  768px) {
+	.funcio{
+		left: 48%;
+		font-size: 3vw;
+		top: -21px;
+	}
 }
 
 
@@ -742,9 +751,9 @@ header {
 @media (max-width: 768px) {
 	.redes .wt {
 		left: 10%;
-		width: 7%;
+		width: 6%;
 		height: auto;
-		top: 23px;
+		top: 70px;
 	}
 }
 
@@ -758,9 +767,9 @@ header {
 @media (max-width: 768px) {
 	.redes .fa {
 		left: 10%;
-		width: 7%;
+		width: 6%;
 		height: auto;
-		top: 50px;
+		top: 65px;
 	}
 }
 
@@ -805,13 +814,23 @@ header {
 	height: 100%;
 }
 
+@media (max-width: 767px){
+	.mapBox {
+		width: 90vw;
+		height: 50vw;
+		left: 5%;
+		top: -110px;
+		
+	}
+}
+
 
 
 footer {
 	background-color: #C8A19D;
     text-align: center;
     margin-top: 50px;
-	
+	font-family: 'Darker Grotesque';
 }
 
 .separa {
