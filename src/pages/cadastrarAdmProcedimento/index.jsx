@@ -8,7 +8,7 @@ import moment from 'moment';
 
 export default function CadastrarAdmProcedimento() {
 
-const [nome, setNome] = useState('');
+const [procedimento, setNome] = useState('');
 const [profissional, setProfissional] = useState('');
 const [preco, setPreco] = useState('');
 const [descricao, setDescricao] = useState('');
@@ -42,7 +42,7 @@ async function consultar() {
 
         
 
-        setNome(dados.nome)
+        setNome(dados.procedimento)
         setProfissional(dados.profissional)
         setPreco(dados.preco)
         setDescricao(dados.descricao)    
@@ -61,7 +61,7 @@ async function consultar() {
             return;
         }
         let paramCorpo = {
-            "nm_procedimento": nome,
+            "nm_procedimento": procedimento,
             "nm_profissional": profissional,
             "preco": preco,
             "descricao": descricao,
@@ -82,6 +82,7 @@ async function consultar() {
                     });
                     alert('Procedimento adicionada nos arquivos. Id: ' + resp.data.novoId);
                 } else {
+                    alert (id)
                     const url = `http://localhost:5029/produtos/${id}?x-access-token=${token}`;
                     let resp = await axios.put(url, paramCorpo, {
 
@@ -158,7 +159,7 @@ async function consultar() {
                             required 
                             type="text" 
                             name="text" 
-                            value={nome}
+                            value={procedimento}
                             onChange={e => setNome(e.target.value)}
                             className="input" 
                             /> 

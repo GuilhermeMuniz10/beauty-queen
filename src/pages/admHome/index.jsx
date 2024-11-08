@@ -52,8 +52,8 @@ export default function AdmHome() {
                 </div>
 
                 <div className='botoes'>
-                    <a href="#"><img className='imagem' src="/assets/images/pasta.png" alt="" /></a>
-                    <a href="#">Examinar cliente</a>
+                    <a href="/ExaminarClientes"><img className='imagem' src="/assets/images/pasta.png" alt="" /></a>
+                    <a href="/ExaminarClientes">Examinar cliente</a>
                 </div>
 
 

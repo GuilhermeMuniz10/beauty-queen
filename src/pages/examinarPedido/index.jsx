@@ -28,10 +28,10 @@ export default function ConsultarPedidos() {
 
 
      async function buscar() {
-        //let id = localStorage.getItem('USUARIO')
-        let id = 1
+        let id = localStorage.getItem('USUARIO')
+       
          try {
-             const url = `http://localhost:5029/pedido/${id}?x-access-token=${token}`;
+             const url = `http://localhost:5029/pedido/?x-access-token=${token}`;
              const resp = await axios.get(url);
              console.log(`resposta:`+resp.data);
              setPedidos(resp.data);

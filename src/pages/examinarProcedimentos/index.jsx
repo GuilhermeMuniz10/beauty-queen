@@ -136,7 +136,7 @@ export default function ConsultarProcedimentos() {
                        {procedimento.map((item) => (
                             <tr key={item.id}>
                                <td>{item.id}</td>
-                                <td>{item.nome}</td>
+                                <td>{item.procedimento}</td>
                                 <td>{item.profissional}</td>
                                 <td>{item.preco}</td>
                                 <td>{item.descricao}</td>                             
