@@ -332,21 +332,21 @@ header {
 
 .NH {
     position: absolute;
-    top: 340%;
+    top: 255%;
     right: 8%;
     line-height: 1.5;
     text-align: center;
-    font-size: 1.4vw; 
+    font-size: 1.6vw; 
     font-family: 'Darker Grotesque', sans-serif; 
 }
 
 .OC {
     position: absolute;
-    left: 13%;  
-    top: 290%; 
+    left: 12%;  
+    top: 220%; 
     line-height: 1.5; 
     text-align: center;
-    font-size: 1.4vw; 
+    font-size: 1.6vw; 
     font-family: 'Darker Grotesque', sans-serif; 
 }
 
@@ -358,25 +358,23 @@ header {
 		opacity: 0;
     }
 
-    .NH, .OC {
-        font-size: 1vw; 
-    }
+   
 }
 
 @media (max-width: 480px) {
     .OC {
-		top: 145%;
-		font-size: 3.5vw;
-		left: 23%;
+		top: 215%;
+		font-size: 2.7vw;
+		left: 50%;
 		line-height: 13px;
     }
 
 
 	@media (max-width: 480px) {
 		.NH {
-		top: 161%;
-		font-size: 3.2vw;
-		right: 21%;
+		top: 190%;
+		font-size: 2.2vw;
+		left: -30%;
 		line-height: 13px;
 		}
 		
