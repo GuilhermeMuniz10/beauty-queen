@@ -149,10 +149,11 @@ header {
 
 
 .historia {
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 30px;
 }
 
 .historia img {
@@ -168,40 +169,65 @@ header {
 	font-size: 20px;
 	font-family: 'Darker Grotesque';
 	position: absolute;
+// sbd
 	
 }
 
 .NM {
-	left: 8%;
-	top: 150%;
+	left: 1%;
+	top: 250%;
+	margin-top: 80px;
 }
 
 .QS {
-	right: 7%;
-	top: 95%;
+	right: 1%;
+	top: 110%;
+	margin-top: 70px;
 }
 
+@media (min-width: 1024px) {
+    .NM, .QS {
+        line-height: 1.8; /* Ajuste a altura da linha */
+        font-size: 1.3vw; /* Fonte escalável para telas maiores */
+        text-align: center;
+        font-family: 'Darker Grotesque', sans-serif;
+    }
 
+    .NM {
+        left: 10%; /* Ajuste de margem à esquerda */
+        top: 120%; /* Ajuste de posição vertical para a tela maior */
+        margin-top: 20px;
+    }
 
-@media (min-width: 1440px) {
-	.NM {
-		top: 140%;
-		font-size: 1.2vw;
-		right: 55%;
-		line-height: 25px;
-		
-	}
-}	
+    .QS {
+        right: 2%; /* Ajuste de margem à direita */
+        top: 70%; /* Ajuste de posição vertical */
+        margin-top: 30px;		
+		width: 500px;
 
-@media (min-width: 1440px) {
-	.QS {
-		top: 80%;
-		font-size: 1.2vw;
-		left: 55%;
-		line-height: 25px;
-		
-	}
-}	
+    }
+}
+
+@media (min-width: 1920px) {
+    .NM, .QS {
+        line-height: 2; /* Ajusta a altura da linha para mais espaçamento */
+        font-size: 1.0vw; /* Fonte proporcional para Full HD */
+        text-align: center;
+        font-family: 'Darker Grotesque', sans-serif;
+    }
+
+    .NM {
+        left: 15%; /* Ajuste de margem à esquerda para mais centralização */
+        top: 160%; /* Posição vertical ajustada para tela Full HD */
+        margin-top: 100px; /* Ajuste de espaçamento */
+    }
+
+    .QS {
+        right: 15%; /* Ajuste de margem à direita */
+        top: 60%; /* Posição vertical ajustada */
+        margin-top: 30px; /* Ajuste de espaçamento */
+    }
+}
 
 
 
@@ -347,7 +373,7 @@ header {
 
 .NH {
     position: absolute;
-    top: 255%;
+    top: 310%;
     right: 8%;
     line-height: 1.5;
     text-align: center;
@@ -358,7 +384,7 @@ header {
 .OC {
     position: absolute;
     left: 12%;  
-    top: 220%; 
+    top: 250%; 
     line-height: 1.5; 
     text-align: center;
     font-size: 1.6vw; 
@@ -376,28 +402,97 @@ header {
    
 }
 
+@media (min-width: 1024px) {
+    .comeco img {
+		width: 1800px;
+        max-width: 1200px; /* Limita o tamanho máximo da imagem */
+        left: 3%;
+        top: -50px;
+    }
+
+    .NH {
+        top: 275%; /* Ajusta a posição vertical para telas grandes */
+        right: 6%;
+        font-size: 1.5vw; /* Reduz a fonte para melhor proporção em tela maior */
+        text-align: center;
+    }
+
+    .OC {
+        top: 235%; /* Ajusta a posição vertical */
+        left: 12%;
+        font-size: 1.5vw; /* Fonte reduzida para se adequar */
+        text-align: center;
+    }
+}
+
+
 @media (max-width: 480px) {
     .OC {
-		top: 215%;
+		top: 162%;
 		font-size: 2.7vw;
-		left: 50%;
+		left: 42.5%;
 		line-height: 13px;
+		background-color: #a9777296;
+		width: 190px;
+		border-radius: 3px;
+		text-align: end;
+		padding-right: 15px;
+		box-shadow: 3px 2px 1.5px 3px #9d93934a;
     }
 
 
 	@media (max-width: 480px) {
 		.NH {
-		top: 190%;
+		background-color: #a97772;
+		box-shadow: -3px 1px 1.5px 3px #9d93934a;
+		top: 144%;
 		font-size: 2.2vw;
-		left: -30%;
+		left: 6%;
 		line-height: 13px;
+		border-radius: 3px;
+		width: 190px;
+		text-align: left;
+		padding-left: 15px;
 		}
 		
 }
 }
 
+/* Responsividade para telas de aproximadamente 360x800 pixels */
+@media (max-width: 360px) {
+    .comeco img {
+        width: 100%; /* Ocupa toda a largura da tela */
+        top: -5px; /* Ajusta a posição vertical */
+        left: 0; /* Centraliza na tela */
+        opacity: 0; /* Garante visibilidade */
+    }
 
+    .NH {
+        background-color: #a97772;
+		box-shadow: -3px 1px 1.5px 3px #9d93934a;
+		top: 137%;
+		font-size: 2.2vw;
+		left: 5%;
+		line-height: 13px;
+		border-radius: 3px;
+		width: 190px;
+		text-align: left;
+		padding-left: 15px;
+    }
 
+    .OC {
+		top: 155%;
+		font-size: 2.7vw;
+		left: 40%;
+		line-height: 13px;
+		background-color: #a9777296;
+		width: 190px;
+		border-radius: 3px;
+		text-align: end;
+		padding-right: 15px;
+		box-shadow: 3px 2px 1.5px 3px #9d93934a;
+    }
+}
 
 
 
