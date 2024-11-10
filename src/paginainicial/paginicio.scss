@@ -144,10 +144,6 @@ header {
   
  
 
-
-
-
-
 .historia {
 	margin-bottom: 30px;
 	display: flex;
@@ -162,49 +158,25 @@ header {
 	margin: 0 auto;
 }
 
-.NM, .QS {
-	
-	line-height: 25px;
-	text-align: center;
-	font-size: 20px;
-	font-family: 'Darker Grotesque';
-	position: absolute;
-// sbd
-	
-}
 
-.NM {
-	left: 1%;
-	top: 250%;
-	margin-top: 80px;
-}
-
-.QS {
-	right: 1%;
-	top: 110%;
-	margin-top: 70px;
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 781px) and (max-width: 1366px) {
     .NM, .QS {
         line-height: 1.8; /* Ajuste a altura da linha */
         font-size: 1.3vw; /* Fonte escalável para telas maiores */
         text-align: center;
         font-family: 'Darker Grotesque', sans-serif;
+		position: absolute;
     }
 
     .NM {
         left: 10%; /* Ajuste de margem à esquerda */
-        top: 120%; /* Ajuste de posição vertical para a tela maior */
-        margin-top: 20px;
+        top: 165%; /* Ajuste de posição vertical para a tela maior */
     }
 
     .QS {
         right: 2%; /* Ajuste de margem à direita */
-        top: 70%; /* Ajuste de posição vertical */
-        margin-top: 30px;		
-		width: 500px;
-
+        top: 95%; /* Ajuste de posição vertical */	
+		
     }
 }
 
@@ -247,6 +219,9 @@ header {
         font-size: 3.5vw;
 		left: 8%;
 		line-height: 13px;
+		position: absolute;
+		font-family: 'Darker Grotesque';
+		text-align: center;
     }
 
 
@@ -261,6 +236,8 @@ header {
 		background-color: #ffffffc2;
 		box-shadow: 0px 0px 2px 4px rgba(0, 0, 0, 0.089);
 		border-radius: 15px;
+		position: absolute;
+		font-family: 'Darker Grotesque';
 	}
 }	
 
@@ -371,25 +348,9 @@ header {
 	
 }
 
-.NH {
-    position: absolute;
-    top: 310%;
-    right: 8%;
-    line-height: 1.5;
-    text-align: center;
-    font-size: 1.6vw; 
-    font-family: 'Darker Grotesque', sans-serif; 
-}
 
-.OC {
-    position: absolute;
-    left: 12%;  
-    top: 250%; 
-    line-height: 1.5; 
-    text-align: center;
-    font-size: 1.6vw; 
-    font-family: 'Darker Grotesque', sans-serif; 
-}
+
+
 
 
 @media (max-width: 480px) {
@@ -402,28 +363,29 @@ header {
    
 }
 
-@media (min-width: 1024px) {
-    .comeco img {
-		width: 1800px;
-        max-width: 1200px; /* Limita o tamanho máximo da imagem */
-        left: 3%;
-        top: -50px;
+
+@media (min-width: 781px) and (max-width: 1366px) {
+    .NH, .OC {
+        line-height: 1.8; /* Ajuste a altura da linha */
+        font-size: 1.3vw; /* Fonte escalável para telas maiores */
+        text-align: center;
+        font-family: 'Darker Grotesque', sans-serif;
+		position: absolute;
     }
 
     .NH {
-        top: 275%; /* Ajusta a posição vertical para telas grandes */
-        right: 6%;
-        font-size: 1.5vw; /* Reduz a fonte para melhor proporção em tela maior */
-        text-align: center;
+		right: 13%;
+       /* Ajuste de margem à esquerda */
+        top: 370%; /* Ajuste de posição vertical para a tela maior */
     }
 
     .OC {
-        top: 235%; /* Ajusta a posição vertical */
-        left: 12%;
-        font-size: 1.5vw; /* Fonte reduzida para se adequar */
-        text-align: center;
+		left: 15%;  /* Ajuste de margem à direita */
+        top: 315%; /* Ajuste de posição vertical */	
+		
     }
 }
+
 
 
 @media (max-width: 480px) {
@@ -438,6 +400,8 @@ header {
 		text-align: end;
 		padding-right: 15px;
 		box-shadow: 3px 2px 1.5px 3px #9d93934a;
+		font-family: 'Darker Grotesque', sans-serif; 
+		position: absolute;
     }
 
 
@@ -453,6 +417,8 @@ header {
 		width: 190px;
 		text-align: left;
 		padding-left: 15px;
+		font-family: 'Darker Grotesque', sans-serif; 
+		position: absolute;
 		}
 		
 }
