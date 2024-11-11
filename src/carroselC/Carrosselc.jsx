@@ -29,25 +29,28 @@ const CarrosselC = () => {
                 infinite
                 disableDotsControls
                 autoPlay
-                autoPlayInterval={3000}
+                autoPlayInterval={2000}
             >
                 <div className="carousel-slide">
-                    <img src="/assets/images/carros1.png" alt="Imagem 1" />
+                    <img src="/assets/images/image6.webp" alt="Imagem 4" />
                 </div>
                 <div className="carousel-slide">
-                    <img src="/assets/images/carros2.png" alt="Imagem 2" />
+                    <img src="/assets/images/image8.webp" alt="Imagem 3" />
                 </div>
                 <div className="carousel-slide">
-                    <img src="/assets/images/carros3.png" alt="Imagem 3" />
+                    <img src="/assets/images/image5.webp" alt="Imagem 2" />
                 </div>
                 <div className="carousel-slide">
-                    <img src="/assets/images/carros4.png" alt="Imagem 4" />
+                    <img src="/assets/images/image11.webp" alt="Imagem 1" />
+                </div>      
+                <div className="carousel-slide">
+                    <img src="/assets/images/image12.webp" alt="Imagem 6" />
                 </div>
                 <div className="carousel-slide">
-                    <img src="/assets/images/carros5.png" alt="Imagem 5" />
+                    <img src="/assets/images/image13.webp" alt="Imagem 7" />
                 </div>
                 <div className="carousel-slide">
-                    <img src="/assets/images/carros6.png" alt="Imagem 6" />
+                    <img src="/assets/images/image10.webp" alt="Imagem 5" />
                 </div>
             </AliceCarouselC>
         </div>

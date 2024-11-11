@@ -1,36 +1,53 @@
-header {
-	background: #C59E9A;
-	padding: 8px 0;
-	height: 75px;
-}
-
-.links {
+/* Estilos do cabeçalho */
+.header {
+	position: fixed;
+	top: -120px; /* Fica fora da tela no início */
+	left: 0;
+	width: 100%;
+	background-color: #C59E9A; /* Cor de fundo */
+	padding: 10px;
+	transition: top 0.3s ease-in-out; /* Transição suave para aparecer */
+	z-index: 1000; /* Garante que o cabeçalho fique por cima de outros elementos */
+	color: #ede7e5; /* Cor do texto */
+	box-shadow: 5px 0px 3px 6px rgba(0, 0, 0, 0.26);
+  }
+  
+  /* Quando o cabeçalho estiver visível */
+  .header.visible {
+	top: 0; /* Cabeçalho aparece ao rolar */
+  }
+  
+  /* Estilos para a navegação */
+  .links {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 90PX		;
 	margin: 0 50px;
 	font-family: 'Darker Grotesque';
-}
-
-.links ul {
+  }
+  
+  .links ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 4rem; /* reduzido para caber em telas menores */
+	gap: 4rem; /* Reduzido para telas menores */
 	list-style: none;
 	margin: 0;
 	padding: 0;
-}
-
-.Link {
+  }
+  
+  .Link {
 	text-decoration: none;
 	color: #ede7e5;
-	font-size: 24px; /* tamanho da fonte reduzido para telas menores */
+	font-size: 24px; /* Tamanho da fonte */
 	padding: 0.2rem;
 	position: relative;
-}
-
-.Link::before {
+	transition: color 0.3s ease;
+  }
+  
+  /* Linha animada ao passar o mouse */
+  .Link::before {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -41,51 +58,74 @@ header {
 	left: 0;
 	transform: scaleX(0);
 	transition: all 0.4s ease;
-}
-
-.Link:hover::before {
+  }
+  
+  .Link:hover::before {
 	transform: scaleX(1);
-}
-
-.botomP ul, .botom ul {
+  }
+  
+  /* Botões no cabeçalho */
+  .botomP ul, .botom ul {
 	display: flex;
 	align-items: center;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-}
-
-.buttonP, .button {
-	font-size: 20px; /* ajustado para telas menores */
+  }
+  
+  .butonP, .buton {
+	font-size: 20px; /* Ajustado para telas menores */
 	color: #ede7e5;
 	text-decoration: none;
 	cursor: pointer;
 	transition: background 0.3s ease;
 	position: relative;
-}
-
-.button {
+  }
+  
+  .buton {
 	background: #E9DFDD;
 	color: #744540;
-	border-radius: 10px;
-	padding: 0.2rem 0.8rem;
+	border-radius: 50px;
+	padding: 0.5rem 1.1rem;
 	padding-top: 1px;
 	padding-bottom: 3px;
 	border: none;
-}
-
-.button:hover {
+	font-size: 23px;
+  }
+  
+  .buton:hover {
 	background: transparent;
-}
-
-.imagem-opaca {
+  }
+  
+  /* Estilo do pseudo-elemento para a linha */
+  .buton::before {
+	content: ''; /* Necessário para criar um pseudo-elemento */
+	position: absolute;
+	bottom: -5px; /* Ajusta a posição da linha abaixo do botão */
+	left: 0; /* Começa do lado esquerdo */
+	width: 100%; /* A largura da linha será 100% do botão */
+	height: 2px; /* Espessura da linha */
+	background-color: #E9DFDD; /* Cor da linha */
+	transform: scaleX(0); /* Inicialmente, com largura 0 */
+	transform-origin: center; /* Faz a linha crescer a partir do centro */
+	transition: transform 0.4s ease; /* Animação suave de expansão */
+  }
+  
+  /* Estilo do hover */
+  .buton:hover::before {
+	transform: scaleX(1); /* Expande a linha para a largura total */
+  }
+  
+  /* Efeito de opacidade nas imagens */
+  .imagem-opaca {
 	transition: opacity 0.3s ease;
-	width: 150px; /* reduzido para telas menores */
-}
-
-.imagem-opaca:hover {
+	width: 150px; /* Tamanho da imagem reduzido para telas menores */
+  }
+  
+  .imagem-opaca:hover {
 	opacity: 0.4;
-}
+  }
+  
 
 /* Media Queries para responsividade */
 @media (max-width: 1024px) {
@@ -143,6 +183,24 @@ header {
 }
   
  
+.logoBQB {
+	position: absolute;
+	top: 20px; /* Alinha 20px abaixo do topo da tela */
+	left: 50%; /* Centraliza horizontalmente */
+	transform: translateX(-50%); /* Ajusta a posição para garantir que o centro do elemento esteja no meio da tela */
+	z-index: 500; /* Garante que o elemento fique acima de outros elementos */
+	display: flex; /* Alinha o conteúdo internamente */
+	align-items: center; /* Alinha verticalmente o conteúdo */
+	justify-content: center; /* Centraliza horizontalmente o conteúdo */
+	width: 150px; /* Largura do elemento */
+	height: auto; /* Altura automática para adaptar ao conteúdo */
+	filter: drop-shadow(1px 3px 20px rgba(0, 0, 0, 0.6)); /* Sombramento com opacidade */
+	filter: drop-shadow(1px 3px 20px rgba(0, 0, 0, 0.6)); /* Sombramento com opacidade */
+
+	padding: 10px; /* Adiciona um pouco de espaçamento ao redor do conteúdo */
+	filter: box-shadow(0 4px 10px rgba(0, 0, 0, 0.2)) ; /* Uma sombra adicional para dar destaque */
+  }
+  
 
 .historia {
 	margin-bottom: 30px;
