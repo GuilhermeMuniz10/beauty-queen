@@ -138,9 +138,9 @@ export default function ConsultarProcedimentos() {
                                <td>{item.id}</td>
                                 <td>{item.procedimento}</td>
                                 <td>{item.profissional}</td>
-                                <td>{item.preco}</td>
-                                <td>{item.descricao}</td>                             
-                                   <td>{item.observacoes}</td>
+                                <td>{item.preço}</td>
+                                <td>{item.descrição}</td>                             
+                                   <td>{item.obs}</td>
                                 
                                 <td className='acoes'>
                                     <Link to={`/cadastrarAdmProcedimento/${item.id}`}>

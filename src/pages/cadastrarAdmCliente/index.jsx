@@ -67,13 +67,13 @@ async function consultar() {
     }
 
         let paramCorpo = {
-            "NOME_Cliente": nome,
-            "DATA_nascimento":nascimento,
+            "NOME_cliente": nome,
+            "data_Nascimento":nascimento,
 		"telefone": telefone,
 		"cpf":cpf,
 		"medidas":medidas,
 		"observacoes" : observacoes, 
-		"E_MAIL" : email
+		"E_Mail" : email
 		        }
 
                 try {
@@ -96,6 +96,7 @@ async function consultar() {
                             }
 
                         });
+                        console.log(email, nome)
                         alert('Pessoa alterada nos arquivos.');
                     }
 
