@@ -159,6 +159,9 @@ header {
 }
 
 
+
+
+
 @media (min-width: 781px) and (max-width: 1366px) {
     .NM, .QS {
         line-height: 1.8; /* Ajuste a altura da linha */
@@ -170,12 +173,12 @@ header {
 
     .NM {
         left: 10%; /* Ajuste de margem à esquerda */
-        top: 165%; /* Ajuste de posição vertical para a tela maior */
+        top: 106vh; /* Ajuste de posição vertical para a tela maior */
     }
 
     .QS {
-        right: 2%; /* Ajuste de margem à direita */
-        top: 95%; /* Ajuste de posição vertical */	
+        right: 8vh; /* Ajuste de margem à direita */
+        top: 65vh; /* Ajuste de posição vertical */	
 		
     }
 }
@@ -231,7 +234,7 @@ header {
 	.NM {
 		top: 47%;
 		font-size: 3.5vw;
-		right: 8%;
+		right: 13%;
 		line-height: 13px;
 		background-color: #ffffffc2;
 		box-shadow: 0px 0px 2px 4px rgba(0, 0, 0, 0.089);
@@ -376,12 +379,12 @@ header {
     .NH {
 		right: 13%;
        /* Ajuste de margem à esquerda */
-        top: 370%; /* Ajuste de posição vertical para a tela maior */
+        top: 245vh; /* Ajuste de posição vertical para a tela maior */
     }
 
     .OC {
 		left: 15%;  /* Ajuste de margem à direita */
-        top: 315%; /* Ajuste de posição vertical */	
+        top: 210vh; /* Ajuste de posição vertical */	
 		
     }
 }
@@ -785,7 +788,7 @@ header {
 .funcio {
 	position: relative;
 	left: 900px;
-	top: -148px;
+	top: -13vh;
 	font-family: 'Darker Grotesque';
 }
 
