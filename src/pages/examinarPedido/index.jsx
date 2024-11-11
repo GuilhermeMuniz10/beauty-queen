@@ -135,10 +135,10 @@ export default function ConsultarPedidos() {
                     <tbody>
                        {pedidos.map((item) => (
                             <tr key={item.id}>
-                               <td>{item.id}</td>
-                                <td>{item.nome}</td>
-                                <td>{item.produto}</td>
-                                <td>{item.qtdProcedimento}</td>
+                               <td>{item.id_pedido}</td>
+                                <td>{item.nome_cliente}</td>
+                                <td>{item.nome_procedimento}</td>
+                                <td>{item.quantidade_pedido}</td>
                                
                             </tr>
                         ))}

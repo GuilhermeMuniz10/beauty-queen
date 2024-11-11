@@ -149,7 +149,7 @@ export default function Consultar() {
                                     <Link to={`/cadastrarAdmCliente/${item.id}`}>
                                         <i className='fa-solid fa-pencil botao' />
                                     </Link>
-                                    <button  className='botao' onClick={excluir}>
+                                    <button  className='botao' onClick={()=>excluir(item.id , item.nome)}>
                                         <i className='fa-solid fa-trash-can' />
                                     </button>
                                 </td>

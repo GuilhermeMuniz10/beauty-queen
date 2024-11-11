@@ -44,9 +44,9 @@ async function consultar() {
 
         setNome(dados.procedimento)
         setProfissional(dados.profissional)
-        setPreco(dados.preco)
-        setDescricao(dados.descricao)    
-        setObservacoes(dados.observacoes)
+        setPreco(dados.preço)
+        setDescricao(dados.descrição)    
+        setObservacoes(dados.obs)
 
     }
 
