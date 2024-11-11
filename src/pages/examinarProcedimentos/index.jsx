@@ -40,13 +40,13 @@ export default function ConsultarProcedimentos() {
          }
      }
 
-     async function excluir(id, nome) {
+     async function excluir(id, procedimento) {
          try {
-            const url = `http://localhost:5029/cliente/${id}?x-access-token=${token}`;
+            const url = `http://localhost:5029/produtos/${id}?x-access-token=${token}`;
              await axios.delete(url);
 
              await buscar();
-             toast.success(`${nome} removido da lista de Procedimentos!`);
+             toast.success(`${procedimento} removido da lista de Procedimentos!`);
          } catch (error) {
              toast.error("Erro ao excluir procedimento!");
          }
@@ -138,16 +138,16 @@ export default function ConsultarProcedimentos() {
                                <td>{item.id}</td>
                                 <td>{item.procedimento}</td>
                                 <td>{item.profissional}</td>
-                                <td>{item.preco}</td>
-                                <td>{item.descricao}</td>                             
-                                   <td>{item.observacoes}</td>
+                                <td>{item.preço}</td>
+                                <td>{item.descrição}</td>                             
+                                   <td>{item.obs}</td>
                                 
                                 <td className='acoes'>
                                     <Link to={`/cadastrarAdmProcedimento/${item.id}`}>
                                         <i className='fa-solid fa-pencil botao' />
                                     </Link>
                                     <button  className='botao'
-                                    onClick={excluir}>
+                                    onClick={()=>excluir(item.id , item.procedimento)}>
                                         <i className='fa-solid fa-trash-can' />
                                     </button>
                                 </td>

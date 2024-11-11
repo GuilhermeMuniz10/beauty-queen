@@ -3,65 +3,69 @@ import CarrosselC from '../carroselC/Carrosselc';
 import CarrosselGA from '../carroselGA/Carrosselga';
 import CarrosselGB from '../carroselGB/Carrosselgb';
 import CarrosselGC from '../carroselGC/Carrosselgc';
-
-
+import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
-
 import './paginicio.scss';
 
 
-
-
 function Paginicio() {
+   const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true); // Adiciona a classe 'visible' quando o usuário rola para baixo
+    } else {
+      setIsVisible(false); // Remove a classe 'visible' quando o usuário rola para cima
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpeza do evento de scroll quando o componente for desmontado
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
 
    return (
       <div className="paginicio">
 
 
-         <header>
-            
-            <nav className='links'>
+<header className={`header ${isVisible ? 'visible' : ''}`}>
+        <nav className="links">
+          <img src="/assets/images/logoBQ.png" alt="Descrição da Imagem" className="imagem-opaca" />
 
-               <img src="/assets/images/logoBQ.png" alt="Descrição da Imagem" class="imagem-opaca" />
+          <ul>
+            <li><a href="#" className="Link">Home</a></li>
+            <li><a href="#" className="Link">Nossa História</a></li>
+            <li><a href="#" className="Link">Serviços</a></li>
+            <li><a href="#" className="Link">Galeria</a></li>
+            <ul>
+              <li>
+                <Link to="/ProdutosCorpo" className="Link">Produtos</Link>
+              </li>
+            </ul>
+          </ul>
 
-               <ul>
-                  <li><a href="#" className='Link'>Home</a></li>
-                  <li><a href="#" className='Link'>Nossa História</a></li>
-                  <li><a href="#" className='Link'>Serviços</a></li>
-                  <li><a href="#" className='Link'>Galeria</a></li>
-                
-                  <ul>
-                     <li>
-                       <Link to='/ProdutosCorpo' className='Link' >Produtos</Link>
-                     </li>
-                  </ul>
-               
-                  
-               </ul>
-
-               
-
-               
-
-               <div class="botom">
-                  <ul>
-                     <li>
-                       <Link to='/LoginAdm' className='button' >Login</Link>
-                     </li>
-                  </ul>
-               </div>
-
-            </nav>
-
-         </header>
+          <div className="botom">
+            <ul>
+              <li>
+                <Link to="/LoginAdm" className="buton">Login</Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
          <div className='carrosselC'>
+            <img className='logoBQB' src="/assets/images/logoBQBranca.png" alt="" />
          <CarrosselC />
          </div>
 
 
-       
 
 
          <div className='historia'>
