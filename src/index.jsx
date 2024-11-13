@@ -15,10 +15,9 @@ import ExaminarClientes from './pages/examinarClientes';
 import CadastrarAdmPedido from './pages/cadastrarAdmPedido';
 import ConsultarProcedimentos from './pages/examinarProcedimentos';
 import LoginAdm from './pages/loginAdm';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ConsultarPedidos from './pages/examinarPedido';
-// import NotFound from './pages/notFound';
+import NotFound from './pages/notFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -47,7 +46,7 @@ root.render(
         <Route path='/LoginAdm' element={<LoginAdm />} />
 
 
-        {/* <Route path= '/Not' element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} /> 
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

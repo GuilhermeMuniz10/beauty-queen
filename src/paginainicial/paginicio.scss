@@ -1,116 +1,3 @@
-
-
-
-/* Estilos para telas pequenas (máximo 480px) */
-@media (max-width: 480px) {
-
-	/* Menu lateral */
-	.menu {
-	  position: fixed;
-	  top: 0;
-	  left: 0%;  /* Inicialmente o menu está fora da tela (à esquerda) */
-	  width: 100%;  /* O menu ocupa 100% da largura da tela */
-	  height: 100%;
-	  background-color: #f6f2f1;
-	  transform: translateX(-100%);
-	  transition: transform 0.3s ease, box-shadow 0.3s ease;
-	  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-	  z-index: 10;
-	}
-  
-	/* Lista do menu */
-	.menu ul {
-	  padding-top: 100px;
-	  list-style: none;
-	  padding-left: 0;
-	  
-	  text-align: center;
-	}
-  
-	.menu ul li {
-	  padding: 10px 30px;
-	}
-  
-	.menu ul li a {
-	  text-decoration: none;
-	  color: black;
-	  font-size: 22px;
-	  transition: color 0.3s ease;
-	}
-  
-	.menu ul li a:hover {
-	  color: rgb(184, 184, 184);
-	}
-  
-	/* Checkbox (menu trigger) */
-	.menu-faketrigger {
-	  display: none;  /* O checkbox fica oculto */
-	}
-  
-	/* Ações do botão de sanduíche quando o menu está ativado */
-	.menu-faketrigger:checked ~ .menu {
-	  transform: translateX(0);  /* Faz o menu deslizar para a tela */
-	  box-shadow: 6px 0 8px rgba(0, 0, 0, 0.3);
-	}
-  
-	/* Estilos do botão de sanduíche */
-	.menu-lines {
-	  position: absolute;
-	  z-index: 11;
-	  width: 35px;
-	  height: 35px;
-	  cursor: pointer;
-	  margin-left: 25px;
-	  margin-top: 30px;
-	}
-  
-	.menu-lines span {
-	  display: block;
-	  width: 35px;
-	  height: 5px;
-	  margin-bottom: 6px;
-	  background-color: #2b2929;
-	  border-radius: 3px;
-	  transition: all 0.3s ease;
-	}
-  
-	/* Efeito de "X" no ícone de sanduíche quando o menu está ativado */
-	.menu-faketrigger:checked + .menu-lines span:nth-child(1) {
-	  transform: rotate(45deg) translateY(10%);
-	}
-  
-	.menu-faketrigger:checked + .menu-lines span:nth-child(2) {
-	  opacity: 0;
-	}
-  
-	.menu-faketrigger:checked + .menu-lines span:nth-child(3) {
-	  transform: rotate(-45deg) translateY(-10%);
-	}
-  }
-  
-  /* Estilos para telas maiores que 480px (desabilitar o menu para telas grandes) */
-  @media (min-width: 481px) {
-  
-	/* Esconder o menu e o botão de sanduíche para telas maiores */
-	.menu,
-	.menu-faketrigger,
-	.menu-lines {
-	  display: none !important; /* Esconde o menu, o checkbox e o botão de sanduíche */
-	}
-  }
-
-
-
-
-
-
-
-
-  
-
-
-
-  @media(min-width: 767px){
 /* Estilos do cabeçalho */
 .header {
 	position: fixed;
@@ -248,61 +135,54 @@
 
 
 
-/* Media Queries para responsividade */
-@media (max-width: 1024px) {
-	.links ul {
-		gap: 3rem;
-	}
 
-	.Link, .buttonP, .button {
-		font-size: 20px;
-	}
-
-	.imagem-opaca {
-		width: 140px;
-	}
-}
-
-@media (max-width: 768px) {
-	.links ul {
-		flex-direction: column;
-		gap: 1.5rem;
-		margin: 0;
-	}
-
+  @media (max-width: 768px) {
 	.links {
-		flex-direction: column;
-		margin: 0;
+	  margin: 0 20px;
+	  gap: 30px; /* Reduz o gap entre os itens do menu */
 	}
-
-	.Link, .buttonP, .button {
-		font-size: 18px;
-	}
-
-	header {
-		height: auto;
-		padding: 10px 0;
-	}
-
-	.imagem-opaca {
-		width: 120px;
-	}
-}
-
-@media (max-width: 480px) {
+  
 	.links ul {
-		gap: 1rem;
+	  gap: 1rem; /* Menor espaçamento entre os itens */
 	}
-
-	.Link, .buttonP, .button {
-		font-size: 16px;
+  
+	.Link {
+	  font-size: 18px; /* Diminui o tamanho da fonte */
 	}
-
+  
+	.botom ul {
+	  gap: 10px; /* Ajusta o gap entre os botões */
+	}
+  
+	.buton {
+	  font-size: 18px; /* Ajusta o tamanho da fonte do botão */
+	  padding: 0.5rem 1rem; /* Ajusta o padding para telas menores */
+	}
+  
+	.imagem-opaca {
+	  width: 120px; /* Reduz o tamanho da imagem */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.header {
+	  padding: 5px; /* Diminui o padding */
+	}
+  
+	.links {
+	  flex-direction: column; /* Coloca os itens da navegação em coluna */
+	  align-items: center; /* Centraliza os itens */
+	  gap: 20px; /* Reduz o espaçamento */
+	}
+  
+	.Link {
+	  font-size: 16px; /* Diminui ainda mais o tamanho da fonte */
+	}
+  
 	.imagem-opaca {
 		width: 100px;
 	}
 }
-
 
 
 
@@ -335,13 +215,33 @@
   }
 
   
+  @media (max-width: 768px) {
+	.logoBQB {
+	  width: 120px; /* Diminui o tamanho do logo para telas menores */
+	  top: 15px; /* Ajusta o topo para não ficar muito apertado */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.logoBQB {
+	  width: 55px; /* Diminui ainda mais o tamanho do logo em telas pequenas */
+	  top: 10px; /* Ajusta o topo para que o logo não fique colado na parte superior da tela */
+	}
+  }
 
 .historia {
 	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 30px;
+	margin-top: 50px;
+.NM{
+	top: 126%;
+}
+
+.QS{
+	top: 83%;
+}
 }
 
 .historia img {
@@ -349,8 +249,6 @@
 	max-width: 4000px;
 	margin: 0 auto;
 }
-
-
 
 
 
@@ -581,7 +479,13 @@
     }
 }
 
+.OC{
+	top: 230%;
+}
 
+.NH{
+	top: 263%
+}
 
 @media (max-width: 480px) {
     .OC {
@@ -1061,7 +965,7 @@
 	align-items: center;
 	min-height: 50vh;
 	left: 140px;
-	margin-top: 200px;
+	margin-top: 130px;
    
 }
 
@@ -1087,7 +991,44 @@ footer {
     text-align: center;
     margin-top: 50px;
 	font-family: 'Darker Grotesque';
+	padding: 30px;
+	padding-bottom: 5px;
+
+	.plt{
+		display: flex;
+		align-items: center;
+		font-size: 70px;
+		width: 20px;
+		
+	}
+
+	
+	.conteiners{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.cont{
+		img{
+			width: 50px;
+			height: 50px;
+			background-color: #ffffff4f;
+			border-radius: 50%;
+			box-shadow: 0px 0px 2px 4px #63606071 ;
+		}
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		text-align: left;
+		line-height: 10%;
+		font-size: 18px;
+		gap: 10px;
+	}
 }
+
+
 
 .separa {
 	color: #D6B686;

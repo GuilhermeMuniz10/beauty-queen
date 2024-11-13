@@ -28,6 +28,18 @@ function Paginicio() {
     };
   }, []);
 
+  const handleSmoothScroll = (event, targetId) => {
+   event.preventDefault();  // Impede o comportamento padrão do link (rolagem imediata)
+ 
+   const targetElement = document.getElementById(targetId);
+   
+   if (targetElement) {
+     window.scrollTo({
+       top: targetElement.offsetTop,  // Obtém a posição vertical da âncora
+       behavior: 'smooth'  // Aplica a rolagem suave
+     });
+   }
+}
 
 
    return (
@@ -64,17 +76,13 @@ function Paginicio() {
         <nav className="links">
           <img src="/assets/images/logoBQ.png" alt="Descrição da Imagem" className="imagem-opaca" />
 
-          <ul>
-            <li><a href="#" className="Link">Home</a></li>
-            <li><a href="#" className="Link">Nossa História</a></li>
-            <li><a href="#" className="Link">Serviços</a></li>
-            <li><a href="#" className="Link">Galeria</a></li>
-            <ul>
-              <li>
-                <Link to="/ProdutosCorpo" className="Link">Produtos</Link>
-              </li>
+          <ul>  
+            <li><a href="#home" className="Link" onClick={(e) => handleSmoothScroll(e, 'home')}>Home</a></li>
+            <li><a href="#historia" className="Link" onClick={(e) => handleSmoothScroll(e, 'historia')}>Nossa História</a></li>
+            <li><a href="#servicos" className="Link" onClick={(e) => handleSmoothScroll(e, 'servicos')}>Serviços</a></li>
+            <li><a href="#galeria" className="Link" onClick={(e) => handleSmoothScroll(e, 'galeria')}>Galeria</a></li>
+
             </ul>
-          </ul>
 
           <div className="botom">
             <ul>
@@ -86,7 +94,7 @@ function Paginicio() {
         </nav>
       </header>
 
-         <div className='carrosselC'>
+         <div id="home" className='carrosselC'>
             <img className='logoBQB' src="/assets/images/logoBQBranca.png" alt="" />
          <CarrosselC />
          </div>
@@ -94,7 +102,7 @@ function Paginicio() {
 
 
 
-         <div className='historia'>
+         <div  className='historia'>
             
                <img  src="/assets/images/historia.png" alt="" />
 
@@ -133,11 +141,11 @@ function Paginicio() {
 
          </div>
 
-      <div className='comeco'>
+      <div  className='comeco'>
          
-      <img src="/assets/images/oncomecou.png" alt="" />
+      <img  src="/assets/images/oncomecou.png" alt="" />
 
-         <div className='OC'>
+         <div id="historia" className='OC'>
             <h2>Onde tudo Começou</h2>
 
             <p>Tudo começou com um sonho em uma <br /> sacada de uma casa.
@@ -148,7 +156,7 @@ function Paginicio() {
 
         
 
-         <div className='NH'>
+         <div  className='NH'>
            <h2>Nosssa Historia</h2>
 
            <p>Com serviços personalizados e um atendimento <br /> excepcional
@@ -163,7 +171,7 @@ function Paginicio() {
 
          <div className='servico'>
 
-            <div className='txt'>
+            <div id="servicos" className='txt'>
 
                <div className='estrelinha'>
                   <p className='estre'>★</p>
@@ -206,12 +214,12 @@ function Paginicio() {
             </div>
 
 
-         <p className='separa'>———————————————————————————————————————————————————————————————————————————————————— </p>
+         <p id="galeria" className='separa'>———————————————————————————————————————————————————————————————————————————————————— </p>
          </div>
 
          
 
-         <div className='galeria'>
+         <div  className='galeria'>
             <div className='direc'><h3>Confira   </h3>———————</div>
             <h1>Nossa Galeria</h1>
          </div>
@@ -266,10 +274,48 @@ function Paginicio() {
 
       
          <div className='mapBox'>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.189356950853!2d-46.70332172578109!3d-23.704931066880288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4fb7e753c599%3A0x6f9ca28fe0093bd2!2sAut%C3%B3dromo%20de%20Interlagos%20-%20Port%C3%A3o%208%20%2F%20Gate%208!5e0!3m2!1spt-BR!2sbr!4v1728855956689!5m2!1spt-BR!2sbr"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.048585268878!2d-46.69951782396472!3d-23.709958967069635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4fbbad0ba35b%3A0xd513dad5edc66c5f!2sR.%20Casqueiro%2C%20208%20-%20Cidade%20Dutra%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004810-090!5e0!3m2!1spt-BR!2sbr!4v1731530406401!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
 
+
+
          <footer>
+
+            <div className='conteiners'> 
+                        <div className='cont'>
+                           <img src="/assets/images/iconeLO.png" alt="" />
+                           <div>
+                              <p>Nosso Endereço:</p>
+                           <p>R. Casqueiro, 208 | Cidade Dutra</p>
+                           <p>CEP: 04810-090</p>
+                           </div>
+                           
+                        </div>
+
+                        <div className='plt'>|</div>
+
+                        <div className='cont'>
+                           <img src="/assets/images/iconeTEL.png" alt="" />
+                           <div>
+                              <p>Tel.: +55 (11) 9999-9999</p>
+                              <p>Cel.: +55 (11) 9999-9999</p>
+                           </div>
+                        </div>
+
+                        <div className='plt'>|</div>
+
+
+                        <div className='cont'>
+                        <img src="/assets/images/iconeEmail.png" alt="" />
+                           <div>
+                              <p>Segue o E-mail:</p>
+                              <p>adrianagomes@gmail.com</p>
+                           </div>
+                        </div>
+
+            </div>
+
+            
             <h1>Site desenvolvido pela agência VeloxByte</h1>
          </footer>
 

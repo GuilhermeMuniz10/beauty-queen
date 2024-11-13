@@ -77,7 +77,7 @@ export default function ConsultarProcedimentos() {
                     <li><Link to='/CadastrarAdmPedido'>Cadastrar Pedido</Link></li>
                     <li><Link to='/ExaminarClientes'>Examinar Clientes</Link></li>
                     <li><Link to='/ExaminarProcedimento'>Examinar Procedimentos</Link></li>
-                    <li><Link to='/ExaminarPedido'>Examinar Pedidos</Link></li>
+                    <li><Link to='/ExaminarPedidos'>Examinar Pedidos</Link></li>
                     
                     <div className='sair'>
                         <li>
