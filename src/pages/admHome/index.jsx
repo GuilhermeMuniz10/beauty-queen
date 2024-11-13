@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export default function AdmHome() {
     return (
-        <div className='pagina-home'>
+        <div className='pagina-hom'>
             <input type="checkbox" className='menu-faketrigger' id="menu-toggle" />
             <label htmlFor="menu-toggle" className='menu-lines'>
                 <span></span>
