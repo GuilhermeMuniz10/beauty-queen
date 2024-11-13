@@ -181,6 +181,10 @@
 		width: 100px;
 	}
 }
+
+
+
+
   
  
 .logoBQB {
@@ -486,7 +490,7 @@
 }
 
 /* Responsividade para telas de aproximadamente 360x800 pixels */
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .comeco img {
         width: 100%; /* Ocupa toda a largura da tela */
         top: -5px; /* Ajusta a posição vertical */

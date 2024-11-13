@@ -35,6 +35,12 @@ function Paginicio() {
 
 
 <header className={`header ${isVisible ? 'visible' : ''}`}>
+
+
+  
+  
+
+
         <nav className="links">
           <img src="/assets/images/logoBQ.png" alt="Descrição da Imagem" className="imagem-opaca" />
 
