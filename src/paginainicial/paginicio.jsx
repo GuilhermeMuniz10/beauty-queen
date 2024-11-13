@@ -34,6 +34,26 @@ function Paginicio() {
       <div className="paginicio">
 
 
+
+
+      <input type="checkbox" id="menu-trigger" class="menu-faketrigger"/>
+      <label for="menu-trigger" class="menu-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+      </label>
+
+
+            <div class="menu">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Nossa História</a></li>
+                     <li><a href="#">Serviços</a></li>
+                     <li><a href="#">Galeria</a></li>
+                  </ul>
+            </div>
+
+
 <header className={`header ${isVisible ? 'visible' : ''}`}>
 
 
