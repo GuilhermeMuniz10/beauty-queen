@@ -101,6 +101,11 @@ function Paginicio() {
 
 
 
+        <div className='fundoTrans'>
+
+        </div>
+
+
 
          <div  className='historia'>
             
