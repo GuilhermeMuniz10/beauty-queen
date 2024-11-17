@@ -288,7 +288,9 @@ function Paginicio() {
 
             <div className='conteiners'> 
                         <div className='cont'>
+                        <a href="https://maps.app.goo.gl/4gPwdN6T76LxZFsP6">
                            <img src="/assets/images/iconeLO.png" alt="" />
+                           </a>
                            <div>
                               <p>Nosso Endereço:</p>
                            <p>R. Casqueiro, 208 | Cidade Dutra</p>
@@ -300,7 +302,9 @@ function Paginicio() {
                         <div className='plt'>|</div>
 
                         <div className='cont'>
+                        <a href="https://wa.me/5511998242606?text=Óla!+Gostaria+de+saber+sobre+o+seu+serviço.">
                            <img src="/assets/images/iconeTEL.png" alt="" />
+                        </a>
                            <div>
                               <p>Tel.: +55 (11) 9999-9999</p>
                               <p>Cel.: +55 (11) 9999-9999</p>

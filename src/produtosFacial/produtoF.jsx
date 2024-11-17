@@ -53,10 +53,10 @@ function ProdutoFacial() {
             <div className='colun1'>
               <div className='fundo1'>
                     <img className='cora' src="/assets/images/coracaoavaliar.svg" alt="" />
-                     <img className='imag' src="/assets/images/manteigacorporal.svg" alt="imagem 1" />
+                     <img className='imag' src="/assets/images/esfoliante facial.webp" alt="imagem 1" />
               </div>
               <p className='marca'>BACURI</p>
-              <h2>Manteiga Corporal</h2>
+              <h2>Esfoliante Facial</h2>
               <img className='estrela' src="/assets/images/estrelaavaliar.svg" alt="" />
               <p className='pre'>R$ 10,00</p>
 
@@ -65,10 +65,10 @@ function ProdutoFacial() {
             <div className='colun1'>
                  <div className='fundo1'>
                  <img className='cora' src="/assets/images/coracaoavaliar.svg" alt="" />
-                    <img className='imag' src="/assets/images/oleocorpo.svg" alt="imagem 2" />
+                    <img className='imag' src="/assets/images/protetor solar facial.png" alt="imagem 2" />
                 </div>
               <p className='marca'>LABOTRAT</p>
-                <h2>Óleo corporal</h2>
+                <h2>Protetor solar facial</h2>
                 <img className='estrela' src="/assets/images/estrelaavaliar.svg" alt="" />
                 <p className='pre'>R$ 10,00</p>
             </div>
@@ -76,11 +76,11 @@ function ProdutoFacial() {
             <div className='colun1'>
                 <div className='fundo1'>
                 <img className='cora' src="/assets/images/coracaoavaliar.svg" alt="" />
-                     <img className='imag' src="/assets/images/protsolarcorpo.svg" alt="imagem 3" />
+                     <img className='imag' src="/assets/images/agua micelar.jpg" alt="imagem 3" />
                 </div>
               <p className='marca'>L´OREAL</p>
               
-                <h2>Protetor solar corporal</h2>
+                <h2>Agua micelar</h2>
                 <img className='estrela' src="/assets/images/estrelaavaliar.svg" alt="" />
                 <p className='pre'>R$ 10,00</p>
             </div>
@@ -88,11 +88,11 @@ function ProdutoFacial() {
             <div className='colun1'>
                <div className='fundo1'>
                <img className='cora' src="/assets/images/coracaoavaliar.svg" alt="" />
-                     <img className='imag' src="/assets/images/gelredutormedidas.svg" alt="imagem 4" />
+                     <img className='imag' src="/assets/images/creme area olhos.webp" alt="imagem 4" />
                 </div>
               <p className='marca'>BIOCAP</p>
 
-                <h2>Gel redutor de <br /> medidas</h2>
+                <h2>Crem para área dos <br /> olhos </h2>
                 <img className='estrela' src="/assets/images/estrelaavaliar.svg" alt="" />
                 <p className='pre'>R$ 10,00</p>
             </div>
