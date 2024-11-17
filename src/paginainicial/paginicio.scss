@@ -405,7 +405,8 @@
 	border-radius: 15px;
 	position: relative;
 	width: 90%;
-	height: 100px;
+	height: 300px;
+	left: 5%;
 	
 }
 }
@@ -467,13 +468,13 @@
 
 @media (max-width: 480px) {
     .QS {
-		margin-top: -41vh;
+		margin-top: -38vh;
         font-size: 2.7vw;
-		right: 5%;
+		right: 10%;
 		line-height: 13px;
 		position: absolute;
 		font-family: 'Darker Grotesque';
-		text-align: center;
+		text-align: right;
     }
 
 
@@ -481,11 +482,10 @@
 
 @media (max-width: 480px) {
 	.NM {
-		margin-top: -62vh;
+		margin-top: -60vh;
 		font-size: 2.7vw;
-		left: 4%;
+		left: 10%;
 		line-height: 13px;
-
 		border-radius: 15px;
 		position: absolute;
 		font-family: 'Darker Grotesque';
@@ -586,6 +586,30 @@
     .formacoes .img {
         width: 200px; 
     }
+}
+
+@media (max-width: 480px){
+	.formacoes {
+		margin-top: -35vh;
+		border-radius: 0px;
+		box-shadow: 0px 0px 0px 0px #C59E9A;
+  		background-color: #E9DFDD;
+	}
+
+	.texto ul {
+		font-size: 3vw;
+		text-align: left;
+		right: 140px;
+		position: absolute;
+	}
+    
+	.formacoes .img {
+		position: relative;
+		top: -60px;
+		left: 100px;
+		width: 180px;
+	}
+
 }
 
 
@@ -693,20 +717,20 @@
     .NH {
         background-color: #a97772;
 		box-shadow: -3px 1px 1.5px 3px #9d93934a;
-		top: 137%;
+		top: 128%;
 		font-size: 2.2vw;
 		left: 5%;
 		line-height: 13px;
 		border-radius: 3px;
-		width: 190px;
+		width: 180px;
 		text-align: left;
 		padding-left: 15px;
     }
 
     .OC {
-		top: 155%;
+		top: 146%;
 		font-size: 2.7vw;
-		left: 40%;
+		left: 42%;
 		line-height: 13px;
 		background-color: #a9777296;
 		width: 190px;
