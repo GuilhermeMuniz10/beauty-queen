@@ -259,8 +259,8 @@ function Paginicio() {
 
 
          <div className="redes">
-      <a href="https://www.whatsapp.com/?lang=pt_BR">
-        <img className="wt" src="/assets/images/whats.png" alt="WhatsApp" />
+      <a href="https://www.whatsapp.com/?lang=pt">
+        <img className="wt" src="/assets/images/twitter.png" alt="WhatsApp" />
       </a>
       <a href="https://www.facebook.com/?locale=pt_BR">
         <img className="fa" src="/assets/images/face.svg" alt="Facebook" />
@@ -276,7 +276,11 @@ function Paginicio() {
          </div>
          
 
-            
+         <div className='redes-1'>
+            <a href="https://www.instagram.com/">
+               <img className="in" src="/assets/images/whats.png" alt="Whatts" />
+            </a>   
+         </div>   
 
       
          <div className='mapBox'>
