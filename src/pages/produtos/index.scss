@@ -1,0 +1,21 @@
+/* Estilo geral da página */
+.pagina-produto {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Ajuste para o container principal */
+  .ini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilo para as categorias */
+  button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+ 

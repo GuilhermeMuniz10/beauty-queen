@@ -18,6 +18,7 @@ import LoginAdm from './pages/loginAdm';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ConsultarPedidos from './pages/examinarPedido';
 import NotFound from './pages/notFound';
+import ProdutosCF from './pages/produtos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +26,7 @@ root.render(
     <BrowserRouter>
       <Routes>
       <Route path='/' element={<Paginicio />}  />
+      <Route path='/Produtos' element={<ProdutosCF />} />
         <Route path='/EsqueceuSenha' element={<EsqueceuSenha />} />
         <Route path='/ValidacaoSenha' element={<ValidacaoSenha />} />
         <Route path='/RedefinirSenha' element={<RedefinirSenha />} />

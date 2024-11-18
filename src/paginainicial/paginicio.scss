@@ -10,6 +10,18 @@
     }
 
 }
+/* Transformação das linhas do botão hambúrguer em "X" */
+.menu-faketrigger:checked + .menu-lines span:nth-child(1) {
+    transform: rotate(45deg) translate(11px, 11px) !important; /* Ajuste para criar o braço superior do "X" */
+}
+
+.menu-faketrigger:checked + .menu-lines span:nth-child(2) {
+    opacity: 0 ; /* Oculta a linha do meio */
+}
+
+.menu-faketrigger:checked + .menu-lines span:nth-child(3) {
+    transform: rotate(-45deg) translate(11px, -11px) !important; /* Ajuste para criar o braço inferior do "X" */
+}
 
 
 

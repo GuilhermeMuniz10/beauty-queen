@@ -58,38 +58,37 @@ export default function ConsultarPedidos() {
 
     return (
             <div className='pagina-consultar'>
-            <input type="checkbox" className='menu-faketrigger' id="menu-toggle" />
-            <label htmlFor="menu-toggle" className='menu-lines'>
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+                      <input type="checkbox" className="menu-toggle" id="menu-toggle" />
+<label htmlFor="menu-toggle" className="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
 
-
-            <nav className='menu'>
-                <ul>
-                    <div className='imagem'>
-                        <li>
-                            <img className='imagem' src="/assets/images/adm.png" alt="" />
-                        </li>
-                    </div>
-                    <li><Link to='/AdmHome'>Home</Link></li>
-                    <li><Link to='/CadastrarAdmCliente'>Cadastrar Cliente</Link></li>
-                    <li><Link to='/CadastrarAdmProcedimento' href="#">Cadastrar Procedimentos</Link></li>
-                    <li><Link to='/CadastrarAdmPedido'>Cadastrar Pedido</Link></li>
-                    <li><Link to='/ExaminarClientes'>Examinar Clientes</Link></li>
-                    <li><Link to='/ExaminarProcedimento'>Examinar Procedimentos</Link></li>
-                    <li><Link to='/ExaminarPedidos'>Examinar Pedidos</Link></li>
-                    
-                    <div className='sair'>
-                        <li>
-                            <a  href="#"></a>
-                            <Link to='/' className='sairr'>Finalizar Sessão</Link>
-                            <Link to='/' className="sair-icon"><img src="/assets/images/sair.png" alt="" /></Link>
-                        </li>
-                    </div>
-                </ul>
-            </nav>
+<nav className="side-menu">
+    <ul>
+        <div className="menu-header">
+            <li>
+                <img className="menu-logo" src="/assets/images/adm.png" alt="Admin Logo" />
+            </li>
+        </div>
+        <li><Link to="/AdmHome">Home</Link></li>
+        <li><Link to="/CadastrarAdmCliente">Cadastrar Cliente</Link></li>
+        <li><Link to="/CadastrarAdmProcedimento">Cadastrar Procedimentos</Link></li>
+        <li><Link to="/CadastrarAdmPedido">Cadastrar Pedido</Link></li>
+        <li><Link to="/ExaminarClientes">Examinar Clientes</Link></li>
+        <li><Link to="/ExaminarProcedimento">Examinar Procedimentos</Link></li>
+        <li><Link to="/ExaminarPedidos">Examinar Pedidos</Link></li>
+        <div className="menu-footer">
+            <li>
+                <Link to="/" className="logout-text">Finalizar Sessão</Link>
+                <Link to="/" className="logout-icon">
+                    <img src="/assets/images/sair.png" alt="Logout Icon" />
+                </Link>
+            </li>
+        </div>
+    </ul>
+</nav>
 
 
             

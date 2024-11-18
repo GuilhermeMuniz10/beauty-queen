@@ -7,123 +7,187 @@
     font-weight: 150px;
     font-size: 21px;
 
-    .menu {
+    .side-menu {
         position: absolute;
         top: 0;
         left: 0;
-        width: 25%;
-        height: 100%;
+        width: 25%; /* Largura do menu */
+        height: 100%; /* Altura completa */
         background-color: #f6f2f1;
         transform: translateX(-100%);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-        z-index: 10;
-
-        ul {
-            padding-top: 100px;
-            list-style: none;
-            padding-left: 0;
-
-            li {
-                padding: 10px 30px;
-
-                a {
-                    text-decoration: none;
-                    color: black;
-                    font-size: 22px;
-                    transition: color 0.3s ease;
-
-                    &:hover {
-                        color: rgb(184, 184, 184);
-                    }
-                }
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .menu {
-                width: 50%; // O menu ocupa 50% da largura da tela em dispositivos menores
-            }
-    
-            .menu-faketrigger:checked ~ .menu {
-                width: 100%; // Permite que o menu ocupe a tela inteira quando aberto
-            }
-        }
-
-        .sair {
-            display: flex;
-            margin-bottom: 10px;
-
-            .sairr {
-                margin-right: 10px;  
-                font-size: 22px;
-                text-align: right;
-            }
-
-            .sair-icon {
-                img {
-                    width: 30px;  
-                    transition: opacity 0.3s ease;
-
-                    &:hover {
-                        opacity: 0.5;
-                    }
-                }
-            }
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 500;
     }
-
-    .menu-faketrigger {
+    
+    .menu-header {
+        width: 65px;
+        margin-bottom: 20px;
+        transition: opacity 0.3s ease;
+    }
+    
+    .menu-header:hover {
+        opacity: 0.6;
+    }
+    
+    .menu-footer {
+        display: flex;
+        margin-top: auto;
+    }
+    
+    .logout-text {
+        margin-right: 10px;
+        font-size: 22px;
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .logout-text:hover {
+        color: gray;
+    }
+    
+    .logout-icon img {
+        width: 30px;
+        margin: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .logout-icon img:hover {
+        opacity: 0.5;
+    }
+    
+    /* Estilização geral dos itens do menu */
+    .side-menu ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .side-menu li {
+        padding: 10px 30px;
+    }
+    
+    .side-menu li a {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        transition: color 0.3s ease;
+    }
+    
+    .side-menu li a:hover {
+        color: rgb(184, 184, 184);
+    }
+    
+    /* Botão hambúrguer */
+    .menu-toggle {
         display: none;
     }
-
-    .menu-faketrigger:checked ~ .menu {
+    
+    .menu-toggle:checked ~ .side-menu {
         transform: translateX(0);
         box-shadow: 6px 0 8px rgba(0, 0, 0, 0.3);
     }
-
-    .menu-lines {
+    
+    .menu-icon {
         position: absolute;
-        z-index: 11;
+        z-index: 999;
         width: 35px;
         height: 35px;
         cursor: pointer;
         margin-left: 25px;
         margin-top: 30px;
-
-        span {
-            display: block;
-            width: 35px;
-            height: 5px;
-            margin-bottom: 6px; 
-            background-color: #2b2929;
-            border-radius: 3px;
-            transition: all 0.3s ease;
-
-            &:nth-child(1) {
-                transform-origin: left;
-            }
-
-            &:nth-child(2) {
-                opacity: 1;
-            }
-
-            &:nth-child(3) {
-                transform-origin: left;
-            }
-        }
     }
-
-    .menu-faketrigger:checked + .menu-lines span:nth-child(1) {
-        transform: rotate(45deg) translateY(10%);
+    
+    .menu-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin-bottom: 6px;
+        background-color: #2b2929;
+        border-radius: 3px;
+        transition: all 0.3s ease;
     }
-
-    .menu-faketrigger:checked + .menu-lines span:nth-child(2) {
+    
+    .menu-icon span:nth-child(1) {
+        transform-origin: left;
+    }
+    
+    .menu-icon span:nth-child(2) {
+        opacity: 1;
+    }
+    
+    .menu-icon span:nth-child(3) {
+        transform-origin: left;
+    }
+    
+    /* Transformação do botão hambúrguer em "X" */
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(-1px, -1px);
+    }
+    
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
         opacity: 0;
     }
-
-    .menu-faketrigger:checked + .menu-lines span:nth-child(3) {
-        transform: rotate(-45deg) translateY(-10%);
+    
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(-1px, -1px);
+    }
+    
+    @media (max-width: 768px) {
+        .side-menu {
+            width: 50%; /* Reduz a largura do menu em dispositivos menores */
+        }
+    
+        .side-menu li a {
+            font-size: 18px; /* Ajusta o tamanho da fonte */
+        }
+    
+        .menu-header {
+            width: 50px; /* Reduz o tamanho do logo */
+        }
+    
+        .logout-icon img {
+            width: 25px; /* Ajusta o tamanho do ícone de logout */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .side-menu {
+            width: 70%; /* Ocupa mais espaço em dispositivos muito pequenos */
+        }
+    
+        .menu-icon {
+            margin-left: 15px;
+            margin-top: 20px;
+            width: 30px; /* Ajusta o tamanho do botão hambúrguer */
+            height: 30px;
+        }
+    
+        .menu-icon span {
+            width: 30px;
+            height: 4px; /* Reduz a altura das linhas do hambúrguer */
+        }
+    
+        .side-menu li a {
+            font-size: 16px; /* Tamanho de texto menor */
+            padding: 8px 20px;
+        }
+    
+        .menu-header {
+            width: 40px; /* Reduz ainda mais o logo */
+        }
+    
+        .logout-text {
+            font-size: 16px; /* Texto menor para logout */
+        }
+    
+        .logout-icon img {
+            width: 20px; /* Ícone de logout menor */
+        }
     }
 
     .nome {
