@@ -2,6 +2,7 @@ import './produto.scss';
 
 
 function Produto() {
+  
 
     return (
        <div className="produto">
@@ -55,7 +56,7 @@ function Produto() {
               <p className='marca'>BACURI</p>
               <h2>Manteiga Corporal</h2>
               <img className='estrela' src="/assets/images/estrelaavaliar.svg" alt="" />
-              <p className='pre'>R$ 10,00</p>
+              <p className='pre'>R$ 99,99</p>
 
             </div>
 
