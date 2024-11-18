@@ -62,7 +62,10 @@ function Paginicio() {
             <li><a href="#historia" className="Link" onClick={(e) => handleSmoothScroll(e, 'historia')}>Nossa História</a></li>
             <li><a href="#servicos" className="Link" onClick={(e) => handleSmoothScroll(e, 'servicos')}>Serviços</a></li>
             <li><a href="#galeria" className="Link" onClick={(e) => handleSmoothScroll(e, 'galeria')}>Galeria</a></li>
+            <li><Link to="/Produtos" className="Link" >Produtos</Link></li>
+
                      <li><Link to="/LoginAdm" className="Link" >Login</Link></li>
+                     
                      </ul>
             </div>
 
@@ -82,6 +85,7 @@ function Paginicio() {
             <li><a href="#historia" className="Link" onClick={(e) => handleSmoothScroll(e, 'historia')}>Nossa História</a></li>
             <li><a href="#servicos" className="Link" onClick={(e) => handleSmoothScroll(e, 'servicos')}>Serviços</a></li>
             <li><a href="#galeria" className="Link" onClick={(e) => handleSmoothScroll(e, 'galeria')}>Galeria</a></li>
+            <li><Link to="/Produtos" className="Link" >Produtos</Link></li>
 
             </ul>
 
@@ -261,13 +265,13 @@ function Paginicio() {
 
 
          <div className="redes">
-      <a href="https://www.whatsapp.com/?lang=pt_BR">
-        <img className="wt" src="/assets/images/whats.png" alt="WhatsApp" />
+      <a href="https://x.com/BeautyQueeSpa?t=HadmY1hVbnOWRZ7QniqNdQ&s=09">
+        <img className="wt" src="/assets/images/twitter.png" alt="Twitter" />
       </a>
-      <a href="https://www.facebook.com/?locale=pt_BR">
+      <a href="https://www.facebook.com/profile.php?id=61568535044106&mibextid=ZbWKwL">
         <img className="fa" src="/assets/images/face.svg" alt="Facebook" />
       </a>
-      <a href="https://www.instagram.com/">
+      <a href="https://www.instagram.com/beutyqueen_estetica/profilecard/?igsh=MXdweTh1OW1jb2MwMQ==">
         <img className="in" src="/assets/images/insta.svg" alt="Twitter" />
       </a>
     </div>
@@ -278,7 +282,11 @@ function Paginicio() {
          </div>
          
 
-            
+         <div className='redes-1'>
+            <a href="https://wa.me/5511998242606?text=Óla!+Gostaria+de+saber+sobre+o+seu+serviço.">
+               <img className="wha" src="/assets/images/whats.png" alt="Whatts" />
+            </a>   
+         </div>   
 
       
          <div className='mapBox'>

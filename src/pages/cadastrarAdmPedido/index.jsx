@@ -1,8 +1,8 @@
 import './index.scss';
-import {Link, useParams} from 'react-router-dom'
+import {Link, useParams , useNavigate} from 'react-router-dom'
 import React from 'react';
 import axios from 'axios';
-import { useEffect, useState, useNavigate  } from 'react' 
+import { useEffect, useState } from 'react' 
 import moment from 'moment';
 
 
