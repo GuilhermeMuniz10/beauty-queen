@@ -1,0 +1,137 @@
+.pagina-notfound{
+
+
+    .textooo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .txt1{
+        background-color: #f2eceb;
+        box-shadow: 0px 0px 1.5px 2.5px #bcb7b6;
+        padding-top: 7px;
+        padding-bottom: 7PX;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: 'Lexend Exa';
+        font-size: 22px;
+    }
+
+    .Link{
+        color: black;
+    }
+
+    .txt2{
+        font-family: 'Lekton';
+        font-size: 28px;
+        color: #968C8C;
+        width: 350px;
+        text-align: center;
+        margin-top: 28px;
+    }
+
+    .txt3{
+        font-family: 'Lexend Exa';
+        font-size: 24px;
+        text-align: center;
+        line-height: 0px;
+    }
+
+    .linha{
+        width: 250px;
+    }
+
+    .notfound{
+      margin-top: 50px;
+        width: 600px;
+    }
+
+    @media (max-width: 768px) {
+        .pagina-notfound {
+    
+            .txt1 {
+                font-size: 5vw; /* Tamanho maior para telas médias */
+                padding: 5px 8px;
+            }
+    
+            .txt2 {
+                font-size: 7vw; /* Tamanho maior para telas médias */
+                width: 90%;
+                margin-top: 4vh;
+            }
+    
+            .txt3 {
+                font-size: 5vw; /* Tamanho maior para telas médias */
+            }
+    
+            .linha {
+                width: 80%; /* Ajuste a largura para telas médias */
+            }
+    
+            .notfound {
+                width: 90%; /* Ajuste a largura para telas médias */
+            }
+        }
+    }
+    
+    /* Media Query para telas pequenas (máximo 480px) */
+    @media (max-width: 480px) {
+        .pagina-notfound {
+    
+            .txt1 {
+                font-size: 6vw; /* Ajuste maior para telas pequenas */
+                padding: 5px 7px;
+            }
+    
+            .txt2 {
+                font-size: 8vw; /* Ajuste maior para telas pequenas */
+                width: 90%;
+                margin-top: 4vh;
+            }
+    
+            .txt3 {
+                font-size: 6vw; /* Ajuste maior para telas pequenas */
+            }
+    
+            .linha {
+                width: 85%; /* Ajuste a largura para telas pequenas */
+            }
+    
+            .notfound {
+                width: 95%; /* Ajuste para largura quase total em telas pequenas */
+            }
+        }
+    }
+    
+    /* Media Query para dispositivos muito pequenos (máximo 320px) */
+    @media (max-width: 320px) {
+        .pagina-notfound {
+    
+            .txt1 {
+                font-size: 7vw; /* Tamanho ainda maior para telas muito pequenas */
+                padding: 5px 6px;
+            }
+    
+            .txt2 {
+                font-size: 9vw; /* Tamanho maior para telas muito pequenas */
+                width: 90%;
+                margin-top: 4vh;
+            }
+    
+            .txt3 {
+                font-size: 7vw; /* Ajuste maior para telas muito pequenas */
+            }
+    
+            .linha {
+                width: 90%; /* Ajuste para telas muito pequenas */
+            }
+    
+            .notfound {
+                width: 100%; /* Ajuste para largura total em telas muito pequenas */
+            }
+        }
+    }
+}

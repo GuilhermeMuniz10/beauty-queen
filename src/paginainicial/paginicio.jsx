@@ -259,13 +259,13 @@ function Paginicio() {
 
 
          <div className="redes">
-      <a href="https://www.whatsapp.com/?lang=pt">
-        <img className="wt" src="/assets/images/twitter.png" alt="WhatsApp" />
+      <a href="https://x.com/BeautyQueeSpa?t=HadmY1hVbnOWRZ7QniqNdQ&s=09">
+        <img className="wt" src="/assets/images/twitter.png" alt="Twitter" />
       </a>
-      <a href="https://www.facebook.com/?locale=pt_BR">
+      <a href="https://www.facebook.com/profile.php?id=61568535044106&mibextid=ZbWKwL">
         <img className="fa" src="/assets/images/face.svg" alt="Facebook" />
       </a>
-      <a href="https://www.instagram.com/">
+      <a href="https://www.instagram.com/beutyqueen_estetica/profilecard/?igsh=MXdweTh1OW1jb2MwMQ==">
         <img className="in" src="/assets/images/insta.svg" alt="Twitter" />
       </a>
     </div>
@@ -277,8 +277,8 @@ function Paginicio() {
          
 
          <div className='redes-1'>
-            <a href="https://www.instagram.com/">
-               <img className="in" src="/assets/images/whats.png" alt="Whatts" />
+            <a href="https://wa.me/5511998242606?text=Óla!+Gostaria+de+saber+sobre+o+seu+serviço.">
+               <img className="wha" src="/assets/images/whats.png" alt="Whatts" />
             </a>   
          </div>   
 
