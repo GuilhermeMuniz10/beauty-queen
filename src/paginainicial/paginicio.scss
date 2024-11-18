@@ -1,10 +1,123 @@
 
+/* Estilos gerais para o menu */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100%; /* Ocupa toda a altura da tela */
+    background-color: #f6f2f1;
+    transform: translateX(-100%); /* Inicialmente fora da tela */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 100px 0 0; /* Espaço no topo para o menu */
+    text-align: center;
+}
+
+.menu ul li {
+    padding: 10px 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: rgb(184, 184, 184);
+}
+
+/* Checkbox (trigger para o menu sanduíche) */
+.menu-faketrigger {
+    display: none; /* Oculta o checkbox */
+}
+
+/* Botão sanduíche */
+.menu-lines {
+    position: fixed; /* Botão fixo no canto da tela */
+    top: 15px; /* Ajusta a posição vertical */
+    left: 15px; /* Ajusta a posição horizontal */
+    z-index: 11; /* Garante que o botão fique acima de outros elementos */
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.menu-lines span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 6px;
+    background-color: #2b2929;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Animação para transformar o sanduíche em "X" */
+.menu-faketrigger:checked ~ .menu {
+    transform: translateX(0); /* Mostra o menu lateral */
+    box-shadow: 6px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-faketrigger:checked + .menu-lines span:nth-child(1) {
+    transform: rotate(45deg) translateY(10%);
+}
+
+.menu-faketrigger:checked + .menu-lines span:nth-child(2) {
+    opacity: 0; /* Oculta a linha do meio */
+}
+
+.menu-faketrigger:checked + .menu-lines span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10%);
+}
+
+/* Estilos para telas menores */
+@media (max-width: 480px) {
+    /* Mostra apenas o botão de sanduíche */
+	.menu{
+		position: fixed !important;
+
+	}
+    .header, .links, .logoBQB {
+        display: none !important; /* Oculta todos os elementos */
+    }
+
+    .menu-lines {
+        display: block; /* Mostra o botão de sanduíche */
+    }
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 481px) {
+    /* Oculta o menu lateral e o botão de sanduíche */
+    .menu, .menu-faketrigger, .menu-lines {
+        display: none !important;
+    }
+	.menu{
+		position: fixed !important;
+
+	}
+    /* Mostra o cabeçalho completo */
+    .header {
+        display: block;
+    }
+}
 
 
 
 /* Estilos para telas pequenas (máximo 480px) */
 @media (max-width: 480px) {
+	.menu{
+		position: fixed !important;
 
+	}
 	/* Menu lateral */
 	.menu {
 	  position: fixed;
@@ -100,6 +213,82 @@
 	}
   }
 
+/* Botão sanduíche fixo */
+.menu-lines {
+    position: fixed; /* Mantém o botão fixo na posição */
+    top: 15px; /* Distância do topo */
+    left: 15px; /* Distância do lado esquerdo */
+    z-index: 100; /* Garante que o botão esteja acima de outros elementos */
+    width: 40px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    display: flex; /* Centraliza as linhas */
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* Linhas do botão sanduíche */
+.menu-lines span {
+    display: block;
+    width: 100%; /* Mesma largura do botão */
+    height: 5px; /* Espessura das linhas */
+    background-color: #2b2929; /* Cor das linhas */
+    border-radius: 3px; /* Bordas arredondadas */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Checkbox (controle do menu) */
+.menu-faketrigger {
+    display: none; /* Oculta o checkbox */
+}
+
+/* Quando o menu está aberto */
+.menu-faketrigger:checked ~ .menu {
+    transform: translateX(0); /* Mostra o menu */
+    box-shadow: 6px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-faketrigger:checked + .menu-lines span:nth-child(1) {
+    transform: rotate(45deg) translateY(10%);
+}
+
+.menu-faketrigger:checked + .menu-lines span:nth-child(2) {
+    opacity: 0; /* Oculta a linha do meio */
+}
+
+.menu-faketrigger:checked + .menu-lines span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10%);
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 480px) {
+    .menu-lines {
+        display: flex; /* Garante que o botão de menu apareça */
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* Largura total */
+        height: 100%; /* Altura total */
+        background-color: #f6f2f1;
+        transform: translateX(-100%); /* Inicialmente fora da tela */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index: 99; /* Abaixo do botão */
+    }
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 481px) {
+    .menu-lines {
+        display: none; /* Oculta o botão para telas maiores */
+    }
+
+    .menu {
+        display: none; /* Esconde o menu lateral */
+    }
+}
 
 
 
@@ -375,6 +564,22 @@
 	  top: 10px; /* Ajusta o topo para que o logo não fique colado na parte superior da tela */
 	}
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 .historia {
 	margin-bottom: 30px;
@@ -1210,7 +1415,43 @@ footer {
 	}
 }
 
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
 
+    footer .plt {
+        display: none; /* Remove o elemento em telas menores */
+    }
+
+    footer .conteiners {
+        flex-direction: column; /* Ajustar para layout em coluna */
+        align-items: center;
+    }
+
+    footer .cont {
+        flex-direction: column; /* Ajustar itens para coluna */
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .cont img {
+        width: 40px; /* Ajustar o tamanho da imagem */
+        height: 40px;
+    }
+}
+
+/* Media Query para telas muito pequenas */
+@media (max-width: 480px) {
+    footer .cont {
+        font-size: 16px; /* Reduzir a fonte */
+    }
+
+	h1{
+		font-size: 20px;
+	}
+}
 
 .separa {
 	color: #D6B686;
