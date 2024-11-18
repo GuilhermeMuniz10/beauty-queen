@@ -62,7 +62,10 @@ function Paginicio() {
             <li><a href="#historia" className="Link" onClick={(e) => handleSmoothScroll(e, 'historia')}>Nossa História</a></li>
             <li><a href="#servicos" className="Link" onClick={(e) => handleSmoothScroll(e, 'servicos')}>Serviços</a></li>
             <li><a href="#galeria" className="Link" onClick={(e) => handleSmoothScroll(e, 'galeria')}>Galeria</a></li>
+            <li><Link to="/Produtos" className="Link" >Produtos</Link></li>
+
                      <li><Link to="/LoginAdm" className="Link" >Login</Link></li>
+                     
                      </ul>
             </div>
 
@@ -82,6 +85,7 @@ function Paginicio() {
             <li><a href="#historia" className="Link" onClick={(e) => handleSmoothScroll(e, 'historia')}>Nossa História</a></li>
             <li><a href="#servicos" className="Link" onClick={(e) => handleSmoothScroll(e, 'servicos')}>Serviços</a></li>
             <li><a href="#galeria" className="Link" onClick={(e) => handleSmoothScroll(e, 'galeria')}>Galeria</a></li>
+            <li><Link to="/Produtos" className="Link" >Produtos</Link></li>
 
             </ul>
 

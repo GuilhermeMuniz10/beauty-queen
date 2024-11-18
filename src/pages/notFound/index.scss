@@ -38,6 +38,11 @@
         font-size: 24px;
         text-align: center;
         line-height: 0px;
+        transition: opacity 0.3s ease;
+    }
+
+    .txt3:hover {
+        opacity: 0.3; /* Torna opaco quando passar o mouse */
     }
 
     .linha{
