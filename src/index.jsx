@@ -40,7 +40,6 @@ root.render(
         <Route path='/CadastrarAdmProcedimento/:id' element={<CadastrarAdmProcedimento />} />
         <Route path='/CadastrarAdmPedido' element={<CadastrarAdmPedido />} />
         <Route path='/ExaminarClientes' element={<ExaminarClientes />} />
-        <Route path='/ProdutosCorpo' element={<ProdutosCorpo />}/>    
         <Route path='/ExaminarProcedimento' element={<ConsultarProcedimentos />}/>    
         <Route path='/ExaminarPedidos' element={<ConsultarPedidos />}/>    
         <Route path='/LoginAdm' element={<LoginAdm />} />

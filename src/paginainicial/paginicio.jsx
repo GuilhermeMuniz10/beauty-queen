@@ -58,11 +58,12 @@ function Paginicio() {
 
             <div class="menu">
                   <ul>
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">Nossa História</a></li>
-                     <li><a href="#">Serviços</a></li>
-                     <li><a href="#">Galeria</a></li>
-                  </ul>
+                  <li><a href="#home" className="Link" onClick={(e) => handleSmoothScroll(e, 'home')}>Home</a></li>
+            <li><a href="#historia" className="Link" onClick={(e) => handleSmoothScroll(e, 'historia')}>Nossa História</a></li>
+            <li><a href="#servicos" className="Link" onClick={(e) => handleSmoothScroll(e, 'servicos')}>Serviços</a></li>
+            <li><a href="#galeria" className="Link" onClick={(e) => handleSmoothScroll(e, 'galeria')}>Galeria</a></li>
+                     <li><Link to="/LoginAdm" className="Link" >Login</Link></li>
+                     </ul>
             </div>
 
 

@@ -1,15 +1,31 @@
 
+
+@media (max-width: 480px) {
+    .logoBQB {
+        visibility: visible !important; /* Garante que o elemento seja visível */
+		opacity: 1 !important; /* Garante que a logo seja visível */
+        width: 55px; /* Mantém o tamanho reduzido para telas pequenas */
+        top: 10px; /* Ajusta a posição, se necessário */
+
+    }
+
+}
+
+
+
 /* Estilos gerais para o menu */
 .menu {
     position: fixed;
+	justify-content: center;
     top: 0;
     left: 0;
-    width: 100%; /* Ocupa toda a largura da tela */
+    width: 70% !important; /* Ocupa toda a largura da tela */
     height: 100%; /* Ocupa toda a altura da tela */
     background-color: #f6f2f1;
     transform: translateX(-100%); /* Inicialmente fora da tela */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 10;
+    z-index: 500;
+	font-family: 'Darker Grotesque';
 }
 
 .menu ul {
@@ -85,7 +101,7 @@
 		position: fixed !important;
 
 	}
-    .header, .links, .logoBQB {
+    .header, .links {
         display: none !important; /* Oculta todos os elementos */
     }
 
@@ -673,7 +689,7 @@
 
 @media (max-width: 480px) {
     .QS {
-		margin-top: -38vh;
+		margin-top: -50vh;
         font-size: 2.7vw;
 		right: 10%;
 		line-height: 13px;
@@ -687,7 +703,7 @@
 
 @media (max-width: 480px) {
 	.NM {
-		margin-top: -60vh;
+		margin-top: -70vh;
 		font-size: 2.7vw;
 		left: 10%;
 		line-height: 13px;
@@ -876,7 +892,7 @@
 
 @media (max-width: 480px) {
     .OC {
-		top: 162%;
+		top: 160%;
 		font-size: 2.7vw;
 		left: 42.5%;
 		line-height: 13px;
@@ -922,9 +938,9 @@
     .NH {
         background-color: #a97772;
 		box-shadow: -3px 1px 1.5px 3px #9d93934a;
-		top: 128%;
+		top: 110%;
 		font-size: 2.2vw;
-		left: 5%;
+		left: 3%;
 		line-height: 13px;
 		border-radius: 3px;
 		width: 180px;
@@ -933,9 +949,9 @@
     }
 
     .OC {
-		top: 146%;
+		top: 130%;
 		font-size: 2.7vw;
-		left: 42%;
+		left: 44%;
 		line-height: 13px;
 		background-color: #a9777296;
 		width: 190px;
@@ -1255,7 +1271,7 @@
 	font-size: 20px;
 	font-family: 'Darker Grotesque';
 	top: 90px;
-	
+	line-height: 20px;
 }
 
 
@@ -1293,6 +1309,8 @@
 	bottom: -55px;
 	padding: 3px;
 	left: 215px;
+	transition: opacity 0.3s ease;
+	margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1309,6 +1327,8 @@
 	position: relative;
 	bottom: -55px;
 	left: 215px;
+	transition: opacity 0.3s ease;
+	margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1325,7 +1345,9 @@
 	position: relative;
 	bottom: -68px;
 	left: 215px;
-	
+	transition: opacity 0.3s ease;
+	margin-top: 10px;
+
 }
 
 @media (max-width: 768px) {
@@ -1339,6 +1361,13 @@
 
 
 
+
+/* Mudar para rosa ao passar o mouse */
+.redes .wt:hover,
+.redes .fa:hover,
+.redes .in:hover {
+	opacity: 0.4;
+}
 
 
 
