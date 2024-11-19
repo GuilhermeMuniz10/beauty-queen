@@ -86,7 +86,7 @@ function Paginicio() {
             <li><a href="#servicos" className="Link" onClick={(e) => handleSmoothScroll(e, 'servicos')}>Serviços</a></li>
             <li><a href="#galeria" className="Link" onClick={(e) => handleSmoothScroll(e, 'galeria')}>Galeria</a></li>
             <li><Link to="/Produtos" className="Link" >Produtos</Link></li>
-
+            <li><Link to="/Feedbacks" className="Link" >Feedbacks</Link></li>
             </ul>
 
           <div className="botom">
