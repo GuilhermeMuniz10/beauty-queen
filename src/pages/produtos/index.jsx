@@ -7,7 +7,7 @@ export default function ProdutosCF(){
   const [activeCategory, setActiveCategory] = useState("corporal"); // Define a categoria ativa
 
   const corporalProducts = (
-    <div>
+    <div className='mae' >
       
       <div className='fileira1'>
             <div className='colun1'>
@@ -340,10 +340,10 @@ export default function ProdutosCF(){
         <img src="/assets/images/logoBQ.png" alt="Descrição da Imagem" className="imagem-opaca" />
 
         <ul>  
-            <li><a href="#home" className="Link">Home</a></li>
-            <li><a href="#historia" className="Link">Nossa História</a></li>
-            <li><a href="#servicos" className="Link">Serviços</a></li>
-            <li><a href="#galeria" className="Link" >Galeria</a></li>
+            <li><a href="/" className="Link">Home</a></li>
+            <li><a href="/" className="Link">Nossa História</a></li>
+            <li><a href="/" className="Link">Serviços</a></li>
+            <li><a href="/" className="Link" >Galeria</a></li>
             </ul>
 
         <div className="botom">
