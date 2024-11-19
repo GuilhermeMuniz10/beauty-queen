@@ -29,7 +29,7 @@ useEffect(() => {
 
 async function consultar() {
     if (id !== undefined && token) {
-        const url = `http://localhost:5029/pedido/${id}?x-access-token=${localStorage.getItem('TOKEN')}`;
+        const url = `http://4.172.207.208:5029/pedido/${id}?x-access-token=${localStorage.getItem('TOKEN')}`;
         let resp = await axios.get(url);
         let dados = resp.data;
 
