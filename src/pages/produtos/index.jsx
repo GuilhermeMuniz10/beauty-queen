@@ -7,7 +7,7 @@ export default function ProdutosCF(){
   const [activeCategory, setActiveCategory] = useState("corporal"); // Define a categoria ativa
 
   const corporalProducts = (
-    <div>
+    <div className='mae' >
       
       <div className='fileira1'>
             <div className='colun1'>
