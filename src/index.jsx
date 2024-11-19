@@ -19,6 +19,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ConsultarPedidos from './pages/examinarPedido';
 import NotFound from './pages/notFound';
 import ProdutosCF from './pages/produtos';
+import Feedbacks from './pages/feedbacks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -45,6 +46,7 @@ root.render(
         <Route path='/ExaminarProcedimento' element={<ConsultarProcedimentos />}/>    
         <Route path='/ExaminarPedidos' element={<ConsultarPedidos />}/>    
         <Route path='/LoginAdm' element={<LoginAdm />} />
+        <Route path='/Feedbacks' element={<Feedbacks />} />
 
 
         <Route path="*" element={<NotFound />} /> 

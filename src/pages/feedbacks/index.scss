@@ -1,0 +1,67 @@
+*{
+    font-family: 'Darker Grotesque';
+}
+
+.pagina-feedbacks{
+
+    .conteiners{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .txt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .conteiner {
+        background-color: rgba(187, 134, 134, 0.432);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        width: 550px;
+        gap: 15px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 2px 4px #66666621;
+        transition: transform 0.3s ease-in-out; /* Adicionando a transição */
+    }
+    
+    /* Efeito de subida ao passar o mouse */
+    .conteiner:hover {
+        transform: translateY(-10px); /* Move o contêiner para cima */
+    }
+    
+    .texto img {
+        width: 60px;
+        border-radius: 80%;
+    }
+    
+    .dire {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .dire .estrelinha {
+        width: 100px;
+    }
+    
+    .imge img {
+        width: 200px;
+        border-radius: 3px;
+    }
+
+    .imge-2 img {
+        width: 200px;
+        height: 300px;
+        border-radius: 3px;
+    }
+    
+}
