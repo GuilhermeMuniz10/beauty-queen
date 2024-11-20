@@ -136,16 +136,41 @@ header {
    display: flex;
    gap: 35px;
    left: -73%;
+   
 }
 
 @media (max-width: 480px){
     .fileira1{
         display: flex;
         gap: 35px;
-        left: -73%;
+        left: -130%;
+        flex-direction: column;
     }
 }
- 
+
+
+@media (min-width: 800px){
+    
+
+    .fileira1{
+        display: flex;
+        gap: 35px;
+        left: 90px;
+
+        .colun1 {
+            position: relative;
+            width: 270px;
+            height: 456px;
+            background: #fff;
+            justify-content: center;
+            top: -130px;
+            left: -55px; 
+            }
+        
+     }
+    
+
+}
 .colun1 {
     position: relative;
 	width: 270px;
@@ -158,15 +183,11 @@ header {
 
 @media (max-width: 480px){
     .colun1{
-        position: relative;
-        width: 220px;
-        height: 456px;
-        background: #fff;
-        justify-content: center;
-        top: -130px;
-        left: 300px; 
+        left: 500px;
     }
 }
+
+
 
 
 .fileira2{
@@ -174,6 +195,41 @@ header {
     gap: 35px;
     left: -73%;
  }
+
+ @media( max-width: 480px) {
+    .fileira2{
+        display: flex;
+        gap: 35px;
+        left: -130%;
+        flex-direction: column;
+    }
+ }
+
+
+ @media (min-width: 800px){
+    
+
+    .fileira2{
+        display: flex;
+        gap: 35px;
+        left: 90px;
+
+        .colun2 {
+            position: relative;
+            width: 270px;
+            height: 456px;
+            background: #fff;
+            justify-content: center;
+            top: -80px;
+            left: -55px; 
+            }
+        
+     }
+    
+
+}
+
+ 
   
  .colun2 {
      position: relative;
@@ -185,6 +241,12 @@ header {
      left: 1000px;
  }
 
+ @media (max-width: 480px) {
+    .colun2 {
+        left: 500px;
+    }
+ }
+
 
 
  .fileira3{
@@ -192,6 +254,39 @@ header {
     gap: 35px;
     left: -73%;
  }
+
+ @media (max-width: 480px) {
+    .fileira3 {
+        display: flex;
+        gap: 35px;
+        left: -130%;
+        flex-direction: column;
+    }
+ }
+
+
+ @media (min-width: 800px){
+    
+
+    .fileira3{
+        display: flex;
+        gap: 35px;
+        left: 90px;
+
+        .colun3 {
+            position: relative;
+            width: 270px;
+            height: 456px;
+            background: #fff;
+            justify-content: center;
+            top: -20px;
+            left: -55px; 
+            }
+        
+     }
+    
+
+}
   
  .colun3 {
      position: relative;
@@ -201,6 +296,12 @@ header {
      justify-content: center;
      top: -20px;
     left: 1000px;
+ }
+
+ @media (max-width: 480px) {
+    .colun3 {
+        left: 500px;
+    }
  }
 
 
@@ -214,18 +315,7 @@ header {
     left: 26px;
 }
 
-@media (max-width: 480px) {
-    .fundo1{
-        position: absolute;
-	    width: 150px;
-	    height: 150px;
-	    background: #C59E9A;
-    	justify-content: center;
-	    top: 20px;
-        left: 26px;
-    }
-}
- 
+
 
 .fundo2 {
     position: absolute;
@@ -281,13 +371,7 @@ header {
     left: 26px;
 }
 
-@media (max-width: 480px) {
-    .fileira1 h2{
-        position: absolute;
-        top: 222px;
-        left: 26px;
-    }
-}
+
 
 .fileira2 h2 {
     position: absolute;
@@ -309,13 +393,7 @@ header {
     left: 26px;
 }
 
-@media (max-width: 480px) {
-    .fileira1 .marca {
-        position: absolute;
-        top: 155px;
-        left: 26px;
-    }
-}
+
 
 .fileira2 .marca {
     position: absolute;
