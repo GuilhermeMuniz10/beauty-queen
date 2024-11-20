@@ -135,7 +135,15 @@ header {
 .fileira1{
    display: flex;
    gap: 35px;
-   
+   left: -73%;
+}
+
+@media (max-width: 480px){
+    .fileira1{
+        display: flex;
+        gap: 35px;
+        left: -73%;
+    }
 }
  
 .colun1 {
@@ -145,15 +153,26 @@ header {
 	background: #fff;
 	justify-content: center;
 	top: -130px;
-    left: 1000px;
-	
-    
+    left: 1000px; 
+}
+
+@media (max-width: 480px){
+    .colun1{
+        position: relative;
+        width: 220px;
+        height: 456px;
+        background: #fff;
+        justify-content: center;
+        top: -130px;
+        left: 300px; 
+    }
 }
 
 
 .fileira2{
     display: flex;
     gap: 35px;
+    left: -73%;
  }
   
  .colun2 {
@@ -171,6 +190,7 @@ header {
  .fileira3{
     display: flex;
     gap: 35px;
+    left: -73%;
  }
   
  .colun3 {
@@ -192,6 +212,18 @@ header {
 	justify-content: center;
 	top: 20px;
     left: 26px;
+}
+
+@media (max-width: 480px) {
+    .fundo1{
+        position: absolute;
+	    width: 150px;
+	    height: 150px;
+	    background: #C59E9A;
+    	justify-content: center;
+	    top: 20px;
+        left: 26px;
+    }
 }
  
 
@@ -219,11 +251,13 @@ header {
 
 .fileira1 .imag {
     position: relative;
-   width: 180px;
+   width: 120px;
    align-items: center;
    left: 20px;
    top: 10px;
 }
+
+
 
 .fileira2 .imag {
     position: relative;
@@ -247,6 +281,14 @@ header {
     left: 26px;
 }
 
+@media (max-width: 480px) {
+    .fileira1 h2{
+        position: absolute;
+        top: 222px;
+        left: 26px;
+    }
+}
+
 .fileira2 h2 {
     position: absolute;
     top: 232px;
@@ -265,6 +307,14 @@ header {
     position: absolute;
     top: 215px;
     left: 26px;
+}
+
+@media (max-width: 480px) {
+    .fileira1 .marca {
+        position: absolute;
+        top: 155px;
+        left: 26px;
+    }
 }
 
 .fileira2 .marca {

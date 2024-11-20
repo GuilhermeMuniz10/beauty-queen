@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 
 export default function ProdutosCF(){
 
+  
   const [activeCategory, setActiveCategory] = useState("corporal"); // Define a categoria ativa
 
   const corporalProducts = (
