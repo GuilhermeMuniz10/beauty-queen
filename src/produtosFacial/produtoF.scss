@@ -1,3 +1,15 @@
+
+
+
+@media (max-width: 480px) {
+    header {
+        width: 0%;
+    }
+}
+
+
+
+
 header {
 	background: #C59E9A;
 	padding-top: 8px;
@@ -341,7 +353,7 @@ header {
 
 .fileira1 .imag {
     position: relative;
-   width: 120px;
+   width: 170px;
    align-items: center;
    left: 20px;
    top: 10px;
@@ -444,3 +456,493 @@ header {
     left: 26px;
 	font-size: 23px;
 }
+
+
+@media (max-width: 480px) {
+  
+/* Estilo da imagem no card */
+.colun1 .imag {
+    width: 80%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .colun1 .imag:hover {
+    transform: scale(1.2); /* Efeito de hover */
+  }
+  
+  /* Modal */
+  .modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Mostrar modal ao ativar o :target */
+  .modal:target {
+    display: flex; /* Mostra o modal */
+  }
+  
+  /* Conteúdo do modal */
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Botão de fechar */
+  .close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #f00;
+  }
+
+
+  .modal-content {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(4);
+    }
+    to {
+      opacity: 1;
+      transform: scale(6);
+    }
+  }
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+  
+    /* Estilo da imagem no card */
+    .colun2 .imag {
+        width: 80%;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.3s;
+      }
+      
+      .colun2 .imag:hover {
+        transform: scale(1.2); /* Efeito de hover */
+      }
+      
+      /* Modal */
+      .modal {
+        display: none; /* Esconde o modal por padrão */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Mostrar modal ao ativar o :target */
+      .modal:target {
+        display: flex; /* Mostra o modal */
+      }
+      
+      /* Conteúdo do modal */
+      .modal-content {
+        max-width: 80%;
+        max-height: 80%;
+        position: relative;
+      }
+      
+      .modal-content img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+      
+      /* Botão de fechar */
+      .close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      
+      .close:hover {
+        color: #f00;
+      }
+    
+    
+      .modal-content {
+        animation: fadeIn 0.3s ease-out;
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(4);
+        }
+        to {
+          opacity: 1;
+          transform: scale(6);
+        }
+      }
+    }
+
+
+
+
+    @media (max-width: 480px) {
+  
+        /* Estilo da imagem no card */
+        .colun3 .imag {
+            width: 80%;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s;
+          }
+          
+          .colun3 .imag:hover {
+            transform: scale(1.2); /* Efeito de hover */
+          }
+          
+          /* Modal */
+          .modal {
+            display: none; /* Esconde o modal por padrão */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          /* Mostrar modal ao ativar o :target */
+          .modal:target {
+            display: flex; /* Mostra o modal */
+          }
+          
+          /* Conteúdo do modal */
+          .modal-content {
+            max-width: 80%;
+            max-height: 80%;
+            position: relative;
+          }
+          
+          .modal-content img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          }
+          
+          /* Botão de fechar */
+          .close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            background-color: transparent;
+            cursor: pointer;
+          }
+          
+          .close:hover {
+            color: #f00;
+          }
+        
+        
+          .modal-content {
+            animation: fadeIn 0.3s ease-out;
+          }
+          
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: scale(4);
+            }
+            to {
+              opacity: 1;
+              transform: scale(6);
+            }
+          }
+        }
+
+
+
+
+
+@media (min-width: 800px){
+
+/* Estilo da imagem no card */
+.colun1 .imag {
+    width: 80%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .colun1 .imag:hover {
+    transform: scale(1.2); /* Efeito de hover */
+  }
+  
+  /* Modal */
+  .modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Mostrar modal ao ativar o :target */
+  .modal:target {
+    display: flex; /* Mostra o modal */
+  }
+  
+  /* Conteúdo do modal */
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Botão de fechar */
+  .close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #f00;
+  }
+
+
+  .modal-content {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(4);
+    }
+    to {
+      opacity: 1;
+      transform: scale(6);
+    }
+  }
+}
+
+
+
+@media (min-width: 800px){
+
+    /* Estilo da imagem no card */
+    .colun2 .imag {
+        width: 80%;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.3s;
+      }
+      
+      .colun2 .imag:hover {
+        transform: scale(1.2); /* Efeito de hover */
+      }
+      
+      /* Modal */
+      .modal {
+        display: none; /* Esconde o modal por padrão */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Mostrar modal ao ativar o :target */
+      .modal:target {
+        display: flex; /* Mostra o modal */
+      }
+      
+      /* Conteúdo do modal */
+      .modal-content {
+        max-width: 80%;
+        max-height: 80%;
+        position: relative;
+      }
+      
+      .modal-content img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+      
+      /* Botão de fechar */
+      .close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      
+      .close:hover {
+        color: #f00;
+      }
+    
+    
+      .modal-content {
+        animation: fadeIn 0.3s ease-out;
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(4);
+        }
+        to {
+          opacity: 1;
+          transform: scale(6);
+        }
+      }
+    }
+
+
+    @media (min-width: 800px){
+
+        /* Estilo da imagem no card */
+        .colun3 .imag {
+            width: 80%;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s;
+          }
+          
+          .colun3 .imag:hover {
+            transform: scale(1.2); /* Efeito de hover */
+          }
+          
+          /* Modal */
+          .modal {
+            display: none; /* Esconde o modal por padrão */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          /* Mostrar modal ao ativar o :target */
+          .modal:target {
+            display: flex; /* Mostra o modal */
+          }
+          
+          /* Conteúdo do modal */
+          .modal-content {
+            max-width: 80%;
+            max-height: 80%;
+            position: relative;
+          }
+          
+          .modal-content img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          }
+          
+          /* Botão de fechar */
+          .close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            background-color: transparent;
+            cursor: pointer;
+          }
+          
+          .close:hover {
+            color: #f00;
+          }
+        
+        
+          .modal-content {
+            animation: fadeIn 0.3s ease-out;
+          }
+          
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: scale(4);
+            }
+            to {
+              opacity: 1;
+              transform: scale(6);
+            }
+          }
+        }
