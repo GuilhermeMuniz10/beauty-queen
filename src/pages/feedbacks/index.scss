@@ -4,6 +4,82 @@
 
 .pagina-feedbacks{
 
+    @media (max-width: 480px) {
+        header{
+            width: 0%;
+            height: 30px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .conteiners {
+            flex-direction: column; /* Alinha os contêineres verticalmente */
+            align-items: center;
+        }
+    
+        .conteiner {
+            width: 80%; /* Ajusta a largura para telas médias */
+            flex-direction: column; /* Alinha o conteúdo internamente em coluna */
+        }
+    
+        .imge img,
+        .imge-2 img {
+            width: 100%; /* Ajusta as imagens à largura do contêiner */
+            max-width: 300px; /* Limita a largura para não exagerar */
+            height: auto; /* Mantém a proporção */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .conteiner {
+            width: 90%; /* Torna o contêiner mais flexível */
+            padding: 15px; /* Reduz o padding em telas menores */
+        }
+    
+        .imge img,
+        .imge-2 img {
+            width: 250px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+
+        .conteiners{
+            display: flex;
+            flex-direction: column !important;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .conteiner {
+            width: 80% !important; /* Ajusta para quase a largura total da tela */
+        }
+    
+        .imge img,
+        .imge-2 img {
+            max-width: 100px; /* Reduz ainda mais as imagens */
+        }
+
+        .dire{
+            width: 10px !important;
+        }
+    
+        .texto img {
+            width: 10px; /* Reduz o tamanho do ícone menor */
+        }
+
+        .texto h3{
+            font-size: medium; 
+        }
+        .estrelinha{
+            width: 10px;
+        }
+        .texto p{
+            font-size: small;
+        }
+
+    }
+
     .conteiners{
         display: flex;
         flex-direction: row;
@@ -19,6 +95,8 @@
         text-align: center;
         margin-top: 20px;
     }
+
+
     
     .conteiner {
         background-color: rgba(187, 134, 134, 0.432);
@@ -56,6 +134,7 @@
     .imge img {
         width: 200px;
         border-radius: 3px;
+        height: 300px;
     }
 
     .imge-2 img {

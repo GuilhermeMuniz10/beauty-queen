@@ -17,9 +17,9 @@ export default function Feedbacks(){
 
             <div class="menu">
                   <ul>
-                  <li><a href="#home" className="Link" >Home</a></li>
-            <li><a href="#historia" className="Link" >Nossa História</a></li>
-            <li><a href="#servicos" className="Link" >Serviços</a></li>
+                  <li><Link to="/" className="Link" >Home</Link></li>
+            <li><Link to="/" className="Link" >Nossa História</Link></li>
+            <li><Link to="/" className="Link" >Serviços</Link></li>
             <li><Link to="/" className="Link" >Galeria</Link></li>
             <li><Link to="/Produtos" className="Link" >Produtos</Link></li>
             <li><Link to="/Feedbacks" className="Link" >Feedbacks</Link></li>
