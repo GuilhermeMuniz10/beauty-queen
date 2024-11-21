@@ -30,7 +30,7 @@ export default function Consultar() {
 
      async function buscar() {
          try {
-             const url = `http://localhost:5029/cliente?x-access-token=${token}`;
+             const url = `http://4.172.207.208:5029/cliente?x-access-token=${token}`;
              const resp = await axios.get(url);
            setClientes(resp.data);
 
@@ -43,7 +43,7 @@ export default function Consultar() {
    async function excluir(id, nome) {
     alert(id)
        try {
-         const url = `http://localhost:5029/cliente/${id}?x-access-token=${token}`;
+         const url = `http://4.172.207.208:5029/cliente/${id}?x-access-token=${token}`;
             await axios.delete(url);
 
            await buscar();

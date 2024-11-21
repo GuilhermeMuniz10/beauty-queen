@@ -31,7 +31,7 @@ export default function ConsultarPedidos() {
         let id = localStorage.getItem('USUARIO')
        
          try {
-             const url = `http://localhost:5029/pedido/?x-access-token=${token}`;
+             const url = `http://4.172.207.208:5029/pedido/?x-access-token=${token}`;
              const resp = await axios.get(url);
              console.log(`resposta:`+resp.data);
              setPedidos(resp.data);
@@ -44,7 +44,7 @@ export default function ConsultarPedidos() {
 
      async function excluir(id, nome) {
          try {
-             const url = `http://localhost:5029/pedido/${id}?x-access-token=${token}`;
+             const url = `http://4.172.207.208:5029/pedido/${id}?x-access-token=${token}`;
              await axios.delete(url);
 
              await buscar();
