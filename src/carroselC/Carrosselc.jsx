@@ -4,9 +4,9 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import './Carrosselc.scss';
 
 const CarrosselC = () => {
-    // Ajuste para garantir que apenas 1 imagem será exibida por vez
+    
     const responsive = {
-        0: { items: 1 }, // Sempre exibir 1 item em qualquer tamanho de tela
+        0: { items: 1 }, 
         1024: { items: 1 },
     };
 
