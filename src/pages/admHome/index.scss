@@ -9,8 +9,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 25%; /* Largura do menu */
-    height: 100%; /* Altura completa */
+    width: 25%; 
+    height: 100%; 
     background-color: #f6f2f1;
     transform: translateX(-100%);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -136,54 +136,54 @@
 
 @media (max-width: 768px) {
     .side-menu {
-        width: 50%; /* Reduz a largura do menu em dispositivos menores */
+        width: 50%; 
     }
 
     .side-menu li a {
-        font-size: 18px; /* Ajusta o tamanho da fonte */
+        font-size: 18px; 
     }
 
     .menu-header {
-        width: 50px; /* Reduz o tamanho do logo */
+        width: 50px; 
     }
 
     .logout-icon img {
-        width: 25px; /* Ajusta o tamanho do ícone de logout */
+        width: 25px; 
     }
 }
 
 @media (max-width: 480px) {
     .side-menu {
-        width: 70%; /* Ocupa mais espaço em dispositivos muito pequenos */
+        width: 70%; 
     }
 
     .menu-icon {
         margin-left: 15px;
         margin-top: 20px;
-        width: 30px; /* Ajusta o tamanho do botão hambúrguer */
+        width: 30px; 
         height: 30px;
     }
 
     .menu-icon span {
         width: 30px;
-        height: 4px; /* Reduz a altura das linhas do hambúrguer */
+        height: 4px; 
     }
 
     .side-menu li a {
-        font-size: 16px; /* Tamanho de texto menor */
+        font-size: 16px; 
         padding: 8px 20px;
     }
 
     .menu-header {
-        width: 40px; /* Reduz ainda mais o logo */
+        width: 40px; 
     }
 
     .logout-text {
-        font-size: 16px; /* Texto menor para logout */
+        font-size: 16px; 
     }
 
     .logout-icon img {
-        width: 20px; /* Ícone de logout menor */
+        width: 20px; 
     }
 }
 
@@ -203,7 +203,7 @@
                 margin-bottom: 20px;
 
                 @media (max-width: 768px) {
-                    font-size: 40px; // Ajuste para telas menores
+                    font-size: 40px; 
                 }
             }
 
@@ -213,7 +213,7 @@
                 margin-bottom: 20px;
 
                 @media (max-width: 768px) {
-                    font-size: 24px; // Ajuste para telas menores
+                    font-size: 24px; 
                 }
             }
         }
@@ -234,7 +234,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center; 
-            align-items: center; // Centraliza horizontalmente
+            align-items: center; 
             transition: opacity 0.3s ease;
 
             .imagem {
@@ -243,7 +243,7 @@
                 transition: opacity 0.3s ease;      
 
                 @media (max-width: 768px) {
-                    width: 150px; // Diminuir o tamanho da imagem
+                    width: 150px; 
                 }
             }
 
@@ -260,7 +260,7 @@
                 transition: color 0.3s ease;
 
                 @media (max-width: 768px) {
-                    font-size: 24px; // Diminuir o tamanho do texto
+                    font-size: 24px; 
                 }
 
                 &:hover {
@@ -276,7 +276,7 @@
         }
 
         .menu-faketrigger:checked ~ .menu {
-            width: 100%; // Permite que o menu ocupe a tela inteira quando aberto
+            width: 100%;
         }
     }
 }
