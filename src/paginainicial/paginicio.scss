@@ -43,7 +43,7 @@
 .menu ul {
     list-style: none;
     margin: 0;
-    padding: 100px 0 0; /* Espaço no topo para o menu */
+    padding: 100px 0 0; 
     text-align: center;
 }
 
@@ -62,17 +62,17 @@
     color: rgb(184, 184, 184);
 }
 
-/* Checkbox (trigger para o menu sanduíche) */
+
 .menu-faketrigger {
-    display: none; /* Oculta o checkbox */
+    display: none; 
 }
 
-/* Botão sanduíche */
+
 .menu-lines {
-    position: fixed; /* Botão fixo no canto da tela */
-    top: 15px; /* Ajusta a posição vertical */
-    left: 15px; /* Ajusta a posição horizontal */
-    z-index: 11; /* Garante que o botão fique acima de outros elementos */
+    position: fixed; 
+    top: 15px; 
+    left: 15px; 
+    z-index: 11; 
     width: 35px;
     height: 35px;
     cursor: pointer;
@@ -88,9 +88,9 @@
     transition: all 0.3s ease;
 }
 
-/* Animação para transformar o sanduíche em "X" */
+
 .menu-faketrigger:checked ~ .menu {
-    transform: translateX(0); /* Mostra o menu lateral */
+    transform: translateX(0); 
     box-shadow: 6px 0 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -99,32 +99,32 @@
 }
 
 .menu-faketrigger:checked + .menu-lines span:nth-child(2) {
-    opacity: 0; /* Oculta a linha do meio */
+    opacity: 0; 
 }
 
 .menu-faketrigger:checked + .menu-lines span:nth-child(3) {
     transform: rotate(-45deg) translateY(-10%);
 }
 
-/* Estilos para telas menores */
+
 @media (max-width: 480px) {
-    /* Mostra apenas o botão de sanduíche */
+    
 	.menu{
 		position: fixed !important;
 
 	}
     .header, .links {
-        display: none !important; /* Oculta todos os elementos */
+        display: none !important; 
     }
 
     .menu-lines {
-        display: block; /* Mostra o botão de sanduíche */
+        display: block; 
     }
 }
 
-/* Estilos para telas maiores */
+
 @media (min-width: 481px) {
-    /* Oculta o menu lateral e o botão de sanduíche */
+    
     .menu, .menu-faketrigger, .menu-lines {
         display: none !important;
     }
@@ -132,7 +132,7 @@
 		position: fixed !important;
 
 	}
-    /* Mostra o cabeçalho completo */
+    
     .header {
         display: block;
     }
