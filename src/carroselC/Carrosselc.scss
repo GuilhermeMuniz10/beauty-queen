@@ -6,16 +6,16 @@
 
 .carousel-slide {
     width: 100%;
-    height: 750px; /* Altura conforme o segundo exemplo */
+    height: 750px; 
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: relative; /* Para o pseudo-elemento */
-    overflow: hidden; /* Esconde o excesso de conteúdo */
+    position: relative; 
+    overflow: hidden; 
 }
 
 .carousel-slide img {
-    width: 100%; /* Mantendo a largura das imagens */
+    width: 100%; 
     height:  100%;
     
 }
@@ -28,62 +28,62 @@
     cursor: pointer;
     font-size: 65px;
     padding: 10px;
-    color: white; /* Cor da seta */
-    background: transparent; /* Sem fundo */
+    color: white; 
+    background: transparent; 
     z-index: 10;
     transition: color 0.3s;
 
     &:hover {
-        color: rgba(0, 0, 0, 0.39); /* Efeito de hover nas setas */
+        color: rgba(0, 0, 0, 0.39); 
     }
 }
 
 .prev-btn {
-    left: 10px; /* Ajuste da distância da seta esquerda para a borda */
+    left: 10px; 
 }
 
 .next-btn {
-    right: 10px; /* Ajuste da distância da seta direita para a borda */
+    right: 10px; 
 }
 
-/* Ajustes para telas menores */
+
 @media (max-width: 768px) {
     .carousel-slide {
-        height: 300px; /* Altura menor para telas menores */
+        height: 300px; 
     }
 
     .carousel-slide img {
-        width: 100%; /* Ajusta a imagem para caber no container */
+        width: 100%; 
     }
 
     .carousel-btn {
-        font-size: 5vw; /* Aumenta o tamanho das setas proporcionalmente em telas menores */
-        padding: 12px; /* Ajusta o padding para botões maiores em telas pequenas */
-        background-size: 10%; /* Define o tamanho inicial do fundo */
+        font-size: 5vw; 
+        padding: 12px; 
+        background-size: 10%; 
     }
 
     .carousel-btn:hover {
-        background-size: 120%; /* Aumenta o fundo proporcionalmente ao passar o mouse */
+        background-size: 120%; 
     }
 }
 
 @media (max-width: 480px) {
     .carousel-slide {
-        height: 200px; /* Altura menor para dispositivos muito pequenos */
+        height: 200px; 
     }
 
     .carousel-slide img {
-        width: 100%; /* Ajusta a imagem para telas pequenas */
+        width: 100%; 
     }
 
     .carousel-btn {
-        font-size: 10vw; /* Aumenta ainda mais o tamanho das setas para telas muito pequenas */
-        padding: 15px; /* Ajusta o tamanho do botão em telas muito pequenas */
-        background-size: 100%; /* Define o tamanho inicial do fundo */
+        font-size: 10vw; 
+        padding: 15px; 
+        background-size: 100%; 
     }
 
     .carousel-btn:hover {
-        background-size: 130%; /* Aumenta o fundo proporcionalmente ao passar o mouse */
+        background-size: 130%; 
     }
 }
 
