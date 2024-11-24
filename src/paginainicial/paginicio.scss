@@ -1028,13 +1028,13 @@
 		}
 	
 		.S {
-			font-size: 40px; /* Diminui o tamanho da fonte de "Serviços" */
+			font-size: 40px; 
 			margin-top: 20px;
 			margin-bottom: 22px;
 		}
 	
 		.P {
-			font-size: 16px; /* Diminui o tamanho da linha de separação */
+			font-size: 16px; 
 		}
 	}
 	
@@ -1055,29 +1055,29 @@
 		}
 
 		.estre {
-			font-size: 16px; /* Diminui ainda mais o tamanho das estrelas */
+			font-size: 16px;
 		}
 	
 		.N {
-			font-size: 20px; /* Diminui o tamanho da fonte de "nossos" */
+			font-size: 20px;
 		}
 	
 		.S {
-			font-size: 35px; /* Diminui o tamanho da fonte de "Serviços" */
+			font-size: 35px; 
 			margin-top: 18px;
 			margin-bottom: 20px;
 		}
 	
 		.P {
-			font-size: 14px; /* Diminui a linha de separação ainda mais */
+			font-size: 14px; 
 		}
 	
 		.texto {
-			margin: 10px 0; /* Reduz a margem do texto */
+			margin: 10px 0; 
 		}
 	
 		.estrelinha {
-			margin-bottom: 10px; /* Diminui a distância entre as estrelas */
+			margin-bottom: 10px; 
 		}
 	}
 	
@@ -1098,29 +1098,29 @@
 		}
 		
 		.estre {
-			font-size: 14px; /* Diminui o tamanho das estrelas */
+			font-size: 14px;
 		}
 	
 		.N {
-			font-size: 18px; /* Diminui o tamanho de "nossos" */
+			font-size: 18px;
 		}
 	
 		.S {
-			font-size: 30px; /* Diminui o tamanho de "Serviços" */
+			font-size: 30px; 
 			margin-top: 15px;
 			margin-bottom: 18px;
 		}
 	
 		.P {
-			font-size: 12px; /* Diminui a linha de separação ainda mais */
+			font-size: 12px;
 		}
 	
 		.texto {
-			margin: 5px 0; /* Reduz a margem do texto */
+			margin: 5px 0;
 		}
 	
 		.estrelinha {
-			margin-bottom: 5px; /* Diminui ainda mais a distância entre as estrelas */
+			margin-bottom: 5px; 
 		}
 	}
 
@@ -1140,12 +1140,12 @@
 
 	.conteiner:hover .card {
 		opacity: 0.5;
-		filter: blur(3px); /* Adiciona o efeito de desfoque */
+		filter: blur(3px); 
 	}
 
 	.conteiner .card:hover {
 		opacity: 1;
-		filter: none; /* Remove o desfoque ao passar o mouse sobre a card */
+		filter: none; 
 	}
 
 	.card {
@@ -1175,7 +1175,7 @@
     }
 
     .servico img {
-        width: 200px; /
+        width: 200px; 
     }
 
 }

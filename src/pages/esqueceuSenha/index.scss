@@ -55,17 +55,17 @@
             margin-top: 8px;
             width: 400px;
             border-radius: 8px;
-            border: none;  // Corrigido para border: none
+            border: none; 
             padding-left: 15px;
             box-shadow: 0px 0px 10px 2px rgb(195, 193, 193);
-            outline: none;  // Adicionado para remover a borda preta
-            transition: box-shadow 0.3s ease;  // Transição suave para a sombra
+            outline: none;  
+            transition: box-shadow 0.3s ease;  
         }
 
 
         input:focus {
-            box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2); // Efeito de foco
-            // Adicione outras propriedades conforme desejado
+            box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2); 
+            
         }
     }
 
@@ -85,64 +85,64 @@
         position: relative;
         border: none;
         cursor: pointer;
-        transition: background 0.3s ease, box-shadow 0.3s ease; // Adicionando transição para box-shadow
+        transition: background 0.3s ease, box-shadow 0.3s ease;
     
         a {
             color: #fff;
         }
     
         &:hover {
-            background: #1d1d1c; // Altera a cor de fundo
-            box-shadow: 0 0 10px #1d1d1c, // Sombra externa
-                        0 0 15px #1d1d1c; // Sombra interna
+            background: #1d1d1c; 
+            box-shadow: 0 0 10px #1d1d1c, 
+                        0 0 15px #1d1d1c; 
         }
     }
 
     }
 
-    // Responsividade
-@media (max-width: 768px) { // Para tablets e telas menores
+    
+@media (max-width: 768px) { 
     .pagina-esqueceuSenha {
         .login {
-            width: 90%; // Ajusta o login para 90% da largura
-            margin: 30px auto; // Centraliza o login na tela
-            padding: 60px 20px; // Ajusta o padding para telas menores
+            width: 90%; 
+            margin: 30px auto; 
+            padding: 60px 20px; 
         }
 
         .pa {
-            justify-content: center; // Centraliza o texto nas telas menores
-            margin-right: 0; // Remove a margem para alinhamento
+            justify-content: center; 
+            margin-right: 0; 
         }
 
         .campo {
-            width: 100%; // A largura do campo será 100% em telas menores
+            width: 100%;
             input {
-                width: 100%; // Input ocupa toda a largura disponível
-                margin-left: 0; // Remove a margem esquerda
+                width: 100%; 
+                margin-left: 0; 
             }
         }
 
         .botom {
-            width: 80%; // O botão ocupa 80% da largura
-            margin: 30px auto; // Centraliza o botão na tela
+            width: 80%;
+            margin: 30px auto; 
         }
     }
 }
 
-@media (max-width: 480px) { // Para dispositivos móveis
+@media (max-width: 480px) { 
     .pagina-esqueceuSenha {
         .login {
-            padding: 40px 10px; // Reduz o padding para dispositivos móveis
+            padding: 40px 10px; 
         }
 
         .campo {
             input {
-                font-size: 14px; // Diminui o tamanho da fonte
+                font-size: 14px; 
             }
         }
 
         .botom {
-            width: 90%; // Ajusta a largura do botão
+            width: 90%;
         }
     }
 }

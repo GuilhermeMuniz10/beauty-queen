@@ -56,7 +56,7 @@
         position: relative;
         border: none;
         cursor: pointer;
-        transition: background 0.3s ease, box-shadow 0.3s ease; // Adicionando transição para box-shadow
+        transition: background 0.3s ease, box-shadow 0.3s ease; 
     
         Link {
             color: #fff;
@@ -65,53 +65,53 @@
         }
     
         &:hover {
-            background: #1d1d1c; // Altera a cor de fundo
-            box-shadow: 0 0 10px #1d1d1c, // Sombra externa
-                        0 0 15px #1d1d1c; // Sombra interna
+            background: #1d1d1c; 
+            box-shadow: 0 0 10px #1d1d1c, 
+                        0 0 15px #1d1d1c;
         }
     }
 
    
     
-    // Responsividade
-    @media (max-width: 768px) { // Tablets e telas menores
+   
+    @media (max-width: 768px) { 
         .login {
-            width: 90%; // Torna o login responsivo
-            margin: 30px auto; // Centraliza o login
-            padding: 60px 20px; // Ajusta o padding
+            width: 90%;
+            margin: 30px auto; 
+            padding: 60px 20px; 
         }
 
         .campo {
-            width: 100%; // Campo ocupa toda a largura
+            width: 100%; 
             input {
-                width: 100%; // Input ocupa toda a largura do campo
-                margin-left: 0; // Remove margem esquerda
+                width: 100%;
+                margin-left: 0;
             }
         }
 
         .botom {
-            width: 80%; // Botão ocupa 80% da tela
-            margin: 30px auto; // Centraliza o botão
+            width: 80%;
+            margin: 30px auto; 
         }
 
         .esqueceu {
-            margin: 0 20px; // Ajusta margens
+            margin: 0 20px; 
         }
     }
 
-    @media (max-width: 480px) { // Dispositivos móveis
+    @media (max-width: 480px) {
         .login {
-            padding: 40px 10px; // Reduz o padding
+            padding: 40px 10px; 
         }
 
         .campo {
             input {
-                font-size: 14px; // Diminui o tamanho da fonte
+                font-size: 14px; 
             }
         }
 
         .botom {
-            width: 90%; // Ajusta a largura do botão
+            width: 90%; 
         }
     }
 }

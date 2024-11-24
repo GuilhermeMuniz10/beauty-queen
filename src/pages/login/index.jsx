@@ -2,22 +2,22 @@ import './index.scss';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Ícones para mostrar/esconder senha
+import { FaEye, FaEyeSlash } from 'react-icons/fa'; 
 import toast, { Toaster } from 'react-hot-toast';
 
 export default function Login() {
     const [nome, setNome] = useState('');
-    const [senha, setSenha] = useState(''); // Armazena a senha real
-    const [inputSenha, setInputSenha] = useState(''); // O que o usuário vê no input
-    const [showPassword, setShowPassword] = useState(false); // Controla a visibilidade total da senha
-    const [lastTypedChar, setLastTypedChar] = useState(''); // Armazena o último caractere digitado
+    const [senha, setSenha] = useState(''); 
+    const [inputSenha, setInputSenha] = useState(''); 
+    const [showPassword, setShowPassword] = useState(false); 
+    const [lastTypedChar, setLastTypedChar] = useState(''); 
  
       
 
 
 
 
-//funcao entra\ar conexao
+
     async function entrar() {
        
 
@@ -47,29 +47,29 @@ export default function Login() {
 
     useEffect(() => {
         if (lastTypedChar) {
-            // Substitui a última letra visível por '*' após 1 segundo
+            
             const timeoutId = setTimeout(() => {
                 setInputSenha((prev) => prev.slice(0, -1) + '*');
             }, 1000);
 
-            return () => clearTimeout(timeoutId); // Limpa o timeout quando o componente é desmontado
+            return () => clearTimeout(timeoutId); 
         }
     }, [lastTypedChar]);
 
    
-    // Alterna a visibilidade da senha completa
+   
     function togglePasswordVisibility() {
         setShowPassword(!showPassword);
     }
 
-    // Função para lidar com a digitação da senha
+  
     function handlePasswordChange(e) {
         const value = e.target.value;
-        const lastChar = value.slice(-1); // Pega o último caractere digitado
+        const lastChar = value.slice(-1); 
 
-        setSenha(value); // Atualiza a senha real
-        setInputSenha(value); // Atualiza o input visível para mostrar a senha com a última letra visível
-        setLastTypedChar(lastChar); // Armazena o último caractere digitado
+        setSenha(value); 
+        setInputSenha(value); 
+        setLastTypedChar(lastChar); 
     }
 
    
@@ -88,7 +88,7 @@ export default function Login() {
                         id='nome'
                         type='text'
                         value={nome}
-                        onChange={(e) => setNome(e.target.value)}//
+                        onChange={(e) => setNome(e.target.value)}
                         placeholder='E-mail'
                     />
                 </div>

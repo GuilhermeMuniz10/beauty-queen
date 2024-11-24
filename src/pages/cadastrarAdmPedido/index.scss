@@ -8,8 +8,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 25%; /* Largura do menu */
-        height: 100%; /* Altura completa */
+        width: 25%; 
+        height: 100%; 
         background-color: #f6f2f1;
         transform: translateX(-100%);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -57,7 +57,7 @@
         opacity: 0.5;
     }
     
-    /* Estilização geral dos itens do menu */
+    
     .side-menu ul {
         list-style: none;
         padding-left: 0;
@@ -78,7 +78,7 @@
         color: rgb(184, 184, 184);
     }
     
-    /* Botão hambúrguer */
+
     .menu-toggle {
         display: none;
     }
@@ -120,7 +120,7 @@
         transform-origin: left;
     }
     
-    /* Transformação do botão hambúrguer em "X" */
+   
     .menu-toggle:checked + .menu-icon span:nth-child(1) {
         transform: rotate(45deg) translate(-1px, -1px);
     }
@@ -135,54 +135,54 @@
     
     @media (max-width: 768px) {
         .side-menu {
-            width: 50%; /* Reduz a largura do menu em dispositivos menores */
+            width: 50%; 
         }
     
         .side-menu li a {
-            font-size: 18px; /* Ajusta o tamanho da fonte */
+            font-size: 18px; 
         }
     
         .menu-header {
-            width: 50px; /* Reduz o tamanho do logo */
+            width: 50px; 
         }
     
         .logout-icon img {
-            width: 25px; /* Ajusta o tamanho do ícone de logout */
+            width: 25px;
         }
     }
     
     @media (max-width: 480px) {
         .side-menu {
-            width: 70%; /* Ocupa mais espaço em dispositivos muito pequenos */
+            width: 70%; 
         }
     
         .menu-icon {
             margin-left: 15px;
             margin-top: 20px;
-            width: 30px; /* Ajusta o tamanho do botão hambúrguer */
+            width: 30px; 
             height: 30px;
         }
     
         .menu-icon span {
             width: 30px;
-            height: 4px; /* Reduz a altura das linhas do hambúrguer */
+            height: 4px; 
         }
     
         .side-menu li a {
-            font-size: 16px; /* Tamanho de texto menor */
+            font-size: 16px; 
             padding: 8px 20px;
         }
     
         .menu-header {
-            width: 40px; /* Reduz ainda mais o logo */
+            width: 40px;
         }
     
         .logout-text {
-            font-size: 16px; /* Texto menor para logout */
+            font-size: 16px;
         }
     
         .logout-icon img {
-            width: 20px; /* Ícone de logout menor */
+            width: 20px; 
         }
     }
 
@@ -213,7 +213,7 @@ margin-left: 0px;        }
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    gap: 20px; // Adiciona espaço entre os containers
+    gap: 20px; 
   }
   
   .container {
@@ -222,7 +222,7 @@ margin-left: 0px;        }
     gap: 7px;
     position: relative;
     color: rgb(77, 77, 77);
-    margin-bottom: 40px; // Adiciona o espaçamento desejado
+    margin-bottom: 40px; 
   }
   
   .label {        
@@ -280,7 +280,7 @@ margin-left: 0px;        }
     gap: 7px;
     position: relative;
     color: rgb(77, 77, 77);
-    margin-bottom: 40px; // Adiciona o espaçamento desejado
+    margin-bottom: 40px; 
   }
   
   .label-data {
@@ -359,11 +359,11 @@ margin-left: 0px;        }
         cursor: pointer;
         transition: all 0.3s ease;
 
-        // Efeitos ao passar o mouse
+        
         &:hover {
             background-color: rgba(0, 0, 0, 0.788);
-            box-shadow: 0 0 15px rgba(158, 152, 152, 0.664), 0 0 30px rgba(77, 73, 73, 0.692); // Efeito de brilho
-            color: lighten(#3f3f3f, 20%); // Clarear a cor do texto
+            box-shadow: 0 0 15px rgba(158, 152, 152, 0.664), 0 0 30px rgba(77, 73, 73, 0.692); 
+            color: lighten(#3f3f3f, 20%); 
         }
     }
 }

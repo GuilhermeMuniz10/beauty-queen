@@ -42,7 +42,7 @@
     }
 
     .txt3:hover {
-        opacity: 0.3; /* Torna opaco quando passar o mouse */
+        opacity: 0.3; 
     }
 
     .linha{
@@ -58,84 +58,84 @@
         .pagina-notfound {
     
             .txt1 {
-                font-size: 5vw; /* Tamanho maior para telas médias */
+                font-size: 5vw; 
                 padding: 5px 8px;
             }
     
             .txt2 {
-                font-size: 7vw; /* Tamanho maior para telas médias */
+                font-size: 7vw; 
                 width: 90%;
                 margin-top: 4vh;
             }
     
             .txt3 {
-                font-size: 5vw; /* Tamanho maior para telas médias */
+                font-size: 5vw;
             }
     
             .linha {
-                width: 80%; /* Ajuste a largura para telas médias */
+                width: 80%; 
             }
     
             .notfound {
-                width: 90%; /* Ajuste a largura para telas médias */
+                width: 90%;
             }
         }
     }
     
-    /* Media Query para telas pequenas (máximo 480px) */
+   
     @media (max-width: 480px) {
         .pagina-notfound {
     
             .txt1 {
-                font-size: 6vw; /* Ajuste maior para telas pequenas */
+                font-size: 6vw;
                 padding: 5px 7px;
             }
     
             .txt2 {
-                font-size: 8vw; /* Ajuste maior para telas pequenas */
+                font-size: 8vw; 
                 width: 90%;
                 margin-top: 4vh;
             }
     
             .txt3 {
-                font-size: 6vw; /* Ajuste maior para telas pequenas */
+                font-size: 6vw;
             }
     
             .linha {
-                width: 85%; /* Ajuste a largura para telas pequenas */
+                width: 85%;
             }
     
             .notfound {
-                width: 95%; /* Ajuste para largura quase total em telas pequenas */
+                width: 95%; 
             }
         }
     }
     
-    /* Media Query para dispositivos muito pequenos (máximo 320px) */
+    
     @media (max-width: 320px) {
         .pagina-notfound {
     
             .txt1 {
-                font-size: 7vw; /* Tamanho ainda maior para telas muito pequenas */
+                font-size: 7vw; 
                 padding: 5px 6px;
             }
     
             .txt2 {
-                font-size: 9vw; /* Tamanho maior para telas muito pequenas */
+                font-size: 9vw; 
                 width: 90%;
                 margin-top: 4vh;
             }
     
             .txt3 {
-                font-size: 7vw; /* Ajuste maior para telas muito pequenas */
+                font-size: 7vw; 
             }
     
             .linha {
-                width: 90%; /* Ajuste para telas muito pequenas */
+                width: 90%; 
             }
     
             .notfound {
-                width: 100%; /* Ajuste para largura total em telas muito pequenas */
+                width: 100%; 
             }
         }
     }

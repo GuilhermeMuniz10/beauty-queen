@@ -49,17 +49,17 @@
             margin-top: 8px;
             width: 400px;
             border-radius: 8px;
-            border: none;  // Corrigido para border: none
+            border: none;  
             padding-left: 15px;
             box-shadow: 0px 0px 10px 2px rgb(195, 193, 193);
-            outline: none;  // Adicionado para remover a borda preta
-            transition: box-shadow 0.3s ease;  // Transição suave para a sombra
+            outline: none;  
+            transition: box-shadow 0.3s ease;  
         }
 
 
         input:focus {
-            box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2); // Efeito de foco
-            // Adicione outras propriedades conforme desejado
+            box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2); 
+            
         }
     }
 
@@ -93,26 +93,26 @@
         a {
             text-decoration: none;
             color: #131313;
-            position: relative; // Adicione esta linha para posicionar o pseudo-elemento
-            transition: color 0.3s ease; // Adiciona transição suave para a cor
+            position: relative; 
+            transition: color 0.3s ease; 
     
             &::after {
-                content: ""; // Necessário para criar o pseudo-elemento
-                position: absolute; // Posiciona o pseudo-elemento em relação ao link
-                left: 0; // Alinha à esquerda do link
-                bottom: -2px; // Ajuste a posição vertical da linha
-                width: 100%; // Largura da linha igual à do link
-                height: 1.5px; // Espessura da linha
-                background-color: #575555; // Cor da linha
-                transform: scaleX(0); // Inicialmente escondido
-                transition: transform 0.3s ease; // Transição suave para a linha
+                content: ""; 
+                position: absolute; 
+                left: 0; 
+                bottom: -2px; 
+                width: 100%; 
+                height: 1.5px; 
+                background-color: #575555; 
+                transform: scaleX(0); 
+                transition: transform 0.3s ease; 
             }
     
             &:hover {
-                color: #575555; // Muda a cor do texto ao passar o mouse
+                color: #575555; 
     
                 &::after {
-                    transform: scaleX(1); // Faz com que a linha apareça
+                    transform: scaleX(1); 
                 }
             }
         }
@@ -136,16 +136,16 @@
         position: relative;
         border: none;
         cursor: pointer;
-        transition: background 0.3s ease, box-shadow 0.3s ease; // Adicionando transição para box-shadow
+        transition: background 0.3s ease, box-shadow 0.3s ease; 
     
         a {
             color: #fff;
         }
     
         &:hover {
-            background: #1d1d1c; // Altera a cor de fundo
-            box-shadow: 0 0 10px #1d1d1c, // Sombra externa
-                        0 0 15px #1d1d1c; // Sombra interna
+            background: #1d1d1c; 
+            box-shadow: 0 0 10px #1d1d1c, 
+                        0 0 15px #1d1d1c; 
         }
     }
 
@@ -233,10 +233,10 @@
         }
     
         label {
-            margin-left: 10px; // Espaçamento entre o checkbox e o texto
-            color: #333; // Cor do texto
-            cursor: pointer; // Muda o cursor para indicar interatividade
-            font-size: 16px; // Tamanho da fonte
+            margin-left: 10px; 
+            color: #333; 
+            cursor: pointer; 
+            font-size: 16px; 
         }
     }
 }    

@@ -104,7 +104,7 @@ export default function ConsultarPedidos() {
 
                 <div className="acoes">
             <button className="botom" onClick={buscar}   >
-                {/* SVG da Lupa */}
+                {}
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

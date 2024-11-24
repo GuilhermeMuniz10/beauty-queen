@@ -13,27 +13,27 @@
 
     @media (max-width: 1024px) {
         .conteiners {
-            flex-direction: column; /* Alinha os contêineres verticalmente */
+            flex-direction: column; 
             align-items: center;
         }
     
         .conteiner {
-            width: 80%; /* Ajusta a largura para telas médias */
-            flex-direction: column; /* Alinha o conteúdo internamente em coluna */
+            width: 80%; 
+            flex-direction: column;
         }
     
         .imge img,
         .imge-2 img {
-            width: 100%; /* Ajusta as imagens à largura do contêiner */
-            max-width: 300px; /* Limita a largura para não exagerar */
-            height: auto; /* Mantém a proporção */
+            width: 100%; 
+            max-width: 300px; 
+            height: auto; 
         }
     }
     
     @media (max-width: 768px) {
         .conteiner {
-            width: 90%; /* Torna o contêiner mais flexível */
-            padding: 15px; /* Reduz o padding em telas menores */
+            width: 90%; 
+            padding: 15px; 
         }
     
         .imge img,
@@ -52,12 +52,12 @@
         }
 
         .conteiner {
-            width: 80% !important; /* Ajusta para quase a largura total da tela */
+            width: 80% !important; 
         }
     
         .imge img,
         .imge-2 img {
-            max-width: 100px; /* Reduz ainda mais as imagens */
+            max-width: 100px; 
         }
 
         .dire{
@@ -65,7 +65,7 @@
         }
     
         .texto img {
-            width: 10px; /* Reduz o tamanho do ícone menor */
+            width: 10px; 
         }
 
         .texto h3{
@@ -108,12 +108,12 @@
         gap: 15px;
         border-radius: 20px;
         box-shadow: 0px 0px 2px 4px #66666621;
-        transition: transform 0.3s ease-in-out; /* Adicionando a transição */
+        transition: transform 0.3s ease-in-out; 
     }
     
-    /* Efeito de subida ao passar o mouse */
+    
     .conteiner:hover {
-        transform: translateY(-10px); /* Move o contêiner para cima */
+        transform: translateY(-10px); 
     }
     
     .texto img {

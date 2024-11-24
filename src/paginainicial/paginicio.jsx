@@ -36,7 +36,7 @@ function Paginicio() {
    if (targetElement) {
      window.scrollTo({
        top: targetElement.offsetTop,  
-       behavior: 'smooth'  // Aplica a rolagem suave
+       behavior: 'smooth'  
      });
    }
 }
