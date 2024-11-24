@@ -140,18 +140,18 @@
 
 
 
-/* Estilos para telas pequenas (máximo 480px) */
+
 @media (max-width: 480px) {
 	.menu{
 		position: fixed !important;
 
 	}
-	/* Menu lateral */
+	
 	.menu {
 	  position: fixed;
 	  top: 0;
-	  left: 0%;  /* Inicialmente o menu está fora da tela (à esquerda) */
-	  width: 100%;  /* O menu ocupa 100% da largura da tela */
+	  left: 0%;  
+	  width: 100%;  
 	  height: 100%;
 	  background-color: #f6f2f1;
 	  transform: translateX(-100%);
@@ -160,7 +160,7 @@
 	  z-index: 10;
 	}
   
-	/* Lista do menu */
+	
 	.menu ul {
 	  padding-top: 100px;
 	  list-style: none;
@@ -184,18 +184,18 @@
 	  color: rgb(184, 184, 184);
 	}
   
-	/* Checkbox (menu trigger) */
+	
 	.menu-faketrigger {
 	  display: none;  /* O checkbox fica oculto */
 	}
   
-	/* Ações do botão de sanduíche quando o menu está ativado */
+	
 	.menu-faketrigger:checked ~ .menu {
-	  transform: translateX(0);  /* Faz o menu deslizar para a tela */
+	  transform: translateX(0);  
 	  box-shadow: 6px 0 8px rgba(0, 0, 0, 0.3);
 	}
   
-	/* Estilos do botão de sanduíche */
+	
 	.menu-lines {
 	  position: absolute;
 	  z-index: 11;
@@ -216,7 +216,7 @@
 	  transition: all 0.3s ease;
 	}
   
-	/* Efeito de "X" no ícone de sanduíche quando o menu está ativado */
+	
 	.menu-faketrigger:checked + .menu-lines span:nth-child(1) {
 	  transform: rotate(45deg) translateY(10%);
 	}
@@ -230,18 +230,18 @@
 	}
   }
   
-  /* Estilos para telas maiores que 480px (desabilitar o menu para telas grandes) */
+  
   @media (min-width: 481px) {
   
-	/* Esconder o menu e o botão de sanduíche para telas maiores */
+	
 	.menu,
 	.menu-faketrigger,
 	.menu-lines {
-	  display: none !important; /* Esconde o menu, o checkbox e o botão de sanduíche */
+	  display: none !important; 
 	}
   }
 
-/* Botão sanduíche fixo */
+
 .menu-lines {
     position: fixed; /* Mantém o botão fixo na posição */
     top: 15px; /* Distância do topo */
