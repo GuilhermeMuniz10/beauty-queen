@@ -47,7 +47,7 @@ header {
 		  height: 2px;
 		  background-color: #E9DFDD;
 		  border-radius: 5px;
-		  bottom: -5px; // Ajuste a posição vertical da linha
+		  bottom: -5px; 
 		  left: 0;
 		  transform: scaleX(0);
 		  transition: all 0.4s ease;
@@ -63,7 +63,7 @@ header {
 
 
 	.imagem-opaca {
-		transition: opacity 0.3s ease; /* Suaviza a transição */
+		transition: opacity 0.3s ease; 
 		width: 180px;
         
 	}
@@ -472,26 +472,26 @@ header {
     transform: scale(1.2); /* Efeito de hover */
   }
   
-  /* Modal */
+  
   .modal {
-    display: none; /* Esconde o modal por padrão */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 80%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    background-color: rgba(0, 0, 0, 0.8); 
     z-index: 1000;
     justify-content: center;
     align-items: center;
   }
   
-  /* Mostrar modal ao ativar o :target */
+  
   .modal:target {
-    display: flex; /* Mostra o modal */
+    display: flex; 
   }
   
-  /* Conteúdo do modal */
+  
   .modal-content {
     max-width: 80%;
     max-height: 80%;
@@ -504,7 +504,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
   
-  /* Botão de fechar */
+  
   .close {
     position: absolute;
     top: -40px;
@@ -544,7 +544,7 @@ header {
 
 @media (max-width: 480px) {
   
-    /* Estilo da imagem no card */
+    
     .colun2 .imag {
         width: 80%;
         cursor: pointer;
@@ -553,12 +553,12 @@ header {
       }
       
       .colun2 .imag:hover {
-        transform: scale(1.2); /* Efeito de hover */
+        transform: scale(1.2); 
       }
       
-      /* Modal */
+      
       .modal {
-        display: none; /* Esconde o modal por padrão */
+        display: none; 
         position: fixed;
         top: 0;
         left: 0;
@@ -570,7 +570,7 @@ header {
         align-items: center;
       }
       
-      /* Mostrar modal ao ativar o :target */
+      
       .modal:target {
         display: flex; /* Mostra o modal */
       }
@@ -626,7 +626,7 @@ header {
 
     @media (max-width: 480px) {
   
-        /* Estilo da imagem no card */
+        
         .colun3 .imag {
             width: 80%;
             cursor: pointer;
@@ -635,7 +635,7 @@ header {
           }
           
           .colun3 .imag:hover {
-            transform: scale(1.2); /* Efeito de hover */
+            transform: scale(1.2); 
           }
           
           /* Modal */
@@ -652,12 +652,12 @@ header {
             align-items: center;
           }
           
-          /* Mostrar modal ao ativar o :target */
+          
           .modal:target {
-            display: flex; /* Mostra o modal */
+            display: flex; 
           }
           
-          /* Conteúdo do modal */
+          
           .modal-content {
             max-width: 80%;
             max-height: 80%;
@@ -670,7 +670,7 @@ header {
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
           }
           
-          /* Botão de fechar */
+          
           .close {
             position: absolute;
             top: -40px;
@@ -709,7 +709,7 @@ header {
 
 @media (min-width: 800px){
 
-/* Estilo da imagem no card */
+
 .colun1 .imag {
     width: 80%;
     cursor: pointer;
@@ -718,29 +718,29 @@ header {
   }
   
   .colun1 .imag:hover {
-    transform: scale(1.2); /* Efeito de hover */
+    transform: scale(1.2); 
   }
   
-  /* Modal */
+  
   .modal {
-    display: none; /* Esconde o modal por padrão */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 80%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     justify-content: center;
     align-items: center;
   }
   
-  /* Mostrar modal ao ativar o :target */
+  
   .modal:target {
-    display: flex; /* Mostra o modal */
+    display: flex; 
   }
   
-  /* Conteúdo do modal */
+  
   .modal-content {
     max-width: 80%;
     max-height: 80%;
@@ -753,7 +753,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
   
-  /* Botão de fechar */
+  
   .close {
     position: absolute;
     top: -40px;
@@ -790,7 +790,7 @@ header {
 
 @media (min-width: 800px){
 
-    /* Estilo da imagem no card */
+    
     .colun2 .imag {
         width: 80%;
         cursor: pointer;
@@ -799,29 +799,29 @@ header {
       }
       
       .colun2 .imag:hover {
-        transform: scale(1.2); /* Efeito de hover */
+        transform: scale(1.2); 
       }
       
-      /* Modal */
+      
       .modal {
-        display: none; /* Esconde o modal por padrão */
+        display: none; 
         position: fixed;
         top: 0;
         left: 0;
         width: 80%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+        background-color: rgba(0, 0, 0, 0.8); 
         z-index: 1000;
         justify-content: center;
         align-items: center;
       }
       
-      /* Mostrar modal ao ativar o :target */
+      
       .modal:target {
-        display: flex; /* Mostra o modal */
+        display: flex; 
       }
       
-      /* Conteúdo do modal */
+      
       .modal-content {
         max-width: 80%;
         max-height: 80%;
@@ -834,7 +834,7 @@ header {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
       }
       
-      /* Botão de fechar */
+      
       .close {
         position: absolute;
         top: -40px;
@@ -870,7 +870,7 @@ header {
 
     @media (min-width: 800px){
 
-        /* Estilo da imagem no card */
+        
         .colun3 .imag {
             width: 80%;
             cursor: pointer;
@@ -879,29 +879,29 @@ header {
           }
           
           .colun3 .imag:hover {
-            transform: scale(1.2); /* Efeito de hover */
+            transform: scale(1.2); 
           }
           
-          /* Modal */
+         
           .modal {
-            display: none; /* Esconde o modal por padrão */
+            display: none; 
             position: fixed;
             top: 0;
             left: 0;
             width: 80%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+            background-color: rgba(0, 0, 0, 0.8); 
             z-index: 1000;
             justify-content: center;
             align-items: center;
           }
           
-          /* Mostrar modal ao ativar o :target */
+          
           .modal:target {
-            display: flex; /* Mostra o modal */
+            display: flex; 
           }
           
-          /* Conteúdo do modal */
+          
           .modal-content {
             max-width: 80%;
             max-height: 80%;
