@@ -13,29 +13,29 @@ function Paginicio() {
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
-      setIsVisible(true); // Adiciona a classe 'visible' quando o usuário rola para baixo
+      setIsVisible(true); 
     } else {
-      setIsVisible(false); // Remove a classe 'visible' quando o usuário rola para cima
+      setIsVisible(false); 
     }
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
-    // Limpeza do evento de scroll quando o componente for desmontado
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const handleSmoothScroll = (event, targetId) => {
-   event.preventDefault();  // Impede o comportamento padrão do link (rolagem imediata)
+   event.preventDefault(); 
  
    const targetElement = document.getElementById(targetId);
    
    if (targetElement) {
      window.scrollTo({
-       top: targetElement.offsetTop,  // Obtém a posição vertical da âncora
+       top: targetElement.offsetTop,  
        behavior: 'smooth'  // Aplica a rolagem suave
      });
    }
