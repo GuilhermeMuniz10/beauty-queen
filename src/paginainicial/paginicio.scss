@@ -1240,15 +1240,15 @@
 		}
 	
 		.P {
-			font-size: 36px; /* Reduz o tamanho da fonte de "Parcerias" em telas pequenas */
+			font-size: 36px;
 		}
 	
 		.txt {
-			margin: 10px; /* Reduz a margem para dispositivos menores */
+			margin: 10px; 
 		}
 	}
 	
-	/* Telas médias (como tablets) */
+	
 	@media screen and (max-width: 1024px) {
 		.N {
 			font-size: 26px; /* Ajusta o tamanho da fonte de "NOSSAS" para tablets */
@@ -1259,7 +1259,7 @@
 		}
 	
 		.txt {
-			margin: 15px; /* Ajusta a margem para dispositivos de tamanho médio */
+			margin: 15px; 
 		}
 	}
 }
@@ -1381,7 +1381,7 @@
 
 
 
-/* Mudar para rosa ao passar o mouse */
+
 .redes .wt:hover,
 .redes .fa:hover,
 .redes .in:hover {
@@ -1470,30 +1470,30 @@ footer {
     }
 
     footer .plt {
-        display: none; /* Remove o elemento em telas menores */
+        display: none; 
     }
 
     footer .conteiners {
-        flex-direction: column; /* Ajustar para layout em coluna */
+        flex-direction: column; 
         align-items: center;
     }
 
     footer .cont {
-        flex-direction: column; /* Ajustar itens para coluna */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
     }
 
     footer .cont img {
-        width: 40px; /* Ajustar o tamanho da imagem */
+        width: 40px; 
         height: 40px;
     }
 }
 
-/* Media Query para telas muito pequenas */
+
 @media (max-width: 480px) {
     footer .cont {
-        font-size: 16px; /* Reduzir a fonte */
+        font-size: 16px; 
     }
 
 	h1{
@@ -1553,27 +1553,27 @@ footer {
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-/* Telas pequenas (como celulares) */
+
 @media screen and (max-width: 767px) {
     .galeria {
-        margin-left: 20px; /* Diminui a margem à esquerda */
+        margin-left: 20px; 
     }
 
     .galeria h1 {
-        font-size: 28px; /* Reduz o tamanho da fonte do título */
+        font-size: 28px; 
     }
 
     .galeria h3 {
-        font-size: 18px; /* Reduz o tamanho da fonte do subtítulo */
+        font-size: 18px; 
     }
 
     .direc {
-        flex-direction: column; /* Torna o layout da galeria vertical em telas menores */
-        gap: 15px; /* Reduz o espaço entre os itens */
+        flex-direction: column; 
+        gap: 15px; 
     }
 
     .separa {
-        font-size: 60px; /* Diminui o tamanho do ícone separador */
+        font-size: 60px; 
     }
 
     .carrosselGS {
@@ -1581,7 +1581,7 @@ footer {
     }
 }
 
-/* Telas médias (como tablets) */
+
 @media screen and (max-width: 1024px) {
     .galeria {
 		align-items: center;
@@ -1592,24 +1592,24 @@ footer {
     }
 
     .galeria h1 {
-        font-size: 32px; /* Ajusta o tamanho do título */
+        font-size: 32px; 
 		margin-top: 40px;
     }
 
     .galeria h3 {
-        font-size: 20px; /* Ajusta o tamanho do subtítulo */
+        font-size: 20px; 
 		margin-left: 0px;
     }
 
     .direc {
-        gap: 0px; /* Reduz o espaço entre os itens */
+        gap: 0px; 
     }
 
     .separa {
-        font-size: 70px; /* Ajusta o ícone separador */
+        font-size: 70px; 
     }
 
     .carrosselGS {
-        margin-bottom: 50px; /* Ajusta a margem inferior no carrossel */
+        margin-bottom: 50px; 
     }
 }
