@@ -310,11 +310,11 @@
 
 @media (min-width: 481px) {
     .menu-lines {
-        display: none; /* Oculta o botão para telas maiores */
+        display: none; 
     }
 
     .menu {
-        display: none; /* Esconde o menu lateral */
+        display: none; 
     }
 }
 
@@ -329,7 +329,7 @@
 
 
   @media(min-width: 767px){
-/* Estilos do cabeçalho */
+
 
 .paginicio{
 	scroll-behavior: smooth
@@ -338,21 +338,21 @@
 
 .header {
 	position: fixed;
-	top: -120px; /* Fica fora da tela no início */
+	top: -120px; 
 	left: 0;
 	width: 100%;
-	background-color: #C59E9A; /* Cor de fundo */
+	background-color: #C59E9A; 
 	padding: 10px;
-	transition: top 0.3s ease-in-out; /* Transição suave para aparecer */
-	z-index: 1000; /* Garante que o cabeçalho fique por cima de outros elementos */
-	color: #ede7e5; /* Cor do texto */
+	transition: top 0.3s ease-in-out; 
+	z-index: 1000; 
+	color: #ede7e5; 
 	box-shadow: 5px 0px 3px 6px rgba(0, 0, 0, 0.26);
   }
 
   
-  /* Quando o cabeçalho estiver visível */
+  
   .header.visible {
-	top: 0; /* Cabeçalho aparece ao rolar */
+	top: 0; 
 	
   }
 
@@ -360,7 +360,7 @@
  
 
   
-  /* Estilos para a navegação */
+  
   .links {
 	display: flex;
 	align-items: center;
@@ -374,7 +374,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 4rem; /* Reduzido para telas menores */
+	gap: 4rem; 
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -383,13 +383,13 @@
   .Link {
 	text-decoration: none;
 	color: #ede7e5;
-	font-size: 24px; /* Tamanho da fonte */
+	font-size: 24px; 
 	padding: 0.2rem;
 	position: relative;
 	transition: color 0.3s ease;
   }
   
-  /* Linha animada ao passar o mouse */
+  
   .Link::before {
 	content: "";
 	position: absolute;
@@ -407,7 +407,7 @@
 	transform: scaleX(1);
   }
   
-  /* Botões no cabeçalho */
+  
   .botomP ul, .botom ul {
 	display: flex;
 	align-items: center;
@@ -417,7 +417,7 @@
   }
   
   .butonP, .buton {
-	font-size: 20px; /* Ajustado para telas menores */
+	font-size: 20px; 
 	color: #ede7e5;
 	text-decoration: none;
 	cursor: pointer;
