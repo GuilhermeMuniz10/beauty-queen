@@ -4,12 +4,12 @@
 
 .carousel-item {
     width: 100%;
-    height: 230px; /* Ajuste conforme necessário */
+    height: 230px; 
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: relative; /* Para o pseudo-elemento */
-    overflow: hidden; /* Esconde o excesso de conteúdo */
+    position: relative; 
+    overflow: hidden; 
 }
 
 .carousel-item::before {
@@ -19,22 +19,22 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.39); /* Cor de fundo desejada */
-    clip-path: circle(0 at center); /* Inicialmente invisível */
-    transition: clip-path 0.3s; /* Transição do clip-path */
-    z-index: 0; /* Abaixo das imagens */
+    background-color: rgba(0, 0, 0, 0.39); 
+    clip-path: circle(0 at center); 
+    transition: clip-path 0.3s; 
+    z-index: 0; 
 }
 
 .carousel-item:hover::before {
-    clip-path: circle(100px at center); /* Ajuste o tamanho e a posição conforme necessário */
+    clip-path: circle(100px at center); 
 }
 
 .imgA, .imgB, .imgC, .imgD, .imgE, .imgF {
     width: 200px;
     border-radius: 50%;
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.39);
-    z-index: 1; /* Acima do pseudo-elemento */
-    transition: transform 0.3s; /* Transição nas imagens */
+    z-index: 1; 
+    transition: transform 0.3s; 
 }
 
 .carousel-item:hover .imgA,
@@ -43,7 +43,7 @@
 .carousel-item:hover .imgD,
 .carousel-item:hover .imgE,
 .carousel-item:hover .imgF {
-    transform: scale(1.05); /* Aumenta levemente a imagem */
+    transform: scale(1.05); 
 }
 
 
@@ -55,49 +55,49 @@
     cursor: pointer;
     font-size: 65px;
     padding: 10px;
-    color: white; // Cor da seta
-    background: transparent; // Sem fundo
+    color: white; 
+    background: transparent; 
     z-index: 10;
     transition: color 0.3s;
 
     &:hover {
-        color: rgba(0, 0, 0, 0.39); // Efeito de hover
+        color: rgba(0, 0, 0, 0.39); 
     }
 }
 
 .prev {
-    left: 10px; // Ajuste a distância da borda
+    left: 10px; 
 }
 
 .next {
-    right: 10px; // Ajuste a distância da borda
+    right: 10px; 
 }
 
-/* Media Queries para ajustes específicos */
+
 @media (max-width: 768px) {
     .carousel-item {
-        height: 180px; /* Altura menor em telas menores */
+        height: 180px; 
     }
 
     .imgA, .imgB, .imgC, .imgD, .imgE, .imgF {
-        width: 25vw; /* Largura um pouco maior em telas pequenas */
+        width: 25vw; 
     }
 
     .carousel-control {
-        font-size: 8vw; /* Aumenta o tamanho das setas em telas menores */
+        font-size: 8vw; 
     }
 }
 
 @media (max-width: 480px) {
     .carousel-item {
-        height: 150px; /* Altura ainda menor para dispositivos muito pequenos */
+        height: 150px; 
     }
 
     .imgA, .imgB, .imgC, .imgD, .imgE, .imgF {
-        width: 30vw; /* Largura maior para dispositivos pequenos */
+        width: 30vw; 
     }
 
     .carousel-control {
-        font-size: 10vw; /* Aumenta ainda mais o tamanho das setas */
+        font-size: 10vw; 
     }
 }
