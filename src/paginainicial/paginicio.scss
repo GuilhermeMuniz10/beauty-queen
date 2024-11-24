@@ -440,29 +440,29 @@
 	background: transparent;
   }
   
-  /* Estilo do pseudo-elemento para a linha */
+  
   .buton::before {
-	content: ''; /* Necessário para criar um pseudo-elemento */
+	content: ''; 
 	position: absolute;
-	bottom: -5px; /* Ajusta a posição da linha abaixo do botão */
-	left: 0; /* Começa do lado esquerdo */
-	width: 100%; /* A largura da linha será 100% do botão */
-	height: 2px; /* Espessura da linha */
-	background-color: #E9DFDD; /* Cor da linha */
-	transform: scaleX(0); /* Inicialmente, com largura 0 */
-	transform-origin: center; /* Faz a linha crescer a partir do centro */
-	transition: transform 0.4s ease; /* Animação suave de expansão */
+	bottom: -5px; 
+	left: 0; 
+	width: 100%; 
+	height: 2px; 
+	background-color: #E9DFDD; 
+	transform: scaleX(0); 
+	transform-origin: center; 
+	transition: transform 0.4s ease; 
   }
   
-  /* Estilo do hover */
+  
   .buton:hover::before {
-	transform: scaleX(1); /* Expande a linha para a largura total */
+	transform: scaleX(1); 
   }
   
-  /* Efeito de opacidade nas imagens */
+  
   .imagem-opaca {
 	transition: opacity 0.3s ease;
-	width: 150px; /* Tamanho da imagem reduzido para telas menores */
+	width: 150px; 
   }
   
   .imagem-opaca:hover {
@@ -472,7 +472,7 @@
 
 
 
-/* Media Queries para responsividade */
+
 @media (max-width: 1024px) {
 	.links ul {
 		gap: 3rem;
@@ -498,53 +498,53 @@
   @media (max-width: 768px) {
 	.links {
 	  margin: 0 20px;
-	  gap: 30px; /* Reduz o gap entre os itens do menu */
+	  gap: 30px; 
 	}
   
 	.links ul {
-	  gap: 1rem; /* Menor espaçamento entre os itens */
+	  gap: 1rem; 
 	}
   
 	.Link {
-	  font-size: 18px; /* Diminui o tamanho da fonte */
+	  font-size: 18px; 
 	}
   
 	.botom ul {
-	  gap: 10px; /* Ajusta o gap entre os botões */
+	  gap: 10px; 
 	}
   
 	.buton {
-	  font-size: 18px; /* Ajusta o tamanho da fonte do botão */
-	  padding: 0.5rem 1rem; /* Ajusta o padding para telas menores */
+	  font-size: 18px; 
+	  padding: 0.5rem 1rem; 
 	}
   
 	.imagem-opaca {
-	  width: 120px; /* Reduz o tamanho da imagem */
+	  width: 120px; 
 	}
   }
   
   @media (max-width: 480px) {
 	.header {
-	  padding: 5px; /* Diminui o padding */
+	  padding: 5px; 
 	}
   
 	.links {
-	  flex-direction: column; /* Coloca os itens da navegação em coluna */
-	  align-items: center; /* Centraliza os itens */
-	  gap: 20px; /* Reduz o espaçamento */
+	  flex-direction: column; 
+	  align-items: center; 
+	  gap: 20px; 
 	}
   
 	.Link {
-	  font-size: 16px; /* Diminui ainda mais o tamanho da fonte */
+	  font-size: 16px; 
 	}
   
 	.imagem-opaca {
-	  width: 100px; /* Reduz mais o tamanho da imagem */
+	  width: 100px; 
 	}
   
 	.buton {
-	  font-size: 16px; /* Diminui o tamanho da fonte do botão */
-	  padding: 0.5rem 0.8rem; /* Ajusta o padding */
+	  font-size: 16px; 
+	  padding: 0.5rem 0.8rem; 
 	}
   }
 
@@ -555,8 +555,8 @@
 
 .logoBQB {
 	position: absolute;
-	top: 20px; /* Alinha 20px abaixo do topo da tela */
-	left: 50%; /* Centraliza horizontalmente */
+	top: 20px; 
+	left: 50%; 
 	transform: translateX(-50%); /* Ajusta a posição para garantir que o centro do elemento esteja no meio da tela */
 	z-index: 500; /* Garante que o elemento fique acima de outros elementos */
 	display: flex; /* Alinha o conteúdo internamente */
