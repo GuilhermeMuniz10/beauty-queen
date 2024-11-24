@@ -557,18 +557,18 @@
 	position: absolute;
 	top: 20px; 
 	left: 50%; 
-	transform: translateX(-50%); /* Ajusta a posição para garantir que o centro do elemento esteja no meio da tela */
-	z-index: 500; /* Garante que o elemento fique acima de outros elementos */
-	display: flex; /* Alinha o conteúdo internamente */
-	align-items: center; /* Alinha verticalmente o conteúdo */
-	justify-content: center; /* Centraliza horizontalmente o conteúdo */
-	width: 150px; /* Largura do elemento */
-	height: auto; /* Altura automática para adaptar ao conteúdo */
-	filter: drop-shadow(1px 3px 20px rgba(0, 0, 0, 0.6)); /* Sombramento com opacidade */
-	filter: drop-shadow(1px 3px 20px rgba(0, 0, 0, 0.6)); /* Sombramento com opacidade */
+	transform: translateX(-50%); 
+	z-index: 500; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	width: 150px; 
+	height: auto; 
+	filter: drop-shadow(1px 3px 20px rgba(0, 0, 0, 0.6)); 
+	filter: drop-shadow(1px 3px 20px rgba(0, 0, 0, 0.6)); 
 
-	padding: 10px; /* Adiciona um pouco de espaçamento ao redor do conteúdo */
-	filter: box-shadow(0 4px 10px rgba(0, 0, 0, 0.2)) ; /* Uma sombra adicional para dar destaque */
+	padding: 10px; 
+	filter: box-shadow(0 4px 10px rgba(0, 0, 0, 0.2)) ; 
   }
 
 
@@ -581,15 +581,15 @@
   
   @media (max-width: 768px) {
 	.logoBQB {
-	  width: 120px; /* Diminui o tamanho do logo para telas menores */
-	  top: 15px; /* Ajusta o topo para não ficar muito apertado */
+	  width: 120px; 
+	  top: 15px; 
 	}
   }
   
   @media (max-width: 480px) {
 	.logoBQB {
-	  width: 55px; /* Diminui ainda mais o tamanho do logo em telas pequenas */
-	  top: 10px; /* Ajusta o topo para que o logo não fique colado na parte superior da tela */
+	  width: 55px; 
+	  top: 10px; 
 	}
   }
 
