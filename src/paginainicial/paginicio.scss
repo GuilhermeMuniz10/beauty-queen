@@ -645,43 +645,43 @@
 
 @media (min-width: 800px) {
     .NM, .QS {
-        line-height: 1.8; /* Ajuste a altura da linha */
-        font-size: 1.3vw; /* Fonte escalável para telas maiores */
+        line-height: 1.8;
+        font-size: 1.3vw; 
         text-align: center;
         font-family: 'Darker Grotesque', sans-serif;
 		position: absolute;
     }
 
     .NM {
-        left: 10%; /* Ajuste de margem à esquerda */
-        top: 140px; /* Ajuste de posição vertical para a tela maior */
+        left: 10%; 
+        top: 140px; 
     }
 
     .QS {
-        right: 8vh; /* Ajuste de margem à direita */
-        top: 90px; /* Ajuste de posição vertical */	
+        right: 8vh; 
+        top: 90px; 
 		
     }
 }
 
 @media (min-width: 1024px) {
     .NM, .QS {
-        line-height: 2; /* Ajusta a altura da linha para mais espaçamento */
-        font-size: 1.0vw; /* Fonte proporcional para Full HD */
+        line-height: 2; 
+        font-size: 1.0vw; 
         text-align: center;
         font-family: 'Darker Grotesque', sans-serif;
     }
 
     .NM {
-        left: 15%; /* Ajuste de margem à esquerda para mais centralização */
-        top: 1050px; /* Posição vertical ajustada para tela Full HD */
-        margin-top: 100px; /* Ajuste de espaçamento */
+        left: 15%; 
+        top: 1050px; 
+        margin-top: 100px; 
     }
 
     .QS {
-        right: 15%; /* Ajuste de margem à direita */
-        top: 750px; /* Posição vertical ajustada */
-        margin-top: 30px; /* Ajuste de espaçamento */
+        right: 15%; 
+        top: 750px; 
+        margin-top: 30px; 
     }
 }
 
@@ -868,8 +868,8 @@
 
 @media (min-width: 800px)  {
     .NH, .OC {
-        line-height: 1.8; /* Ajuste a altura da linha */
-        font-size: 1.3vw; /* Fonte escalável para telas maiores */
+        line-height: 1.8; 
+        font-size: 1.3vw; 
         text-align: center;
         font-family: 'Darker Grotesque', sans-serif;
 		position: absolute;
@@ -877,13 +877,13 @@
 
     .NH {
 		right: 13%;
-       /* Ajuste de margem à esquerda */
-        top: 2400px; /* Ajuste de posição vertical para a tela maior */
+       
+        top: 2400px; 
     }
 
     .OC {
-		left: 15%;  /* Ajuste de margem à direita */
-        top: 2050px; /* Ajuste de posição vertical */	
+		left: 15%;  
+        top: 2050px; 
 		
     }
 }
@@ -926,13 +926,13 @@
 }
 }
 
-/* Responsividade para telas de aproximadamente 360x800 pixels */
+
 @media (max-width: 480px) {
     .comeco img {
-        width: 100%; /* Ocupa toda a largura da tela */
-        top: -5px; /* Ajusta a posição vertical */
-        left: 0; /* Centraliza na tela */
-        opacity: 0; /* Garante visibilidade */
+        width: 100%; 
+        top: -5px; 
+        left: 0; 
+        opacity: 0; 
     }
 
     .NH {
@@ -1018,13 +1018,13 @@
 		margin-left: 10px;
 		gap: 30px;
 		}
-		/* Para telas menores que 1024px (ex: tablets) */
+	
 		.estre {
-			font-size: 18px; /* Diminui o tamanho das estrelas */
+			font-size: 18px; 
 		}
 	
 		.N {
-			font-size: 22px; /* Diminui o tamanho da fonte de "nossos" */
+			font-size: 22px; 
 		}
 	
 		.S {
@@ -1039,7 +1039,7 @@
 	}
 	
 	@media (max-width: 768px) {
-		/* Para telas pequenas (ex: smartphones) */
+		
 
 		.txt{
 			display: flex;
@@ -1096,7 +1096,7 @@
 		margin-right: 50px;
 		gap: 30px;
 		}
-		/* Para dispositivos muito pequenos (ex: smartphones em modo retrato) */
+		
 		.estre {
 			font-size: 14px; /* Diminui o tamanho das estrelas */
 		}
@@ -1169,13 +1169,13 @@
 
 
     .servico .imgs {
-        flex-direction: column; /* Imagens ficam em coluna em telas médias */
-        gap: 50px; /* Reduz o espaçamento entre as imagens */
+        flex-direction: column;
+        gap: 50px; 
         margin-bottom: 40px;
     }
 
     .servico img {
-        width: 200px; /* Reduzindo o tamanho das imagens */
+        width: 200px; /
     }
 
 }
@@ -1183,11 +1183,11 @@
 @media (max-width: 768px) {
 
     .servico .imgs {
-        gap: 30px; /* Reduz ainda mais o espaço entre as imagens */
+        gap: 30px; 
     }
 
     .servico img {
-        width: 150px; /* Diminuindo ainda mais as imagens para telas pequenas */
+        width: 150px; 
     }
 
 }
